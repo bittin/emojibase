@@ -1,94 +1,86 @@
-import path from 'path';
-import { Emoji, Hexcode, ShortcodesDataset, SUPPORTED_LOCALES } from 'emojibase';
-import log from '../helpers/log';
-import toArray from '../helpers/toArray';
-// import loadPoMeta from '../loaders/loadPoMeta';
-import loadPoShortcodes from '../loaders/loadPoShortcodes';
+import {
+	type Emoji,
+	type GroupDataset,
+	type Hexcode,
+	type Locale,
+	type ShortcodesDataset,
+	SUPPORTED_LOCALES,
+} from 'emojibase';
+import { log } from '../helpers/log';
+import { readCache } from '../helpers/readCache';
+import { toArray } from '../helpers/toArray';
+import { loadDataset } from '../loaders/loadDatasetPackage';
+import { loadPoMessages } from '../loaders/loadPoMessages';
+import { loadPoShortcodes } from '../loaders/loadPoShortcodes';
 
-export default async function generatePoFiles(): Promise<void> {
-  log.title('data', 'Generating I18N po files');
+const LOCALES = ['base', ...SUPPORTED_LOCALES];
 
-  // eslint-disable-next-line
-  const emojiList: Emoji[] = require(path.join(process.cwd(), 'packages/data/en/data.raw.json'));
-  const emojiMap: Record<Hexcode, Emoji> = {};
+export async function generatePoFiles(): Promise<void> {
+	log.title('data', 'Generating I18N po files');
 
-  emojiList.forEach((emoji) => {
-    emojiMap[emoji.hexcode] = emoji;
+	const emojiList = await loadDataset<Emoji[]>('en/data.raw.json');
+	const emojiMap: Record<Hexcode, Emoji> = {};
 
-    if (emoji.skins) {
-      emoji.skins.forEach((skin) => {
-        emojiMap[skin.hexcode] = skin;
-      });
-    }
-  });
+	emojiList.forEach((emoji) => {
+		emojiMap[emoji.hexcode] = emoji;
 
-  // Shortcodes
-  // eslint-disable-next-line
-  const emojibaseShortcodes: ShortcodesDataset = require(path.join(
-    process.cwd(),
-    'packages/data/en/shortcodes/emojibase.raw.json',
-  ));
+		if (emoji.skins) {
+			emoji.skins.forEach((skin) => {
+				emojiMap[skin.hexcode] = skin;
+			});
+		}
+	});
 
-  await Promise.all(
-    SUPPORTED_LOCALES.map(async (locale) => {
-      const po = await loadPoShortcodes(locale);
+	const emojibaseShortcodes = await loadDataset<ShortcodesDataset>(
+		'en/shortcodes/emojibase.raw.json',
+	);
+	const groupHierarchy = readCache<GroupDataset>('temp/group-hierarchy.json');
 
-      // We use english as the base so all others inherit
-      Object.entries(emojibaseShortcodes).forEach(([hexcode, shortcodeList]) => {
-        const shortcodes = toArray(shortcodeList);
-        const emoji = emojiMap[hexcode];
+	if (!groupHierarchy) {
+		throw new Error('Group hierarchy dataset missing!');
+	}
 
-        // Skip skin tones since they're automatically generated
-        if (emoji.tone) {
-          return;
-        }
+	await Promise.all(
+		LOCALES.map(async (locale) => {
+			const poShortcodes = await loadPoShortcodes(locale as Locale);
+			const poMessages = await loadPoMessages(locale as Locale);
 
-        shortcodes.forEach((shortcode) => {
-          po.addItem(
-            shortcode,
-            locale === 'en' ? shortcode : '',
-            `EMOJI: ${emoji.emoji || emoji.text} ${emoji.annotation}`,
-            {
-              comment: emoji.hexcode,
-            },
-          );
-        });
-      });
+			// We use english as the base so all others inherit
+			Object.entries(emojibaseShortcodes).forEach(([hexcode, shortcodeList]) => {
+				const shortcodes = toArray(shortcodeList);
+				const emoji = emojiMap[hexcode];
 
-      return po.write(true);
-    }),
-  );
+				// Skip skin tones since they're automatically generated
+				if (emoji.tone) {
+					return;
+				}
 
-  // // Metadata
-  // // eslint-disable-next-line
-  // const groupsHierarchy: GroupDataset = require(path.join(
-  //   process.cwd(),
-  //   'packages/data/meta/groups.json',
-  // ));
+				shortcodes.forEach((shortcode) => {
+					poShortcodes.addItem(
+						shortcode,
+						locale === 'en' ? shortcode : '',
+						`EMOJI: ${emoji.emoji || emoji.text} ${emoji.label}`,
+						{
+							comment: emoji.hexcode,
+						},
+					);
+				});
+			});
 
-  // const englishMeta = await loadPoMeta('en');
+			// Ensure groups and sub-groups are in sync
+			Object.entries(groupHierarchy.groups).forEach(([order, key]) => {
+				poMessages.addItem(key, '', `EMOJI GROUP: ${key}`, {
+					comment: order,
+				});
+			});
 
-  // await Promise.all(
-  //   SUPPORTED_LOCALES.map(async (locale) => {
-  //     const po = await loadPoMeta(locale);
+			Object.entries(groupHierarchy.subgroups).forEach(([order, key]) => {
+				poMessages.addItem(key, '', `EMOJI SUB-GROUP: ${key}`, {
+					comment: order,
+				});
+			});
 
-  //     // Groups
-  //     Object.entries(groupsHierarchy.groups).forEach(([groupID, groupKey]) => {
-  //       po.addItem(groupKey.replace(/-/g, ' '), '', 'EMOJI GROUP', {
-  //         comment: `${groupID}: ${groupKey}`,
-  //       });
-  //     });
-
-  //     // Subgroups
-  //     Object.entries(groupsHierarchy.subgroups).forEach(([groupID, groupKey]) => {
-  //       po.addItem(groupKey.replace(/-/g, ' '), '', 'EMOJI SUB-GROUP', {
-  //         comment: `${groupID}: ${groupKey}`,
-  //       });
-  //     });
-
-  //     // Add custom translations here!
-
-  //     return po.write();
-  //   }),
-  // );
+			await Promise.all([poShortcodes.write('msgid'), poMessages.write('msgctxt')]);
+		}),
+	);
 }

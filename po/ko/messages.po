@@ -1,0 +1,612 @@
+# Korean
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-17 14:53-0700\n"
+"PO-Revision-Date: 2024-12-03 15:57+480\n"
+"Last-Translator: Miles Johnson\n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0\n"
+
+# 6
+msgctxt "EMOJI GROUP: activities"
+msgid "activities"
+msgstr "액티비티"
+
+# 3
+msgctxt "EMOJI GROUP: animals-nature"
+msgid "animals-nature"
+msgstr "동물과 자연"
+
+# 2
+msgctxt "EMOJI GROUP: component"
+msgid "component"
+msgstr "구성 요소"
+
+# 9
+msgctxt "EMOJI GROUP: flags"
+msgid "flags"
+msgstr "플래그"
+
+# 4
+msgctxt "EMOJI GROUP: food-drink"
+msgid "food-drink"
+msgstr "음식 및 음료"
+
+# 7
+msgctxt "EMOJI GROUP: objects"
+msgid "objects"
+msgstr "사물"
+
+# 1
+msgctxt "EMOJI GROUP: people-body"
+msgid "people-body"
+msgstr "사람과 몸"
+
+# 0
+msgctxt "EMOJI GROUP: smileys-emotion"
+msgid "smileys-emotion"
+msgstr "웃는 얼굴과 감정"
+
+# 8
+msgctxt "EMOJI GROUP: symbols"
+msgid "symbols"
+msgstr "기호"
+
+# 5
+msgctxt "EMOJI GROUP: travel-places"
+msgid "travel-places"
+msgstr "여행 및 장소"
+
+# 95
+msgctxt "EMOJI SUB-GROUP: alphanum"
+msgid "alphanum"
+msgstr "거형 기호"
+
+# 36
+msgctxt "EMOJI SUB-GROUP: animal-amphibian"
+msgid "animal-amphibian"
+msgstr "양서류"
+
+# 35
+msgctxt "EMOJI SUB-GROUP: animal-bird"
+msgid "animal-bird"
+msgstr "조류"
+
+# 39
+msgctxt "EMOJI SUB-GROUP: animal-bug"
+msgid "animal-bug"
+msgstr "버그"
+
+# 34
+msgctxt "EMOJI SUB-GROUP: animal-mammal"
+msgid "animal-mammal"
+msgstr "포유류"
+
+# 38
+msgctxt "EMOJI SUB-GROUP: animal-marine"
+msgid "animal-marine"
+msgstr "해양 생물"
+
+# 37
+msgctxt "EMOJI SUB-GROUP: animal-reptile"
+msgid "animal-reptile"
+msgstr "파충류"
+
+# 85
+msgctxt "EMOJI SUB-GROUP: arrow"
+msgid "arrow"
+msgstr "화살"
+
+# 64
+msgctxt "EMOJI SUB-GROUP: arts-crafts"
+msgid "arts-crafts"
+msgstr "예술과 공예품"
+
+# 88
+msgctxt "EMOJI SUB-GROUP: av-symbol"
+msgid "av-symbol"
+msgstr "오디오 및 비디오 기호"
+
+# 61
+msgctxt "EMOJI SUB-GROUP: award-medal"
+msgid "award-medal"
+msgstr "수상 메달"
+
+# 22
+msgctxt "EMOJI SUB-GROUP: body-parts"
+msgid "body-parts"
+msgstr "신체 부위"
+
+# 72
+msgctxt "EMOJI SUB-GROUP: book-paper"
+msgid "book-paper"
+msgstr "책과 종이"
+
+# 12
+msgctxt "EMOJI SUB-GROUP: cat-face"
+msgid "cat-face"
+msgstr "고양이 얼굴"
+
+# 65
+msgctxt "EMOJI SUB-GROUP: clothing"
+msgid "clothing"
+msgstr "의류"
+
+# 70
+msgctxt "EMOJI SUB-GROUP: computer"
+msgid "computer"
+msgstr "컴퓨터"
+
+# 98
+msgctxt "EMOJI SUB-GROUP: country-flag"
+msgid "country-flag"
+msgstr "국가 플래그"
+
+# 92
+msgctxt "EMOJI SUB-GROUP: currency"
+msgid "currency"
+msgstr "통화"
+
+# 48
+msgctxt "EMOJI SUB-GROUP: dishware"
+msgid "dishware"
+msgstr "식기"
+
+# 47
+msgctxt "EMOJI SUB-GROUP: drink"
+msgid "drink"
+msgstr "음료"
+
+# 15
+msgctxt "EMOJI SUB-GROUP: emotion"
+msgid "emotion"
+msgstr "감정"
+
+# 60
+msgctxt "EMOJI SUB-GROUP: event"
+msgid "event"
+msgstr "이벤트 및 공휴일"
+
+# 1
+msgctxt "EMOJI SUB-GROUP: face-affection"
+msgid "face-affection"
+msgstr "애정"
+
+# 9
+msgctxt "EMOJI SUB-GROUP: face-concerned"
+msgid "face-concerned"
+msgstr "우려"
+
+# 11
+msgctxt "EMOJI SUB-GROUP: face-costume"
+msgid "face-costume"
+msgstr "의상과 생물"
+
+# 8
+msgctxt "EMOJI SUB-GROUP: face-glasses"
+msgid "face-glasses"
+msgstr "안경"
+
+# 3
+msgctxt "EMOJI SUB-GROUP: face-hand"
+msgid "face-hand"
+msgstr "손"
+
+# 7
+msgctxt "EMOJI SUB-GROUP: face-hat"
+msgid "face-hat"
+msgstr "모자와 함께"
+
+# 10
+msgctxt "EMOJI SUB-GROUP: face-negative"
+msgid "face-negative"
+msgstr "마이너스"
+
+# 4
+msgctxt "EMOJI SUB-GROUP: face-neutral-skeptical"
+msgid "face-neutral-skeptical"
+msgstr "중립 / 회의적"
+
+# 5
+msgctxt "EMOJI SUB-GROUP: face-sleepy"
+msgid "face-sleepy"
+msgstr "졸린"
+
+# 0
+msgctxt "EMOJI SUB-GROUP: face-smiling"
+msgid "face-smiling"
+msgstr "미소"
+
+# 2
+msgctxt "EMOJI SUB-GROUP: face-tongue"
+msgid "face-tongue"
+msgstr "혀와 함께"
+
+# 6
+msgctxt "EMOJI SUB-GROUP: face-unwell"
+msgid "face-unwell"
+msgstr "웰빙이 좋지 않은"
+
+# 30
+msgctxt "EMOJI SUB-GROUP: family"
+msgid "family"
+msgstr "가족"
+
+# 97
+msgctxt "EMOJI SUB-GROUP: flag"
+msgid "flag"
+msgstr "기타 플래그"
+
+# 45
+msgctxt "EMOJI SUB-GROUP: food-asian"
+msgid "food-asian"
+msgstr "아시아"
+
+# 42
+msgctxt "EMOJI SUB-GROUP: food-fruit"
+msgid "food-fruit"
+msgstr "과일"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-marine"
+msgid "food-marine"
+msgstr "해산물"
+
+# 44
+msgctxt "EMOJI SUB-GROUP: food-prepared"
+msgid "food-prepared"
+msgstr "조리 / 준비"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-sweet"
+msgid "food-sweet"
+msgstr "과자 및 사탕"
+
+# 43
+msgctxt "EMOJI SUB-GROUP: food-vegetable"
+msgid "food-vegetable"
+msgstr "야채"
+
+# 63
+msgctxt "EMOJI SUB-GROUP: game"
+msgid "game"
+msgstr "게임 및 취미"
+
+# 89
+msgctxt "EMOJI SUB-GROUP: gender"
+msgid "gender"
+msgstr "성별 징후"
+
+# 96
+msgctxt "EMOJI SUB-GROUP: geometric"
+msgid "geometric"
+msgstr "모양 및 색상"
+
+# 33
+msgctxt "EMOJI SUB-GROUP: hair-style"
+msgid "hair-style"
+msgstr "헤어 스타일"
+
+# 19
+msgctxt "EMOJI SUB-GROUP: hand-fingers-closed"
+msgid "hand-fingers-closed"
+msgstr "손가락 닫기"
+
+# 16
+msgctxt "EMOJI SUB-GROUP: hand-fingers-open"
+msgid "hand-fingers-open"
+msgstr "손가락 열기"
+
+# 17
+msgctxt "EMOJI SUB-GROUP: hand-fingers-partial"
+msgid "hand-fingers-partial"
+msgstr "손 표지판"
+
+# 21
+msgctxt "EMOJI SUB-GROUP: hand-prop"
+msgid "hand-prop"
+msgstr "손 소품"
+
+# 18
+msgctxt "EMOJI SUB-GROUP: hand-single-finger"
+msgid "hand-single-finger"
+msgstr "손가락 포인팅"
+
+# 20
+msgctxt "EMOJI SUB-GROUP: hands"
+msgid "hands"
+msgstr "손"
+
+# 14
+msgctxt "EMOJI SUB-GROUP: heart"
+msgid "heart"
+msgstr "마음"
+
+# 57
+msgctxt "EMOJI SUB-GROUP: hotel"
+msgid "hotel"
+msgstr "호텔"
+
+# 81
+msgctxt "EMOJI SUB-GROUP: household"
+msgid "household"
+msgstr "가정용품"
+
+# 94
+msgctxt "EMOJI SUB-GROUP: keycap"
+msgid "keycap"
+msgstr "키패드 문자"
+
+# 71
+msgctxt "EMOJI SUB-GROUP: light-video"
+msgid "light-video"
+msgstr "빛, 영화 및 비디오"
+
+# 77
+msgctxt "EMOJI SUB-GROUP: lock"
+msgid "lock"
+msgstr "잠금 및 키"
+
+# 74
+msgctxt "EMOJI SUB-GROUP: mail"
+msgid "mail"
+msgstr "메일"
+
+# 90
+msgctxt "EMOJI SUB-GROUP: math"
+msgid "math"
+msgstr "수학 기호"
+
+# 80
+msgctxt "EMOJI SUB-GROUP: medical"
+msgid "medical"
+msgstr "의료"
+
+# 73
+msgctxt "EMOJI SUB-GROUP: money"
+msgid "money"
+msgstr "돈을"
+
+# 13
+msgctxt "EMOJI SUB-GROUP: monkey-face"
+msgid "monkey-face"
+msgstr "원숭이 얼굴"
+
+# 67
+msgctxt "EMOJI SUB-GROUP: music"
+msgid "music"
+msgstr "음악"
+
+# 68
+msgctxt "EMOJI SUB-GROUP: musical-instrument"
+msgid "musical-instrument"
+msgstr "악기"
+
+# 76
+msgctxt "EMOJI SUB-GROUP: office"
+msgid "office"
+msgstr "사무용품"
+
+# 82
+msgctxt "EMOJI SUB-GROUP: other-object"
+msgid "other-object"
+msgstr "기타 개체"
+
+# 93
+msgctxt "EMOJI SUB-GROUP: other-symbol"
+msgid "other-symbol"
+msgstr "기타 기호"
+
+# 23
+msgctxt "EMOJI SUB-GROUP: person"
+msgid "person"
+msgstr "사람들"
+
+# 27
+msgctxt "EMOJI SUB-GROUP: person-activity"
+msgid "person-activity"
+msgstr "액티비티"
+
+# 26
+msgctxt "EMOJI SUB-GROUP: person-fantasy"
+msgid "person-fantasy"
+msgstr "판타지"
+
+# 24
+msgctxt "EMOJI SUB-GROUP: person-gesture"
+msgid "person-gesture"
+msgstr "제스처"
+
+# 29
+msgctxt "EMOJI SUB-GROUP: person-resting"
+msgid "person-resting"
+msgstr "휴식"
+
+# 25
+msgctxt "EMOJI SUB-GROUP: person-role"
+msgid "person-role"
+msgstr "역할 및 경력"
+
+# 28
+msgctxt "EMOJI SUB-GROUP: person-sport"
+msgid "person-sport"
+msgstr "육상"
+
+# 31
+msgctxt "EMOJI SUB-GROUP: person-symbol"
+msgid "person-symbol"
+msgstr "사람 기호"
+
+# 69
+msgctxt "EMOJI SUB-GROUP: phone"
+msgid "phone"
+msgstr "전화"
+
+# 51
+msgctxt "EMOJI SUB-GROUP: place-building"
+msgid "place-building"
+msgstr "건물"
+
+# 50
+msgctxt "EMOJI SUB-GROUP: place-geographic"
+msgid "place-geographic"
+msgstr "지리적 위치"
+
+# 49
+msgctxt "EMOJI SUB-GROUP: place-map"
+msgid "place-map"
+msgstr "글로브 와지도"
+
+# 53
+msgctxt "EMOJI SUB-GROUP: place-other"
+msgid "place-other"
+msgstr "기타 장소"
+
+# 52
+msgctxt "EMOJI SUB-GROUP: place-religious"
+msgid "place-religious"
+msgstr "종교 건물"
+
+# 40
+msgctxt "EMOJI SUB-GROUP: plant-flower"
+msgid "plant-flower"
+msgstr "꽃"
+
+# 41
+msgctxt "EMOJI SUB-GROUP: plant-other"
+msgid "plant-other"
+msgstr "기타 식물"
+
+# 91
+msgctxt "EMOJI SUB-GROUP: punctuation"
+msgid "punctuation"
+msgstr "문장 부호"
+
+# 86
+msgctxt "EMOJI SUB-GROUP: religion"
+msgid "religion"
+msgstr "종교적 상징"
+
+# 79
+msgctxt "EMOJI SUB-GROUP: science"
+msgid "science"
+msgstr "과학 장비"
+
+# 32
+msgctxt "EMOJI SUB-GROUP: skin-tone"
+msgid "skin-tone"
+msgstr "피부 톤"
+
+# 59
+msgctxt "EMOJI SUB-GROUP: sky-weather"
+msgid "sky-weather"
+msgstr "날씨"
+
+# 66
+msgctxt "EMOJI SUB-GROUP: sound"
+msgid "sound"
+msgstr "소리"
+
+# 62
+msgctxt "EMOJI SUB-GROUP: sport"
+msgid "sport"
+msgstr "스포츠"
+
+# 99
+msgctxt "EMOJI SUB-GROUP: subdivision-flag"
+msgid "subdivision-flag"
+msgstr "세분화 플래그"
+
+# 58
+msgctxt "EMOJI SUB-GROUP: time"
+msgid "time"
+msgstr "시간"
+
+# 78
+msgctxt "EMOJI SUB-GROUP: tool"
+msgid "tool"
+msgstr "도구"
+
+# 56
+msgctxt "EMOJI SUB-GROUP: transport-air"
+msgid "transport-air"
+msgstr "항공 운송"
+
+# 54
+msgctxt "EMOJI SUB-GROUP: transport-ground"
+msgid "transport-ground"
+msgstr "지상 교통"
+
+# 83
+msgctxt "EMOJI SUB-GROUP: transport-sign"
+msgid "transport-sign"
+msgstr "교통 표지판"
+
+# 55
+msgctxt "EMOJI SUB-GROUP: transport-water"
+msgid "transport-water"
+msgstr "물 운송"
+
+# 84
+msgctxt "EMOJI SUB-GROUP: warning"
+msgid "warning"
+msgstr "경고 기호"
+
+# 75
+msgctxt "EMOJI SUB-GROUP: writing"
+msgid "writing"
+msgstr "쓰기"
+
+# 87
+msgctxt "EMOJI SUB-GROUP: zodiac"
+msgid "zodiac"
+msgstr "조디악 징후"
+
+#, javascript-format
+msgctxt "LABEL: Denotes a countries flag using alphabetical characters (usa = United States)"
+msgid "regional indicator %s"
+msgstr "지역 지표 %s"
+
+msgctxt "LABEL: Name of the asterisk symbol (*)"
+msgid "asterisk"
+msgstr "별표"
+
+msgctxt "LABEL: Name of the number sign/hash symbol (#)"
+msgid "number sign"
+msgstr "숫자 기호"
+
+msgctxt "LABEL: Very short word for skin tone and/or color (max 1 word if possible)"
+msgid "tone"
+msgstr "색깔"
+
+#, fuzzy
+msgctxt "SKIN TONE: dark"
+msgid "dark skin tone"
+msgstr "어두운 피부 톤"
+
+#, fuzzy
+msgctxt "SKIN TONE: light"
+msgid "light skin tone"
+msgstr "밝은 피부 톤"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium"
+msgid "medium skin tone"
+msgstr "중간 피부 톤"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium-dark"
+msgid "medium-dark skin tone"
+msgstr "미디엄 다크 스킨 톤"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium-light"
+msgid "medium-light skin tone"
+msgstr "중간 빛 피부 톤"

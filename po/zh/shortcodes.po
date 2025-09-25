@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-25 22:32+420\n"
-"PO-Revision-Date: 2021-01-10 15:38+480\n"
+"PO-Revision-Date: 2024-12-03 15:57+480\n"
 "Last-Translator: Filon Hon <filon7@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/emojibase/emojibase-shortcodes/zh_Hans/>\n"
 "Language: zh\n"
@@ -146,7 +146,7 @@ msgid "aland_islands"
 msgstr ""
 
 # 23F0
-msgctxt "EMOJI: ⏰ alarm clock"
+msgctxt "EMOJI: ⏰️ alarm clock"
 msgid "alarm_clock"
 msgstr ""
 
@@ -321,12 +321,12 @@ msgid "arrow_backward"
 msgstr ""
 
 # 23EC
-msgctxt "EMOJI: ⏬ fast down button"
+msgctxt "EMOJI: ⏬️ fast down button"
 msgid "arrow_double_down"
 msgstr ""
 
 # 23EB
-msgctxt "EMOJI: ⏫ fast up button"
+msgctxt "EMOJI: ⏫️ fast up button"
 msgid "arrow_double_up"
 msgstr ""
 
@@ -735,6 +735,11 @@ msgctxt "EMOJI: 😁 beaming face with smiling eyes"
 msgid "beaming_face"
 msgstr ""
 
+# 1FAD8
+msgctxt "EMOJI: 🫘 beans"
+msgid "beans"
+msgstr ""
+
 # 1F43B
 msgctxt "EMOJI: 🐻 bear"
 msgid "bear"
@@ -908,6 +913,16 @@ msgstr ""
 # 1F9AC
 msgctxt "EMOJI: 🦬 bison"
 msgid "bison"
+msgstr ""
+
+# 1FAE6
+msgctxt "EMOJI: 🫦 biting lip"
+msgid "biting_lip"
+msgstr ""
+
+# 1F426-200D-2B1B
+msgctxt "EMOJI: 🐦‍⬛ black bird"
+msgid "black_bird"
 msgstr ""
 
 # 1F408-200D-2B1B
@@ -1190,6 +1205,11 @@ msgctxt "EMOJI: 🥦 broccoli"
 msgid "broccoli"
 msgstr ""
 
+# 26D3-FE0F-200D-1F4A5
+msgctxt "EMOJI: ⛓️‍💥 broken chain"
+msgid "broken_chain"
+msgstr ""
+
 # 1F494
 msgctxt "EMOJI: 💔 broken heart"
 msgid "broken_heart"
@@ -1210,6 +1230,11 @@ msgctxt "EMOJI: 🤎 brown heart"
 msgid "brown_heart"
 msgstr ""
 
+# 1F344-200D-1F7EB
+msgctxt "EMOJI: 🍄‍🟫 brown mushroom"
+msgid "brown_mushroom"
+msgstr ""
+
 # 1F7EB
 msgctxt "EMOJI: 🟫 brown square"
 msgid "brown_square"
@@ -1223,6 +1248,11 @@ msgstr ""
 # 1F9CB
 msgctxt "EMOJI: 🧋 bubble tea"
 msgid "bubble_tea"
+msgstr ""
+
+# 1FAE7
+msgctxt "EMOJI: 🫧 bubbles"
+msgid "bubbles"
 msgstr ""
 
 # 1FAA3
@@ -1566,7 +1596,7 @@ msgid "check_mark"
 msgstr ""
 
 # 2705
-msgctxt "EMOJI: ✅ check mark button"
+msgctxt "EMOJI: ✅️ check mark button"
 msgid "check_mark_button"
 msgstr ""
 
@@ -2145,6 +2175,11 @@ msgctxt "EMOJI: ©️ copyright"
 msgid "copyright"
 msgstr ""
 
+# 1FAB8
+msgctxt "EMOJI: 🪸 coral"
+msgid "coral"
+msgstr ""
+
 # 1F33D
 msgctxt "EMOJI: 🌽 ear of corn"
 msgid "corn"
@@ -2276,12 +2311,12 @@ msgid "croissant"
 msgstr ""
 
 # 274C
-msgctxt "EMOJI: ❌ cross mark"
+msgctxt "EMOJI: ❌️ cross mark"
 msgid "cross_mark"
 msgstr ""
 
 # 274E
-msgctxt "EMOJI: ❎ cross mark button"
+msgctxt "EMOJI: ❎️ cross mark button"
 msgid "cross_mark_button"
 msgstr ""
 
@@ -2303,6 +2338,11 @@ msgstr ""
 # 1F6F3
 msgctxt "EMOJI: 🛳️ passenger ship"
 msgid "cruise_ship"
+msgstr ""
+
+# 1FA7C
+msgctxt "EMOJI: 🩼 crutch"
+msgid "crutch"
 msgstr ""
 
 # 1F622
@@ -2371,7 +2411,7 @@ msgid "curly_haired"
 msgstr ""
 
 # 27B0
-msgctxt "EMOJI: ➰ curly loop"
+msgctxt "EMOJI: ➰️ curly loop"
 msgid "curly_loop"
 msgstr ""
 
@@ -2575,6 +2615,16 @@ msgctxt "EMOJI: 😥 sad but relieved face"
 msgid "disappointed_relieved"
 msgstr ""
 
+# 1FAA9
+msgctxt "EMOJI: 🪩 mirror ball"
+msgid "disco"
+msgstr ""
+
+# 1FAA9
+msgctxt "EMOJI: 🪩 mirror ball"
+msgid "disco_ball"
+msgstr ""
+
 # 1F978
 msgctxt "EMOJI: 🥸 disguised face"
 msgid "disguised"
@@ -2586,7 +2636,7 @@ msgid "disguised_face"
 msgstr ""
 
 # 2797
-msgctxt "EMOJI: ➗ divide"
+msgctxt "EMOJI: ➗️ divide"
 msgid "divide"
 msgstr ""
 
@@ -2596,7 +2646,7 @@ msgid "diving_mask"
 msgstr ""
 
 # 2797
-msgctxt "EMOJI: ➗ divide"
+msgctxt "EMOJI: ➗️ divide"
 msgid "division"
 msgstr ""
 
@@ -2616,7 +2666,7 @@ msgid "dizzy_eyes"
 msgstr ""
 
 # 1F635
-msgctxt "EMOJI: 😵 knocked-out face"
+msgctxt "EMOJI: 😵 face with crossed-out eyes"
 msgid "dizzy_face"
 msgstr ""
 
@@ -2675,13 +2725,23 @@ msgctxt "EMOJI: 🇩🇴 flag: Dominican Republic"
 msgid "dominican_republic"
 msgstr ""
 
+# 1FACF
+msgctxt "EMOJI: 🫏 donkey"
+msgid "donkey"
+msgstr ""
+
 # 1F6AA
 msgctxt "EMOJI: 🚪 door"
 msgid "door"
 msgstr ""
 
+# 1FAE5
+msgctxt "EMOJI: 🫥 dotted line face"
+msgid "dotted_line_face"
+msgstr ""
+
 # 27BF
-msgctxt "EMOJI: ➿ double curly loop"
+msgctxt "EMOJI: ➿️ double curly loop"
 msgid "double_curly_loop"
 msgstr ""
 
@@ -2895,6 +2955,11 @@ msgctxt "EMOJI: 📧 e-mail"
 msgid "email"
 msgstr ""
 
+# 1FAB9
+msgctxt "EMOJI: 🪹 empty nest"
+msgid "empty_nest"
+msgstr ""
+
 # 1F51A
 msgctxt "EMOJI: 🔚 END arrow"
 msgid "end"
@@ -3025,9 +3090,24 @@ msgctxt "EMOJI: 👀 eyes"
 msgid "eyes"
 msgstr ""
 
+# 1F979
+msgctxt "EMOJI: 🥹 face holding back tears"
+msgid "face_holding_back_tears"
+msgstr ""
+
 # 1F92E
 msgctxt "EMOJI: 🤮 face vomiting"
 msgid "face_vomiting"
+msgstr ""
+
+# 1FAE4
+msgctxt "EMOJI: 🫤 face with diagonal mouth"
+msgid "face_with_diagonal_mouth"
+msgstr ""
+
+# 1FAE9
+msgctxt "EMOJI: 🫩 face with bags under eyes"
+msgid "face_with_eye_bags"
 msgstr ""
 
 # 1F92D
@@ -3045,9 +3125,19 @@ msgctxt "EMOJI: 🧐 face with monocle"
 msgid "face_with_monocle"
 msgstr ""
 
+# 1FAE2
+msgctxt "EMOJI: 🫢 face with open eyes and hand over mouth"
+msgid "face_with_open_eyes_hand_over_mouth"
+msgstr ""
+
 # 1F62E
 msgctxt "EMOJI: 😮 face with open mouth"
 msgid "face_with_open_mouth"
+msgstr ""
+
+# 1FAE3
+msgctxt "EMOJI: 🫣 face with peeking eye"
+msgid "face_with_peeking_eye"
 msgstr ""
 
 # 1F928
@@ -3108,6 +3198,26 @@ msgstr ""
 # 1F46A
 msgctxt "EMOJI: 👪️ family"
 msgid "family"
+msgstr ""
+
+# 1F9D1-200D-1F9D1-200D-1F9D2
+msgctxt "EMOJI: 🧑‍🧑‍🧒 family: adult, adult, child"
+msgid "family_aac"
+msgstr ""
+
+# 1F9D1-200D-1F9D1-200D-1F9D2-200D-1F9D2
+msgctxt "EMOJI: 🧑‍🧑‍🧒‍🧒 family: adult, adult, child, child"
+msgid "family_aacc"
+msgstr ""
+
+# 1F9D1-200D-1F9D2
+msgctxt "EMOJI: 🧑‍🧒 family: adult, child"
+msgid "family_ac"
+msgstr ""
+
+# 1F9D1-200D-1F9D2-200D-1F9D2
+msgctxt "EMOJI: 🧑‍🧒‍🧒 family: adult, child, child"
+msgid "family_acc"
 msgstr ""
 
 # 1F468-200D-1F466
@@ -3246,7 +3356,7 @@ msgid "faroe_islands"
 msgstr ""
 
 # 23EC
-msgctxt "EMOJI: ⏬ fast down button"
+msgctxt "EMOJI: ⏬️ fast down button"
 msgid "fast_down"
 msgstr ""
 
@@ -3261,7 +3371,7 @@ msgid "fast_reverse"
 msgstr ""
 
 # 23EB
-msgctxt "EMOJI: ⏫ fast up button"
+msgctxt "EMOJI: ⏫️ fast up button"
 msgid "fast_up"
 msgstr ""
 
@@ -3350,6 +3460,11 @@ msgctxt "EMOJI: 📽️ film projector"
 msgid "film_projector"
 msgstr ""
 
+# 1FAC6
+msgctxt "EMOJI: 🫆 fingerprint"
+msgid "fingerprint"
+msgstr ""
+
 # 1F91E
 msgctxt "EMOJI: 🤞 crossed fingers"
 msgid "fingers_crossed"
@@ -3426,7 +3541,7 @@ msgid "fishing_pole_and_fish"
 msgstr ""
 
 # 270A
-msgctxt "EMOJI: ✊ raised fist"
+msgctxt "EMOJI: ✊️ raised fist"
 msgid "fist"
 msgstr ""
 
@@ -3688,6 +3803,11 @@ msgstr ""
 # 1F1E8-1F1F5
 msgctxt "EMOJI: 🇨🇵 flag: Clipperton Island"
 msgid "flag_cp"
+msgstr ""
+
+# 1F1E8-1F1F6
+msgctxt "EMOJI: 🇨🇶 flag: Sark"
+msgid "flag_cq"
 msgstr ""
 
 # 1F1E8-1F1F7
@@ -4606,7 +4726,7 @@ msgid "flag_to"
 msgstr ""
 
 # 1F1F9-1F1F7
-msgctxt "EMOJI: 🇹🇷 flag: Turkey"
+msgctxt "EMOJI: 🇹🇷 flag: Türkiye"
 msgid "flag_tr"
 msgstr ""
 
@@ -4790,6 +4910,11 @@ msgctxt "EMOJI: 😳 flushed face"
 msgid "flushed_face"
 msgstr ""
 
+# 1FA88
+msgctxt "EMOJI: 🪈 flute"
+msgid "flute"
+msgstr ""
+
 # 1FAB0
 msgctxt "EMOJI: 🪰 fly"
 msgid "fly"
@@ -4818,6 +4943,11 @@ msgstr ""
 # 1F64F
 msgctxt "EMOJI: 🙏 folded hands"
 msgid "folded_hands"
+msgstr ""
+
+# 1FAAD
+msgctxt "EMOJI: 🪭 folding hand fan"
+msgid "folding_fan"
 msgstr ""
 
 # 1FAD5
@@ -5000,6 +5130,11 @@ msgctxt "EMOJI: 🧄 garlic"
 msgid "garlic"
 msgstr ""
 
+# 1FAE2
+msgctxt "EMOJI: 🫢 face with open eyes and hand over mouth"
+msgid "gasp"
+msgstr ""
+
 # 2699
 msgctxt "EMOJI: ⚙️ gear"
 msgid "gear"
@@ -5053,6 +5188,11 @@ msgstr ""
 # 1F49D
 msgctxt "EMOJI: 💝 heart with ribbon"
 msgid "gift_heart"
+msgstr ""
+
+# 1FADA
+msgctxt "EMOJI: 🫚 ginger root"
+msgid "ginger"
 msgstr ""
 
 # 1F992
@@ -5125,6 +5265,11 @@ msgctxt "EMOJI: 🏌️ person golfing"
 msgid "golfing"
 msgstr ""
 
+# 1FABF
+msgctxt "EMOJI: 🪿 goose"
+msgid "goose"
+msgstr ""
+
 # 1F98D
 msgctxt "EMOJI: 🦍 gorilla"
 msgid "gorilla"
@@ -5138,6 +5283,11 @@ msgstr ""
 # 1F347
 msgctxt "EMOJI: 🍇 grapes"
 msgid "grapes"
+msgstr ""
+
+# 1FA76
+msgctxt "EMOJI: 🩶 grey heart"
+msgid "gray_heart"
 msgstr ""
 
 # 1F1EC-1F1F7
@@ -5183,6 +5333,11 @@ msgstr ""
 # 1F1EC-1F1E9
 msgctxt "EMOJI: 🇬🇩 flag: Grenada"
 msgid "grenada"
+msgstr ""
+
+# 1FA76
+msgctxt "EMOJI: 🩶 grey heart"
+msgid "grey_heart"
 msgstr ""
 
 # 1F62C
@@ -5295,6 +5450,11 @@ msgctxt "EMOJI: 🇬🇾 flag: Guyana"
 msgid "guyana"
 msgstr ""
 
+# 1FAAE
+msgctxt "EMOJI: 🪮 hair pick"
+msgid "hair_pick"
+msgstr ""
+
 # 1F487
 msgctxt "EMOJI: 💇 person getting haircut"
 msgid "haircut"
@@ -5330,6 +5490,11 @@ msgctxt "EMOJI: 🛠️ hammer and wrench"
 msgid "hammer_and_wrench"
 msgstr ""
 
+# 1FAAC
+msgctxt "EMOJI: 🪬 hamsa"
+msgid "hamsa"
+msgstr ""
+
 # 1F439
 msgctxt "EMOJI: 🐹 hamster"
 msgid "hamster"
@@ -5343,6 +5508,11 @@ msgstr ""
 # 1F92D
 msgctxt "EMOJI: 🤭 face with hand over mouth"
 msgid "hand_over_mouth"
+msgstr ""
+
+# 1FAF0
+msgctxt "EMOJI: 🫰 hand with index finger and thumb crossed"
+msgid "hand_with_index_finger_and_thumb_crossed"
 msgstr ""
 
 # 1F45C
@@ -5365,6 +5535,11 @@ msgctxt "EMOJI: 🤝 handshake"
 msgid "handshake"
 msgstr ""
 
+# 1FA89
+msgctxt "EMOJI: 🪉 harp"
+msgid "harp"
+msgstr ""
+
 # 0023-FE0F-20E3
 msgctxt "EMOJI: #️⃣ keycap: #"
 msgid "hash"
@@ -5378,6 +5553,16 @@ msgstr ""
 # 1F423
 msgctxt "EMOJI: 🐣 hatching chick"
 msgid "hatching_chick"
+msgstr ""
+
+# 1F642-200D-2194-FE0F
+msgctxt "EMOJI: 🙂‍↔️ head shaking horizontally"
+msgid "head_shaking_horizontally"
+msgstr ""
+
+# 1F642-200D-2195-FE0F
+msgctxt "EMOJI: 🙂‍↕️ head shaking vertically"
+msgid "head_shaking_vertically"
 msgstr ""
 
 # 1F3A7
@@ -5435,6 +5620,11 @@ msgctxt "EMOJI: 😻 smiling cat with heart-eyes"
 msgid "heart_eyes_cat"
 msgstr ""
 
+# 1FAF6
+msgctxt "EMOJI: 🫶 heart hands"
+msgid "heart_hands"
+msgstr ""
+
 # 2764-FE0F-200D-1F525
 msgctxt "EMOJI: ❤️‍🔥 heart on fire"
 msgid "heart_on_fire"
@@ -5475,6 +5665,11 @@ msgctxt "EMOJI: 💲 heavy dollar sign"
 msgid "heavy_dollar_sign"
 msgstr ""
 
+# 1F7F0
+msgctxt "EMOJI: 🟰 heavy equals sign"
+msgid "heavy_equals_sign"
+msgstr ""
+
 # 1F994
 msgctxt "EMOJI: 🦔 hedgehog"
 msgid "hedgehog"
@@ -5506,7 +5701,7 @@ msgid "high_brightness"
 msgstr ""
 
 # 270B
-msgctxt "EMOJI: ✋ raised hand"
+msgctxt "EMOJI: ✋️ raised hand"
 msgid "high_five"
 msgstr ""
 
@@ -5666,17 +5861,17 @@ msgid "houses"
 msgstr ""
 
 # 1F917
-msgctxt "EMOJI: 🤗 hugging face"
+msgctxt "EMOJI: 🤗 smiling face with open hands"
 msgid "hug"
 msgstr ""
 
 # 1F917
-msgctxt "EMOJI: 🤗 hugging face"
+msgctxt "EMOJI: 🤗 smiling face with open hands"
 msgid "hugging"
 msgstr ""
 
 # 1F917
-msgctxt "EMOJI: 🤗 hugging face"
+msgctxt "EMOJI: 🤗 smiling face with open hands"
 msgid "hugging_face"
 msgstr ""
 
@@ -5698,6 +5893,11 @@ msgstr ""
 # 1F6D6
 msgctxt "EMOJI: 🛖 hut"
 msgid "hut"
+msgstr ""
+
+# 1FABB
+msgctxt "EMOJI: 🪻 hyacinth"
+msgid "hyacinth"
 msgstr ""
 
 # 1F9CA
@@ -5733,6 +5933,11 @@ msgstr ""
 # 1F194
 msgctxt "EMOJI: 🆔 ID button"
 msgid "id"
+msgstr ""
+
+# 1FAAA
+msgctxt "EMOJI: 🪪 identification card"
+msgid "id_card"
 msgstr ""
 
 # 1F250
@@ -5960,9 +6165,19 @@ msgctxt "EMOJI: 👹 ogre"
 msgid "japanese_ogre"
 msgstr ""
 
+# 1FAD9
+msgctxt "EMOJI: 🫙 jar"
+msgid "jar"
+msgstr ""
+
 # 1F456
 msgctxt "EMOJI: 👖 jeans"
 msgid "jeans"
+msgstr ""
+
+# 1FABC
+msgctxt "EMOJI: 🪼 jellyfish"
+msgid "jellyfish"
 msgstr ""
 
 # 1F1EF-1F1EA
@@ -6049,6 +6264,11 @@ msgstr ""
 msgctxt "EMOJI: ⌨️ keyboard"
 msgid "keyboard"
 msgstr "键盘"
+
+# 1FAAF
+msgctxt "EMOJI: 🪯 khanda"
+msgid "khanda"
+msgstr ""
 
 # 1F458
 msgctxt "EMOJI: 👘 kimono"
@@ -6146,7 +6366,7 @@ msgid "knife"
 msgstr ""
 
 # 1F635
-msgctxt "EMOJI: 😵 knocked-out face"
+msgctxt "EMOJI: 😵 face with crossed-out eyes"
 msgid "knocked_out"
 msgstr ""
 
@@ -6255,6 +6475,11 @@ msgctxt "EMOJI: 😆 grinning squinting face"
 msgid "laughing"
 msgstr ""
 
+# 1FABE
+msgctxt "EMOJI: 🪾 leafless tree"
+msgid "leafless_tree"
+msgstr ""
+
 # 1F96C
 msgctxt "EMOJI: 🥬 leafy green"
 msgid "leafy_green"
@@ -6298,6 +6523,16 @@ msgstr ""
 # 21A9
 msgctxt "EMOJI: ↩️ right arrow curving left"
 msgid "leftwards_arrow_with_hook"
+msgstr ""
+
+# 1FAF2
+msgctxt "EMOJI: 🫲 leftwards hand"
+msgid "leftwards_hand"
+msgstr ""
+
+# 1FAF7
+msgctxt "EMOJI: 🫷 leftwards pushing hand"
+msgid "leftwards_pushing_hand"
 msgstr ""
 
 # 1F9B5
@@ -6360,6 +6595,16 @@ msgctxt "EMOJI: 🇱🇮 flag: Liechtenstein"
 msgid "liechtenstein"
 msgstr ""
 
+# 1F6DF
+msgctxt "EMOJI: 🛟 ring buoy"
+msgid "lifebuoy"
+msgstr ""
+
+# 1FA75
+msgctxt "EMOJI: 🩵 light blue heart"
+msgid "light_blue_heart"
+msgstr ""
+
 # 1F4A1
 msgctxt "EMOJI: 💡 light bulb"
 msgid "light_bulb"
@@ -6373,6 +6618,11 @@ msgstr ""
 # 1F329
 msgctxt "EMOJI: 🌩️ cloud with lightning"
 msgid "lightning"
+msgstr ""
+
+# 1F34B-200D-1F7E9
+msgctxt "EMOJI: 🍋‍🟩 lime"
+msgid "lime"
 msgstr ""
 
 # 1F517
@@ -6471,13 +6721,18 @@ msgid "long_drum"
 msgstr ""
 
 # 27BF
-msgctxt "EMOJI: ➿ double curly loop"
+msgctxt "EMOJI: ➿️ double curly loop"
 msgid "loop"
 msgstr ""
 
 # 1F9F4
 msgctxt "EMOJI: 🧴 lotion bottle"
 msgid "lotion_bottle"
+msgstr ""
+
+# 1FAB7
+msgctxt "EMOJI: 🪷 lotus"
+msgid "lotus"
 msgstr ""
 
 # 1F50A
@@ -6508,6 +6763,11 @@ msgstr ""
 # 1F91F
 msgctxt "EMOJI: 🤟 love-you gesture"
 msgid "love_you_gesture"
+msgstr ""
+
+# 1FAAB
+msgctxt "EMOJI: 🪫 low battery"
+msgid "low_battery"
 msgstr ""
 
 # 1F505
@@ -6830,9 +7090,19 @@ msgctxt "EMOJI: 👨‍🦽 man in manual wheelchair"
 msgid "man_in_manual_wheelchair"
 msgstr ""
 
+# 1F468-200D-1F9BD-200D-27A1-FE0F
+msgctxt "EMOJI: 👨‍🦽‍➡️ man in manual wheelchair facing right"
+msgid "man_in_manual_wheelchair_right"
+msgstr ""
+
 # 1F468-200D-1F9BC
 msgctxt "EMOJI: 👨‍🦼 man in motorized wheelchair"
 msgid "man_in_motorized_wheelchair"
+msgstr ""
+
+# 1F468-200D-1F9BC-200D-27A1-FE0F
+msgctxt "EMOJI: 👨‍🦼‍➡️ man in motorized wheelchair facing right"
+msgid "man_in_motorized_wheelchair_right"
 msgstr ""
 
 # 1F9D6-200D-2642-FE0F
@@ -6858,6 +7128,11 @@ msgstr ""
 # 1F9CE-200D-2642-FE0F
 msgctxt "EMOJI: 🧎‍♂️ man kneeling"
 msgid "man_kneeling"
+msgstr ""
+
+# 1F9CE-200D-2642-FE0F-200D-27A1-FE0F
+msgctxt "EMOJI: 🧎‍♂️‍➡️ man kneeling facing right"
+msgid "man_kneeling_right"
 msgstr ""
 
 # 1F3CB-FE0F-200D-2642-FE0F
@@ -6930,6 +7205,11 @@ msgctxt "EMOJI: 🏃‍♂️ man running"
 msgid "man_running"
 msgstr ""
 
+# 1F3C3-200D-2642-FE0F-200D-27A1-FE0F
+msgctxt "EMOJI: 🏃‍♂️‍➡️ man running facing right"
+msgid "man_running_right"
+msgstr ""
+
 # 1F468-200D-1F52C
 msgctxt "EMOJI: 👨‍🔬 man scientist"
 msgid "man_scientist"
@@ -7000,6 +7280,11 @@ msgctxt "EMOJI: 🚶‍♂️ man walking"
 msgid "man_walking"
 msgstr ""
 
+# 1F6B6-200D-2642-FE0F-200D-27A1-FE0F
+msgctxt "EMOJI: 🚶‍♂️‍➡️ man walking facing right"
+msgid "man_walking_right"
+msgstr ""
+
 # 1F473-200D-2642-FE0F
 msgctxt "EMOJI: 👳‍♂️ man wearing turban"
 msgid "man_wearing_turban"
@@ -7025,6 +7310,11 @@ msgctxt "EMOJI: 👨‍🦯 man with white cane"
 msgid "man_with_white_cane"
 msgstr ""
 
+# 1F468-200D-1F9AF-200D-27A1-FE0F
+msgctxt "EMOJI: 👨‍🦯‍➡️ man with white cane facing right"
+msgid "man_with_white_cane_right"
+msgstr ""
+
 # 1F9DF-200D-2642-FE0F
 msgctxt "EMOJI: 🧟‍♂️ man zombie"
 msgid "man_zombie"
@@ -7048,6 +7338,11 @@ msgstr ""
 # 1F341
 msgctxt "EMOJI: 🍁 maple leaf"
 msgid "maple_leaf"
+msgstr ""
+
+# 1FA87
+msgctxt "EMOJI: 🪇 maracas"
+msgid "maracas"
 msgstr ""
 
 # 1F1F2-1F1ED
@@ -7148,6 +7443,16 @@ msgstr ""
 # 1F348
 msgctxt "EMOJI: 🍈 melon"
 msgid "melon"
+msgstr ""
+
+# 1FAE0
+msgctxt "EMOJI: 🫠 melting face"
+msgid "melt"
+msgstr ""
+
+# 1FAE0
+msgctxt "EMOJI: 🫠 melting face"
+msgid "melting_face"
 msgstr ""
 
 # 1F4DD
@@ -7266,13 +7571,18 @@ msgid "minidisc"
 msgstr ""
 
 # 2796
-msgctxt "EMOJI: ➖ minus"
+msgctxt "EMOJI: ➖️ minus"
 msgid "minus"
 msgstr ""
 
 # 1FA9E
 msgctxt "EMOJI: 🪞 mirror"
 msgid "mirror"
+msgstr ""
+
+# 1FAA9
+msgctxt "EMOJI: 🪩 mirror ball"
+msgid "mirror_ball"
 msgstr ""
 
 # 1F5FF
@@ -7358,6 +7668,11 @@ msgstr ""
 # 1F391
 msgctxt "EMOJI: 🎑 moon viewing ceremony"
 msgid "moon_ceremony"
+msgstr ""
+
+# 1FACE
+msgctxt "EMOJI: 🫎 moose"
+msgid "moose"
 msgstr ""
 
 # 1F1F2-1F1E6
@@ -7526,7 +7841,7 @@ msgid "mute"
 msgstr ""
 
 # 1F9D1-200D-1F384
-msgctxt "EMOJI: 🧑‍🎄 mx claus"
+msgctxt "EMOJI: 🧑‍🎄 Mx Claus"
 msgid "mx_claus"
 msgstr ""
 
@@ -7586,7 +7901,7 @@ msgid "necktie"
 msgstr ""
 
 # 274E
-msgctxt "EMOJI: ❎ cross mark button"
+msgctxt "EMOJI: ❎️ cross mark button"
 msgid "negative_squared_cross_mark"
 msgstr ""
 
@@ -7603,6 +7918,16 @@ msgstr ""
 # 1F913
 msgctxt "EMOJI: 🤓 nerd face"
 msgid "nerd_face"
+msgstr ""
+
+# 1FAB9
+msgctxt "EMOJI: 🪹 empty nest"
+msgid "nest"
+msgstr ""
+
+# 1FABA
+msgctxt "EMOJI: 🪺 nest with eggs"
+msgid "nest_with_eggs"
 msgstr ""
 
 # 1FA86
@@ -7991,7 +8316,7 @@ msgid "open_mouth"
 msgstr ""
 
 # 26CE
-msgctxt "EMOJI: ⛎ Ophiuchus"
+msgctxt "EMOJI: ⛎️ Ophiuchus"
 msgid "ophiuchus"
 msgstr ""
 
@@ -8105,9 +8430,19 @@ msgctxt "EMOJI: 🎨 artist palette"
 msgid "palette"
 msgstr ""
 
+# 1FAF3
+msgctxt "EMOJI: 🫳 palm down hand"
+msgid "palm_down"
+msgstr ""
+
 # 1F334
 msgctxt "EMOJI: 🌴 palm tree"
 msgid "palm_tree"
+msgstr ""
+
+# 1FAF4
+msgctxt "EMOJI: 🫴 palm up hand"
+msgid "palm_up"
 msgstr ""
 
 # 1F932
@@ -8220,6 +8555,11 @@ msgctxt "EMOJI: 🐾 paw prints"
 msgid "paw_prints"
 msgstr ""
 
+# 1FADB
+msgctxt "EMOJI: 🫛 pea pod"
+msgid "pea"
+msgstr ""
+
 # 262E
 msgctxt "EMOJI: ☮️ peace symbol"
 msgid "peace"
@@ -8248,6 +8588,11 @@ msgstr ""
 # 1F350
 msgctxt "EMOJI: 🍐 pear"
 msgid "pear"
+msgstr ""
+
+# 1FAE3
+msgctxt "EMOJI: 🫣 face with peeking eye"
+msgid "peek"
 msgstr ""
 
 # 1F58A
@@ -8405,9 +8750,19 @@ msgctxt "EMOJI: 🧑‍🦽 person in manual wheelchair"
 msgid "person_in_manual_wheelchair"
 msgstr ""
 
+# 1F9D1-200D-1F9BD-200D-27A1-FE0F
+msgctxt "EMOJI: 🧑‍🦽‍➡️ person in manual wheelchair facing right"
+msgid "person_in_manual_wheelchair_right"
+msgstr ""
+
 # 1F9D1-200D-1F9BC
 msgctxt "EMOJI: 🧑‍🦼 person in motorized wheelchair"
 msgid "person_in_motorized_wheelchair"
+msgstr ""
+
+# 1F9D1-200D-1F9BC-200D-27A1-FE0F
+msgctxt "EMOJI: 🧑‍🦼‍➡️ person in motorized wheelchair facing right"
+msgid "person_in_motorized_wheelchair_right"
 msgstr ""
 
 # 1F9D6
@@ -8433,6 +8788,11 @@ msgstr ""
 # 1F9CE
 msgctxt "EMOJI: 🧎 person kneeling"
 msgid "person_kneeling"
+msgstr ""
+
+# 1F9CE-200D-27A1-FE0F
+msgctxt "EMOJI: 🧎‍➡️ person kneeling facing right"
+msgid "person_kneeling_right"
 msgstr ""
 
 # 1F3CB
@@ -8473,6 +8833,11 @@ msgstr ""
 # 1F3C3
 msgctxt "EMOJI: 🏃 person running"
 msgid "person_running"
+msgstr ""
+
+# 1F3C3-200D-27A1-FE0F
+msgctxt "EMOJI: 🏃‍➡️ person running facing right"
+msgid "person_running_right"
 msgstr ""
 
 # 1F937
@@ -8520,9 +8885,19 @@ msgctxt "EMOJI: 🚶 person walking"
 msgid "person_walking"
 msgstr ""
 
+# 1F6B6-200D-27A1-FE0F
+msgctxt "EMOJI: 🚶‍➡️ person walking facing right"
+msgid "person_walking_right"
+msgstr ""
+
 # 1F473
 msgctxt "EMOJI: 👳 person wearing turban"
 msgid "person_wearing_turban"
+msgstr ""
+
+# 1FAC5
+msgctxt "EMOJI: 🫅 person with crown"
+msgid "person_with_crown"
 msgstr ""
 
 # 1F9D1-200D-1F9AF
@@ -8545,6 +8920,11 @@ msgctxt "EMOJI: 🧑‍🦯 person with white cane"
 msgid "person_with_white_cane"
 msgstr ""
 
+# 1F9D1-200D-1F9AF-200D-27A1-FE0F
+msgctxt "EMOJI: 🧑‍🦯‍➡️ person with white cane facing right"
+msgid "person_with_white_cane_right"
+msgstr ""
+
 # 1F1F5-1F1EA
 msgctxt "EMOJI: 🇵🇪 flag: Peru"
 msgid "peru"
@@ -8558,6 +8938,11 @@ msgstr ""
 # 1F1F5-1F1ED
 msgctxt "EMOJI: 🇵🇭 flag: Philippines"
 msgid "philippines"
+msgstr ""
+
+# 1F426-200D-1F525
+msgctxt "EMOJI: 🐦‍🔥 phoenix"
+msgid "phoenix"
 msgstr ""
 
 # 26CF
@@ -8630,6 +9015,11 @@ msgctxt "EMOJI: 🏓 ping pong"
 msgid "ping_pong"
 msgstr ""
 
+# 1FA77
+msgctxt "EMOJI: 🩷 pink heart"
+msgid "pink_heart"
+msgstr ""
+
 # 1F3F4-200D-2620-FE0F
 msgctxt "EMOJI: 🏴‍☠️ pirate flag"
 msgid "pirate_flag"
@@ -8675,6 +9065,11 @@ msgctxt "EMOJI: ⏯️ play or pause button"
 msgid "play_pause"
 msgstr ""
 
+# 1F6DD
+msgctxt "EMOJI: 🛝 playground slide"
+msgid "playground_slide"
+msgstr ""
+
 # 1F97A
 msgctxt "EMOJI: 🥺 pleading face"
 msgid "pleading"
@@ -8691,13 +9086,18 @@ msgid "plunger"
 msgstr ""
 
 # 2795
-msgctxt "EMOJI: ➕ plus"
+msgctxt "EMOJI: ➕️ plus"
 msgid "plus"
 msgstr ""
 
 # 1F447
 msgctxt "EMOJI: 👇️ backhand index pointing down"
 msgid "point_down"
+msgstr ""
+
+# 1FAF5
+msgctxt "EMOJI: 🫵 index pointing at the viewer"
+msgid "point_forward"
 msgstr ""
 
 # 1F448
@@ -8815,8 +9215,18 @@ msgctxt "EMOJI: 💷 pound banknote"
 msgid "pound"
 msgstr ""
 
+# 1FAD7
+msgctxt "EMOJI: 🫗 pouring liquid"
+msgid "pour"
+msgstr ""
+
+# 1FAD7
+msgctxt "EMOJI: 🫗 pouring liquid"
+msgid "pouring_liquid"
+msgstr ""
+
 # 1F621
-msgctxt "EMOJI: 😡 pouting face"
+msgctxt "EMOJI: 😡 enraged face"
 msgid "pout"
 msgstr ""
 
@@ -8831,7 +9241,7 @@ msgid "pouting_cat"
 msgstr ""
 
 # 1F621
-msgctxt "EMOJI: 😡 pouting face"
+msgctxt "EMOJI: 😡 enraged face"
 msgid "pouting_face"
 msgstr ""
 
@@ -8843,6 +9253,16 @@ msgstr ""
 # 1F4FF
 msgctxt "EMOJI: 📿 prayer beads"
 msgid "prayer_beads"
+msgstr ""
+
+# 1FAC3
+msgctxt "EMOJI: 🫃 pregnant man"
+msgid "pregnant_man"
+msgstr ""
+
+# 1FAC4
+msgctxt "EMOJI: 🫄 pregnant person"
+msgid "pregnant_person"
 msgstr ""
 
 # 1F930
@@ -8981,7 +9401,7 @@ msgid "radioactive"
 msgstr ""
 
 # 1F621
-msgctxt "EMOJI: 😡 pouting face"
+msgctxt "EMOJI: 😡 enraged face"
 msgid "rage"
 msgstr ""
 
@@ -9021,7 +9441,7 @@ msgid "raised_eyebrow"
 msgstr ""
 
 # 270B
-msgctxt "EMOJI: ✋ raised hand"
+msgctxt "EMOJI: ✋️ raised hand"
 msgid "raised_hand"
 msgstr ""
 
@@ -9375,9 +9795,24 @@ msgctxt "EMOJI: ↪️ left arrow curving right"
 msgid "rightwards_arrow_with_hook"
 msgstr ""
 
+# 1FAF1
+msgctxt "EMOJI: 🫱 rightwards hand"
+msgid "rightwards_hand"
+msgstr ""
+
+# 1FAF8
+msgctxt "EMOJI: 🫸 rightwards pushing hand"
+msgid "rightwards_pushing_hand"
+msgstr ""
+
 # 1F48D
 msgctxt "EMOJI: 💍 ring"
 msgid "ring"
+msgstr ""
+
+# 1F6DF
+msgctxt "EMOJI: 🛟 ring buoy"
+msgid "ring_buoy"
 msgstr ""
 
 # 1FA90
@@ -9445,6 +9880,11 @@ msgctxt "EMOJI: 🐓 rooster"
 msgid "rooster"
 msgstr ""
 
+# 1FADC
+msgctxt "EMOJI: 🫜 root vegetable"
+msgid "root_vegetable"
+msgstr ""
+
 # 1F339
 msgctxt "EMOJI: 🌹 rose"
 msgid "rose"
@@ -9468,6 +9908,11 @@ msgstr ""
 # 1F6A3
 msgctxt "EMOJI: 🚣 person rowing boat"
 msgid "rowboat"
+msgstr ""
+
+# 1FAC5
+msgctxt "EMOJI: 🫅 person with crown"
+msgid "royalty"
 msgstr ""
 
 # 1F3C9
@@ -9540,6 +9985,16 @@ msgctxt "EMOJI: 🧂 salt"
 msgid "salt"
 msgstr ""
 
+# 1FAE1
+msgctxt "EMOJI: 🫡 saluting face"
+msgid "salute"
+msgstr ""
+
+# 1FAE1
+msgctxt "EMOJI: 🫡 saluting face"
+msgid "saluting_face"
+msgstr ""
+
 # 1F1FC-1F1F8
 msgctxt "EMOJI: 🇼🇸 flag: Samoa"
 msgid "samoa"
@@ -9573,6 +10028,11 @@ msgstr ""
 # 1F97B
 msgctxt "EMOJI: 🥻 sari"
 msgid "sari"
+msgstr ""
+
+# 1F1E8-1F1F6
+msgctxt "EMOJI: 🇨🇶 flag: Sark"
+msgid "sark"
 msgstr ""
 
 # 1F6F0
@@ -9755,6 +10215,16 @@ msgctxt "EMOJI: 🇸🇨 flag: Seychelles"
 msgid "seychelles"
 msgstr ""
 
+# 1FAE8
+msgctxt "EMOJI: 🫨 shaking face"
+msgid "shaking"
+msgstr ""
+
+# 1FAE8
+msgctxt "EMOJI: 🫨 shaking face"
+msgid "shaking_face"
+msgstr ""
+
 # 1F958
 msgctxt "EMOJI: 🥘 shallow pan of food"
 msgid "shallow_pan_of_food"
@@ -9838,6 +10308,11 @@ msgstr ""
 # 1FA73
 msgctxt "EMOJI: 🩳 shorts"
 msgid "shorts"
+msgstr ""
+
+# 1FA8F
+msgctxt "EMOJI: 🪏 shovel"
+msgid "shovel"
 msgstr ""
 
 # 1F6BF
@@ -9973,6 +10448,11 @@ msgstr ""
 # 1F62A
 msgctxt "EMOJI: 😪 sleepy face"
 msgid "sleepy_face"
+msgstr ""
+
+# 1F6DD
+msgctxt "EMOJI: 🛝 playground slide"
+msgid "slide"
 msgstr ""
 
 # 1F641
@@ -10276,7 +10756,7 @@ msgid "sparkler"
 msgstr ""
 
 # 2728
-msgctxt "EMOJI: ✨ sparkles"
+msgctxt "EMOJI: ✨️ sparkles"
 msgid "sparkles"
 msgstr ""
 
@@ -10318,6 +10798,11 @@ msgstr ""
 # 1F578
 msgctxt "EMOJI: 🕸️ spider web"
 msgid "spider_web"
+msgstr ""
+
+# 1FADF
+msgctxt "EMOJI: 🫟 splatter"
+msgid "splatter"
 msgstr ""
 
 # 1F9FD
@@ -11160,6 +11645,11 @@ msgctxt "EMOJI: 😤 face with steam from nose"
 msgid "triumph"
 msgstr ""
 
+# 1F9CC
+msgctxt "EMOJI: 🧌 troll"
+msgid "troll"
+msgstr ""
+
 # 1F68E
 msgctxt "EMOJI: 🚎 trolleybus"
 msgid "trolleybus"
@@ -11211,7 +11701,7 @@ msgid "turkey"
 msgstr ""
 
 # 1F1F9-1F1F7
-msgctxt "EMOJI: 🇹🇷 flag: Turkey"
+msgctxt "EMOJI: 🇹🇷 flag: Türkiye"
 msgid "turkey_tr"
 msgstr ""
 
@@ -11565,6 +12055,11 @@ msgctxt "EMOJI: 🍉 watermelon"
 msgid "watermelon"
 msgstr ""
 
+# 1F979
+msgctxt "EMOJI: 🥹 face holding back tears"
+msgid "watery_eyes"
+msgstr ""
+
 # 1F44B
 msgctxt "EMOJI: 👋 waving hand"
 msgid "wave"
@@ -11635,6 +12130,11 @@ msgctxt "EMOJI: 🐋 whale"
 msgid "whale"
 msgstr ""
 
+# 1F6DE
+msgctxt "EMOJI: 🛞 wheel"
+msgid "wheel"
+msgstr ""
+
 # 2638
 msgctxt "EMOJI: ☸️ wheel of dharma"
 msgid "wheel_of_dharma"
@@ -11656,7 +12156,7 @@ msgid "white_cane"
 msgstr ""
 
 # 2705
-msgctxt "EMOJI: ✅ check mark button"
+msgctxt "EMOJI: ✅️ check mark button"
 msgid "white_check_mark"
 msgstr ""
 
@@ -11666,7 +12166,7 @@ msgid "white_circle"
 msgstr ""
 
 # 2755
-msgctxt "EMOJI: ❕ white exclamation mark"
+msgctxt "EMOJI: ❕️ white exclamation mark"
 msgid "white_exclamation"
 msgstr ""
 
@@ -11716,7 +12216,7 @@ msgid "white_medium_square"
 msgstr ""
 
 # 2754
-msgctxt "EMOJI: ❔ white question mark"
+msgctxt "EMOJI: ❔️ white question mark"
 msgid "white_question"
 msgstr ""
 
@@ -11755,6 +12255,11 @@ msgctxt "EMOJI: 🍷 wine glass"
 msgid "wine_glass"
 msgstr ""
 
+# 1FABD
+msgctxt "EMOJI: 🪽 wing"
+msgid "wing"
+msgstr ""
+
 # 1F609
 msgctxt "EMOJI: 😉 winking face"
 msgid "wink"
@@ -11763,6 +12268,11 @@ msgstr ""
 # 1F609
 msgctxt "EMOJI: 😉 winking face"
 msgid "winking_face"
+msgstr ""
+
+# 1F6DC
+msgctxt "EMOJI: 🛜 wireless"
+msgid "wireless"
 msgstr ""
 
 # 1F43A
@@ -11945,9 +12455,19 @@ msgctxt "EMOJI: 👩‍🦽 woman in manual wheelchair"
 msgid "woman_in_manual_wheelchair"
 msgstr ""
 
+# 1F469-200D-1F9BD-200D-27A1-FE0F
+msgctxt "EMOJI: 👩‍🦽‍➡️ woman in manual wheelchair facing right"
+msgid "woman_in_manual_wheelchair_right"
+msgstr ""
+
 # 1F469-200D-1F9BC
 msgctxt "EMOJI: 👩‍🦼 woman in motorized wheelchair"
 msgid "woman_in_motorized_wheelchair"
+msgstr ""
+
+# 1F469-200D-1F9BC-200D-27A1-FE0F
+msgctxt "EMOJI: 👩‍🦼‍➡️ woman in motorized wheelchair facing right"
+msgid "woman_in_motorized_wheelchair_right"
 msgstr ""
 
 # 1F9D6-200D-2640-FE0F
@@ -11973,6 +12493,11 @@ msgstr ""
 # 1F9CE-200D-2640-FE0F
 msgctxt "EMOJI: 🧎‍♀️ woman kneeling"
 msgid "woman_kneeling"
+msgstr ""
+
+# 1F9CE-200D-2640-FE0F-200D-27A1-FE0F
+msgctxt "EMOJI: 🧎‍♀️‍➡️ woman kneeling facing right"
+msgid "woman_kneeling_right"
 msgstr ""
 
 # 1F3CB-FE0F-200D-2640-FE0F
@@ -12045,6 +12570,11 @@ msgctxt "EMOJI: 🏃‍♀️ woman running"
 msgid "woman_running"
 msgstr ""
 
+# 1F3C3-200D-2640-FE0F-200D-27A1-FE0F
+msgctxt "EMOJI: 🏃‍♀️‍➡️ woman running facing right"
+msgid "woman_running_right"
+msgstr ""
+
 # 1F469-200D-1F52C
 msgctxt "EMOJI: 👩‍🔬 woman scientist"
 msgid "woman_scientist"
@@ -12115,6 +12645,11 @@ msgctxt "EMOJI: 🚶‍♀️ woman walking"
 msgid "woman_walking"
 msgstr ""
 
+# 1F6B6-200D-2640-FE0F-200D-27A1-FE0F
+msgctxt "EMOJI: 🚶‍♀️‍➡️ woman walking facing right"
+msgid "woman_walking_right"
+msgstr ""
+
 # 1F473-200D-2640-FE0F
 msgctxt "EMOJI: 👳‍♀️ woman wearing turban"
 msgid "woman_wearing_turban"
@@ -12143,6 +12678,11 @@ msgstr ""
 # 1F469-200D-1F9AF
 msgctxt "EMOJI: 👩‍🦯 woman with white cane"
 msgid "woman_with_white_cane"
+msgstr ""
+
+# 1F469-200D-1F9AF-200D-27A1-FE0F
+msgctxt "EMOJI: 👩‍🦯‍➡️ woman with white cane facing right"
+msgid "woman_with_white_cane_right"
 msgstr ""
 
 # 1F9DF-200D-2640-FE0F
@@ -12246,8 +12786,18 @@ msgid "wtf"
 msgstr ""
 
 # 274C
-msgctxt "EMOJI: ❌ cross mark"
+msgctxt "EMOJI: ❌️ cross mark"
 msgid "x"
+msgstr ""
+
+# 1FA7B
+msgctxt "EMOJI: 🩻 x-ray"
+msgid "x-ray"
+msgstr ""
+
+# 1FA7B
+msgctxt "EMOJI: 🩻 x-ray"
+msgid "xray"
 msgstr ""
 
 # 1F9F6
@@ -12366,6 +12916,6 @@ msgid "zombie"
 msgstr ""
 
 # 1F4A4
-msgctxt "EMOJI: 💤 zzz"
+msgctxt "EMOJI: 💤 ZZZ"
 msgid "zzz"
 msgstr ""

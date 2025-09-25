@@ -1,0 +1,607 @@
+# Swedish
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-17 14:53-0700\n"
+"PO-Revision-Date: 2024-12-03 15:57+480\n"
+"Last-Translator: Miles Johnson\n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0\n"
+
+# 6
+msgctxt "EMOJI GROUP: activities"
+msgid "activities"
+msgstr "aktiviteter"
+
+# 3
+msgctxt "EMOJI GROUP: animals-nature"
+msgid "animals-nature"
+msgstr "djur & natur"
+
+# 2
+msgctxt "EMOJI GROUP: component"
+msgid "component"
+msgstr "komponenter"
+
+# 9
+msgctxt "EMOJI GROUP: flags"
+msgid "flags"
+msgstr "flaggor"
+
+# 4
+msgctxt "EMOJI GROUP: food-drink"
+msgid "food-drink"
+msgstr "mat & dryck"
+
+# 7
+msgctxt "EMOJI GROUP: objects"
+msgid "objects"
+msgstr "objekt"
+
+# 1
+msgctxt "EMOJI GROUP: people-body"
+msgid "people-body"
+msgstr "människor & kropp"
+
+# 0
+msgctxt "EMOJI GROUP: smileys-emotion"
+msgid "smileys-emotion"
+msgstr "smileys & emotion"
+
+# 8
+msgctxt "EMOJI GROUP: symbols"
+msgid "symbols"
+msgstr "symboler"
+
+# 5
+msgctxt "EMOJI GROUP: travel-places"
+msgid "travel-places"
+msgstr "resor & platser"
+
+# 95
+msgctxt "EMOJI SUB-GROUP: alphanum"
+msgid "alphanum"
+msgstr "alfanumeriska symboler"
+
+# 36
+msgctxt "EMOJI SUB-GROUP: animal-amphibian"
+msgid "animal-amphibian"
+msgstr "amfibier"
+
+# 35
+msgctxt "EMOJI SUB-GROUP: animal-bird"
+msgid "animal-bird"
+msgstr "fåglar"
+
+# 39
+msgctxt "EMOJI SUB-GROUP: animal-bug"
+msgid "animal-bug"
+msgstr "buggar"
+
+# 34
+msgctxt "EMOJI SUB-GROUP: animal-mammal"
+msgid "animal-mammal"
+msgstr "däggdjur"
+
+# 38
+msgctxt "EMOJI SUB-GROUP: animal-marine"
+msgid "animal-marine"
+msgstr "marint liv"
+
+# 37
+msgctxt "EMOJI SUB-GROUP: animal-reptile"
+msgid "animal-reptile"
+msgstr "reptiler"
+
+# 85
+msgctxt "EMOJI SUB-GROUP: arrow"
+msgid "arrow"
+msgstr "pilar"
+
+# 64
+msgctxt "EMOJI SUB-GROUP: arts-crafts"
+msgid "arts-crafts"
+msgstr "konst & hantverk"
+
+# 88
+msgctxt "EMOJI SUB-GROUP: av-symbol"
+msgid "av-symbol"
+msgstr "ljud - och bildsymboler"
+
+# 61
+msgctxt "EMOJI SUB-GROUP: award-medal"
+msgid "award-medal"
+msgstr "tilldela medaljer"
+
+# 22
+msgctxt "EMOJI SUB-GROUP: body-parts"
+msgid "body-parts"
+msgstr "kroppsdelar"
+
+# 72
+msgctxt "EMOJI SUB-GROUP: book-paper"
+msgid "book-paper"
+msgstr "böcker & papper"
+
+# 12
+msgctxt "EMOJI SUB-GROUP: cat-face"
+msgid "cat-face"
+msgstr "katt ansikten"
+
+# 65
+msgctxt "EMOJI SUB-GROUP: clothing"
+msgid "clothing"
+msgstr "kläder"
+
+# 70
+msgctxt "EMOJI SUB-GROUP: computer"
+msgid "computer"
+msgstr "dator"
+
+# 98
+msgctxt "EMOJI SUB-GROUP: country-flag"
+msgid "country-flag"
+msgstr "land flaggor"
+
+# 92
+msgctxt "EMOJI SUB-GROUP: currency"
+msgid "currency"
+msgstr "valutor"
+
+# 48
+msgctxt "EMOJI SUB-GROUP: dishware"
+msgid "dishware"
+msgstr "porslin"
+
+# 47
+msgctxt "EMOJI SUB-GROUP: drink"
+msgid "drink"
+msgstr "dryck"
+
+# 15
+msgctxt "EMOJI SUB-GROUP: emotion"
+msgid "emotion"
+msgstr "känslor"
+
+# 60
+msgctxt "EMOJI SUB-GROUP: event"
+msgid "event"
+msgstr "händelser & helgdagar"
+
+# 1
+msgctxt "EMOJI SUB-GROUP: face-affection"
+msgid "face-affection"
+msgstr "tillgiven"
+
+# 9
+msgctxt "EMOJI SUB-GROUP: face-concerned"
+msgid "face-concerned"
+msgstr "berörda"
+
+# 11
+msgctxt "EMOJI SUB-GROUP: face-costume"
+msgid "face-costume"
+msgstr "kostym & varelser"
+
+# 8
+msgctxt "EMOJI SUB-GROUP: face-glasses"
+msgid "face-glasses"
+msgstr "med glasögon"
+
+# 3
+msgctxt "EMOJI SUB-GROUP: face-hand"
+msgid "face-hand"
+msgstr "med händer"
+
+# 7
+msgctxt "EMOJI SUB-GROUP: face-hat"
+msgid "face-hat"
+msgstr "med hattar"
+
+# 10
+msgctxt "EMOJI SUB-GROUP: face-negative"
+msgid "face-negative"
+msgstr "negativ"
+
+# 4
+msgctxt "EMOJI SUB-GROUP: face-neutral-skeptical"
+msgid "face-neutral-skeptical"
+msgstr "neutrala / skeptiska"
+
+# 5
+msgctxt "EMOJI SUB-GROUP: face-sleepy"
+msgid "face-sleepy"
+msgstr "sömnig"
+
+# 0
+msgctxt "EMOJI SUB-GROUP: face-smiling"
+msgid "face-smiling"
+msgstr "leende"
+
+# 2
+msgctxt "EMOJI SUB-GROUP: face-tongue"
+msgid "face-tongue"
+msgstr "med tunga"
+
+# 6
+msgctxt "EMOJI SUB-GROUP: face-unwell"
+msgid "face-unwell"
+msgstr "dåligt"
+
+# 30
+msgctxt "EMOJI SUB-GROUP: family"
+msgid "family"
+msgstr "familj"
+
+# 97
+msgctxt "EMOJI SUB-GROUP: flag"
+msgid "flag"
+msgstr "andra flaggor"
+
+# 45
+msgctxt "EMOJI SUB-GROUP: food-asian"
+msgid "food-asian"
+msgstr "asiatiska"
+
+# 42
+msgctxt "EMOJI SUB-GROUP: food-fruit"
+msgid "food-fruit"
+msgstr "frukt"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-marine"
+msgid "food-marine"
+msgstr "skaldjur"
+
+# 44
+msgctxt "EMOJI SUB-GROUP: food-prepared"
+msgid "food-prepared"
+msgstr "kokta / beredda"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-sweet"
+msgid "food-sweet"
+msgstr "godis"
+
+# 43
+msgctxt "EMOJI SUB-GROUP: food-vegetable"
+msgid "food-vegetable"
+msgstr "grönsaker"
+
+# 63
+msgctxt "EMOJI SUB-GROUP: game"
+msgid "game"
+msgstr "spel & hobbyer"
+
+# 89
+msgctxt "EMOJI SUB-GROUP: gender"
+msgid "gender"
+msgstr "könstecken"
+
+# 96
+msgctxt "EMOJI SUB-GROUP: geometric"
+msgid "geometric"
+msgstr "former & färger"
+
+# 33
+msgctxt "EMOJI SUB-GROUP: hair-style"
+msgid "hair-style"
+msgstr "hår stilar"
+
+# 19
+msgctxt "EMOJI SUB-GROUP: hand-fingers-closed"
+msgid "hand-fingers-closed"
+msgstr "fingrar stängda"
+
+# 16
+msgctxt "EMOJI SUB-GROUP: hand-fingers-open"
+msgid "hand-fingers-open"
+msgstr "fingrar öppna"
+
+# 17
+msgctxt "EMOJI SUB-GROUP: hand-fingers-partial"
+msgid "hand-fingers-partial"
+msgstr "handtecken"
+
+# 21
+msgctxt "EMOJI SUB-GROUP: hand-prop"
+msgid "hand-prop"
+msgstr "hand rekvisita"
+
+# 18
+msgctxt "EMOJI SUB-GROUP: hand-single-finger"
+msgid "hand-single-finger"
+msgstr "fingret pekar"
+
+# 20
+msgctxt "EMOJI SUB-GROUP: hands"
+msgid "hands"
+msgstr "händer"
+
+# 14
+msgctxt "EMOJI SUB-GROUP: heart"
+msgid "heart"
+msgstr "hjärtan"
+
+# 57
+msgctxt "EMOJI SUB-GROUP: hotel"
+msgid "hotel"
+msgstr "hotell"
+
+# 81
+msgctxt "EMOJI SUB-GROUP: household"
+msgid "household"
+msgstr "husgeråd"
+
+# 94
+msgctxt "EMOJI SUB-GROUP: keycap"
+msgid "keycap"
+msgstr "knappsatstecken"
+
+# 71
+msgctxt "EMOJI SUB-GROUP: light-video"
+msgid "light-video"
+msgstr "ljus, film & video"
+
+# 77
+msgctxt "EMOJI SUB-GROUP: lock"
+msgid "lock"
+msgstr "lås & nycklar"
+
+# 74
+msgctxt "EMOJI SUB-GROUP: mail"
+msgid "mail"
+msgstr "post"
+
+# 90
+msgctxt "EMOJI SUB-GROUP: math"
+msgid "math"
+msgstr "matematik symboler"
+
+# 80
+msgctxt "EMOJI SUB-GROUP: medical"
+msgid "medical"
+msgstr "medicinsk"
+
+# 73
+msgctxt "EMOJI SUB-GROUP: money"
+msgid "money"
+msgstr "pengar"
+
+# 13
+msgctxt "EMOJI SUB-GROUP: monkey-face"
+msgid "monkey-face"
+msgstr "apa ansikten"
+
+# 67
+msgctxt "EMOJI SUB-GROUP: music"
+msgid "music"
+msgstr "musik"
+
+# 68
+msgctxt "EMOJI SUB-GROUP: musical-instrument"
+msgid "musical-instrument"
+msgstr "musikinstrument"
+
+# 76
+msgctxt "EMOJI SUB-GROUP: office"
+msgid "office"
+msgstr "kontorsmateriel"
+
+# 82
+msgctxt "EMOJI SUB-GROUP: other-object"
+msgid "other-object"
+msgstr "andra objekt"
+
+# 93
+msgctxt "EMOJI SUB-GROUP: other-symbol"
+msgid "other-symbol"
+msgstr "andra symboler"
+
+# 23
+msgctxt "EMOJI SUB-GROUP: person"
+msgid "person"
+msgstr "personer"
+
+# 27
+msgctxt "EMOJI SUB-GROUP: person-activity"
+msgid "person-activity"
+msgstr "aktiviteter"
+
+# 26
+msgctxt "EMOJI SUB-GROUP: person-fantasy"
+msgid "person-fantasy"
+msgstr "fantasi"
+
+# 24
+msgctxt "EMOJI SUB-GROUP: person-gesture"
+msgid "person-gesture"
+msgstr "gester"
+
+# 29
+msgctxt "EMOJI SUB-GROUP: person-resting"
+msgid "person-resting"
+msgstr "vila"
+
+# 25
+msgctxt "EMOJI SUB-GROUP: person-role"
+msgid "person-role"
+msgstr "roller & karriärer"
+
+# 28
+msgctxt "EMOJI SUB-GROUP: person-sport"
+msgid "person-sport"
+msgstr "friidrott"
+
+# 31
+msgctxt "EMOJI SUB-GROUP: person-symbol"
+msgid "person-symbol"
+msgstr "människor symboler"
+
+# 69
+msgctxt "EMOJI SUB-GROUP: phone"
+msgid "phone"
+msgstr "telefon"
+
+# 51
+msgctxt "EMOJI SUB-GROUP: place-building"
+msgid "place-building"
+msgstr "byggnader"
+
+# 50
+msgctxt "EMOJI SUB-GROUP: place-geographic"
+msgid "place-geographic"
+msgstr "geografiska platser"
+
+# 49
+msgctxt "EMOJI SUB-GROUP: place-map"
+msgid "place-map"
+msgstr "glober & kartor"
+
+# 53
+msgctxt "EMOJI SUB-GROUP: place-other"
+msgid "place-other"
+msgstr "andra platser"
+
+# 52
+msgctxt "EMOJI SUB-GROUP: place-religious"
+msgid "place-religious"
+msgstr "religiösa byggnader"
+
+# 40
+msgctxt "EMOJI SUB-GROUP: plant-flower"
+msgid "plant-flower"
+msgstr "blommor"
+
+# 41
+msgctxt "EMOJI SUB-GROUP: plant-other"
+msgid "plant-other"
+msgstr "andra växter"
+
+# 91
+msgctxt "EMOJI SUB-GROUP: punctuation"
+msgid "punctuation"
+msgstr "skiljetecken"
+
+# 86
+msgctxt "EMOJI SUB-GROUP: religion"
+msgid "religion"
+msgstr "religiösa symboler"
+
+# 79
+msgctxt "EMOJI SUB-GROUP: science"
+msgid "science"
+msgstr "vetenskap utrustning"
+
+# 32
+msgctxt "EMOJI SUB-GROUP: skin-tone"
+msgid "skin-tone"
+msgstr "hudtoner"
+
+# 59
+msgctxt "EMOJI SUB-GROUP: sky-weather"
+msgid "sky-weather"
+msgstr "väder"
+
+# 66
+msgctxt "EMOJI SUB-GROUP: sound"
+msgid "sound"
+msgstr "ljud"
+
+# 62
+msgctxt "EMOJI SUB-GROUP: sport"
+msgid "sport"
+msgstr "sporter"
+
+# 99
+msgctxt "EMOJI SUB-GROUP: subdivision-flag"
+msgid "subdivision-flag"
+msgstr "flaggor för indelning"
+
+# 58
+msgctxt "EMOJI SUB-GROUP: time"
+msgid "time"
+msgstr "tid"
+
+# 78
+msgctxt "EMOJI SUB-GROUP: tool"
+msgid "tool"
+msgstr "verktyg"
+
+# 56
+msgctxt "EMOJI SUB-GROUP: transport-air"
+msgid "transport-air"
+msgstr "lufttransporter"
+
+# 54
+msgctxt "EMOJI SUB-GROUP: transport-ground"
+msgid "transport-ground"
+msgstr "marktransporter"
+
+# 83
+msgctxt "EMOJI SUB-GROUP: transport-sign"
+msgid "transport-sign"
+msgstr "transportskyltar"
+
+# 55
+msgctxt "EMOJI SUB-GROUP: transport-water"
+msgid "transport-water"
+msgstr "vatten transport"
+
+# 84
+msgctxt "EMOJI SUB-GROUP: warning"
+msgid "warning"
+msgstr "varningssymboler"
+
+# 75
+msgctxt "EMOJI SUB-GROUP: writing"
+msgid "writing"
+msgstr "skriva"
+
+# 87
+msgctxt "EMOJI SUB-GROUP: zodiac"
+msgid "zodiac"
+msgstr "stjärntecken"
+
+#, javascript-format
+msgctxt "LABEL: Denotes a countries flag using alphabetical characters (usa = United States)"
+msgid "regional indicator %s"
+msgstr "regional indikator %s"
+
+msgctxt "LABEL: Name of the asterisk symbol (*)"
+msgid "asterisk"
+msgstr "asterisk"
+
+msgctxt "LABEL: Name of the number sign/hash symbol (#)"
+msgid "number sign"
+msgstr "nummertecken"
+
+msgctxt "LABEL: Very short word for skin tone and/or color (max 1 word if possible)"
+msgid "tone"
+msgstr "färg"
+
+msgctxt "SKIN TONE: dark"
+msgid "dark skin tone"
+msgstr "mörk toning"
+
+msgctxt "SKIN TONE: light"
+msgid "light skin tone"
+msgstr "ljus toning"
+
+msgctxt "SKIN TONE: medium"
+msgid "medium skin tone"
+msgstr "medium toning"
+
+msgctxt "SKIN TONE: medium-dark"
+msgid "medium-dark skin tone"
+msgstr "medelmörk toning"
+
+msgctxt "SKIN TONE: medium-light"
+msgid "medium-light skin tone"
+msgstr "medelljus toning"

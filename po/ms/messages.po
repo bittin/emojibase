@@ -1,0 +1,612 @@
+# Malay
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-17 14:53-0700\n"
+"PO-Revision-Date: 2024-12-03 15:57+480\n"
+"Last-Translator: Miles Johnson\n"
+"Language-Team: \n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0\n"
+
+# 6
+msgctxt "EMOJI GROUP: activities"
+msgid "activities"
+msgstr "aktiviti"
+
+# 3
+msgctxt "EMOJI GROUP: animals-nature"
+msgid "animals-nature"
+msgstr "haiwan & alam semula jadi"
+
+# 2
+msgctxt "EMOJI GROUP: component"
+msgid "component"
+msgstr "komponen"
+
+# 9
+msgctxt "EMOJI GROUP: flags"
+msgid "flags"
+msgstr "bendera"
+
+# 4
+msgctxt "EMOJI GROUP: food-drink"
+msgid "food-drink"
+msgstr "makanan & minuman"
+
+# 7
+msgctxt "EMOJI GROUP: objects"
+msgid "objects"
+msgstr "objek"
+
+# 1
+msgctxt "EMOJI GROUP: people-body"
+msgid "people-body"
+msgstr "orang & badan"
+
+# 0
+msgctxt "EMOJI GROUP: smileys-emotion"
+msgid "smileys-emotion"
+msgstr "senyuman & emosi"
+
+# 8
+msgctxt "EMOJI GROUP: symbols"
+msgid "symbols"
+msgstr "simbol"
+
+# 5
+msgctxt "EMOJI GROUP: travel-places"
+msgid "travel-places"
+msgstr "perjalanan & tempat"
+
+# 95
+msgctxt "EMOJI SUB-GROUP: alphanum"
+msgid "alphanum"
+msgstr "simbol abjad"
+
+# 36
+msgctxt "EMOJI SUB-GROUP: animal-amphibian"
+msgid "animal-amphibian"
+msgstr "amfbia"
+
+# 35
+msgctxt "EMOJI SUB-GROUP: animal-bird"
+msgid "animal-bird"
+msgstr "burung"
+
+# 39
+msgctxt "EMOJI SUB-GROUP: animal-bug"
+msgid "animal-bug"
+msgstr "pepijat"
+
+# 34
+msgctxt "EMOJI SUB-GROUP: animal-mammal"
+msgid "animal-mammal"
+msgstr "mamalia"
+
+# 38
+msgctxt "EMOJI SUB-GROUP: animal-marine"
+msgid "animal-marine"
+msgstr "hidupan laut"
+
+# 37
+msgctxt "EMOJI SUB-GROUP: animal-reptile"
+msgid "animal-reptile"
+msgstr "reptilia"
+
+# 85
+msgctxt "EMOJI SUB-GROUP: arrow"
+msgid "arrow"
+msgstr "anak panah"
+
+# 64
+msgctxt "EMOJI SUB-GROUP: arts-crafts"
+msgid "arts-crafts"
+msgstr "seni & kraf"
+
+# 88
+msgctxt "EMOJI SUB-GROUP: av-symbol"
+msgid "av-symbol"
+msgstr "simbol audio & video"
+
+# 61
+msgctxt "EMOJI SUB-GROUP: award-medal"
+msgid "award-medal"
+msgstr "pingat anugerah"
+
+# 22
+msgctxt "EMOJI SUB-GROUP: body-parts"
+msgid "body-parts"
+msgstr "bahagian badan"
+
+# 72
+msgctxt "EMOJI SUB-GROUP: book-paper"
+msgid "book-paper"
+msgstr "buku & kertas"
+
+# 12
+msgctxt "EMOJI SUB-GROUP: cat-face"
+msgid "cat-face"
+msgstr "muka kucing"
+
+# 65
+msgctxt "EMOJI SUB-GROUP: clothing"
+msgid "clothing"
+msgstr "pakaian"
+
+# 70
+msgctxt "EMOJI SUB-GROUP: computer"
+msgid "computer"
+msgstr "komputer"
+
+# 98
+msgctxt "EMOJI SUB-GROUP: country-flag"
+msgid "country-flag"
+msgstr "bendera negara"
+
+# 92
+msgctxt "EMOJI SUB-GROUP: currency"
+msgid "currency"
+msgstr "mata wang"
+
+# 48
+msgctxt "EMOJI SUB-GROUP: dishware"
+msgid "dishware"
+msgstr "perisian basuh"
+
+# 47
+msgctxt "EMOJI SUB-GROUP: drink"
+msgid "drink"
+msgstr "minuman"
+
+# 15
+msgctxt "EMOJI SUB-GROUP: emotion"
+msgid "emotion"
+msgstr "emosi"
+
+# 60
+msgctxt "EMOJI SUB-GROUP: event"
+msgid "event"
+msgstr "acara & cuti"
+
+# 1
+msgctxt "EMOJI SUB-GROUP: face-affection"
+msgid "face-affection"
+msgstr "kasih sayang"
+
+# 9
+msgctxt "EMOJI SUB-GROUP: face-concerned"
+msgid "face-concerned"
+msgstr "berkenaan"
+
+# 11
+msgctxt "EMOJI SUB-GROUP: face-costume"
+msgid "face-costume"
+msgstr "kostum & makhluk"
+
+# 8
+msgctxt "EMOJI SUB-GROUP: face-glasses"
+msgid "face-glasses"
+msgstr "dengan gelas"
+
+# 3
+msgctxt "EMOJI SUB-GROUP: face-hand"
+msgid "face-hand"
+msgstr "dengan tangan"
+
+# 7
+msgctxt "EMOJI SUB-GROUP: face-hat"
+msgid "face-hat"
+msgstr "dengan topi"
+
+# 10
+msgctxt "EMOJI SUB-GROUP: face-negative"
+msgid "face-negative"
+msgstr "negatif"
+
+# 4
+msgctxt "EMOJI SUB-GROUP: face-neutral-skeptical"
+msgid "face-neutral-skeptical"
+msgstr "neutral / ragu-ragu"
+
+# 5
+msgctxt "EMOJI SUB-GROUP: face-sleepy"
+msgid "face-sleepy"
+msgstr "mengantuk"
+
+# 0
+msgctxt "EMOJI SUB-GROUP: face-smiling"
+msgid "face-smiling"
+msgstr "tersenyum"
+
+# 2
+msgctxt "EMOJI SUB-GROUP: face-tongue"
+msgid "face-tongue"
+msgstr "dengan lidah"
+
+# 6
+msgctxt "EMOJI SUB-GROUP: face-unwell"
+msgid "face-unwell"
+msgstr "tidak sihat"
+
+# 30
+msgctxt "EMOJI SUB-GROUP: family"
+msgid "family"
+msgstr "keluarga"
+
+# 97
+msgctxt "EMOJI SUB-GROUP: flag"
+msgid "flag"
+msgstr "bendera lain"
+
+# 45
+msgctxt "EMOJI SUB-GROUP: food-asian"
+msgid "food-asian"
+msgstr "asia"
+
+# 42
+msgctxt "EMOJI SUB-GROUP: food-fruit"
+msgid "food-fruit"
+msgstr "buah"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-marine"
+msgid "food-marine"
+msgstr "makanan laut"
+
+# 44
+msgctxt "EMOJI SUB-GROUP: food-prepared"
+msgid "food-prepared"
+msgstr "dimasak / disediakan"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-sweet"
+msgid "food-sweet"
+msgstr "gula-gula"
+
+# 43
+msgctxt "EMOJI SUB-GROUP: food-vegetable"
+msgid "food-vegetable"
+msgstr "sayur"
+
+# 63
+msgctxt "EMOJI SUB-GROUP: game"
+msgid "game"
+msgstr "permainan & hobi"
+
+# 89
+msgctxt "EMOJI SUB-GROUP: gender"
+msgid "gender"
+msgstr "tanda-tanda jantina"
+
+# 96
+msgctxt "EMOJI SUB-GROUP: geometric"
+msgid "geometric"
+msgstr "bentuk & warna"
+
+# 33
+msgctxt "EMOJI SUB-GROUP: hair-style"
+msgid "hair-style"
+msgstr "gaya rambut"
+
+# 19
+msgctxt "EMOJI SUB-GROUP: hand-fingers-closed"
+msgid "hand-fingers-closed"
+msgstr "jari ditutup"
+
+# 16
+msgctxt "EMOJI SUB-GROUP: hand-fingers-open"
+msgid "hand-fingers-open"
+msgstr "jari terbuka"
+
+# 17
+msgctxt "EMOJI SUB-GROUP: hand-fingers-partial"
+msgid "hand-fingers-partial"
+msgstr "tanda tangan"
+
+# 21
+msgctxt "EMOJI SUB-GROUP: hand-prop"
+msgid "hand-prop"
+msgstr "prop tangan"
+
+# 18
+msgctxt "EMOJI SUB-GROUP: hand-single-finger"
+msgid "hand-single-finger"
+msgstr "menuding jari"
+
+# 20
+msgctxt "EMOJI SUB-GROUP: hands"
+msgid "hands"
+msgstr "tangan"
+
+# 14
+msgctxt "EMOJI SUB-GROUP: heart"
+msgid "heart"
+msgstr "hati"
+
+# 57
+msgctxt "EMOJI SUB-GROUP: hotel"
+msgid "hotel"
+msgstr "hotel"
+
+# 81
+msgctxt "EMOJI SUB-GROUP: household"
+msgid "household"
+msgstr "barangan isi rumah"
+
+# 94
+msgctxt "EMOJI SUB-GROUP: keycap"
+msgid "keycap"
+msgstr "aksara pad kekunci"
+
+# 71
+msgctxt "EMOJI SUB-GROUP: light-video"
+msgid "light-video"
+msgstr "cahaya, filem & video"
+
+# 77
+msgctxt "EMOJI SUB-GROUP: lock"
+msgid "lock"
+msgstr "kunci & kekunci"
+
+# 74
+msgctxt "EMOJI SUB-GROUP: mail"
+msgid "mail"
+msgstr "mel"
+
+# 90
+msgctxt "EMOJI SUB-GROUP: math"
+msgid "math"
+msgstr "simbol matematik"
+
+# 80
+msgctxt "EMOJI SUB-GROUP: medical"
+msgid "medical"
+msgstr "perubatan"
+
+# 73
+msgctxt "EMOJI SUB-GROUP: money"
+msgid "money"
+msgstr "wang"
+
+# 13
+msgctxt "EMOJI SUB-GROUP: monkey-face"
+msgid "monkey-face"
+msgstr "wajah monyet"
+
+# 67
+msgctxt "EMOJI SUB-GROUP: music"
+msgid "music"
+msgstr "muzik"
+
+# 68
+msgctxt "EMOJI SUB-GROUP: musical-instrument"
+msgid "musical-instrument"
+msgstr "alat muzik"
+
+# 76
+msgctxt "EMOJI SUB-GROUP: office"
+msgid "office"
+msgstr "bekalan pejabat"
+
+# 82
+msgctxt "EMOJI SUB-GROUP: other-object"
+msgid "other-object"
+msgstr "objek lain"
+
+# 93
+msgctxt "EMOJI SUB-GROUP: other-symbol"
+msgid "other-symbol"
+msgstr "simbol lain"
+
+# 23
+msgctxt "EMOJI SUB-GROUP: person"
+msgid "person"
+msgstr "orang"
+
+# 27
+msgctxt "EMOJI SUB-GROUP: person-activity"
+msgid "person-activity"
+msgstr "aktiviti"
+
+# 26
+msgctxt "EMOJI SUB-GROUP: person-fantasy"
+msgid "person-fantasy"
+msgstr "fantasi"
+
+# 24
+msgctxt "EMOJI SUB-GROUP: person-gesture"
+msgid "person-gesture"
+msgstr "gerak isyarat"
+
+# 29
+msgctxt "EMOJI SUB-GROUP: person-resting"
+msgid "person-resting"
+msgstr "berehat"
+
+# 25
+msgctxt "EMOJI SUB-GROUP: person-role"
+msgid "person-role"
+msgstr "peranan & kerjaya"
+
+# 28
+msgctxt "EMOJI SUB-GROUP: person-sport"
+msgid "person-sport"
+msgstr "olahraga"
+
+# 31
+msgctxt "EMOJI SUB-GROUP: person-symbol"
+msgid "person-symbol"
+msgstr "simbol orang"
+
+# 69
+msgctxt "EMOJI SUB-GROUP: phone"
+msgid "phone"
+msgstr "telefon"
+
+# 51
+msgctxt "EMOJI SUB-GROUP: place-building"
+msgid "place-building"
+msgstr "bangunan"
+
+# 50
+msgctxt "EMOJI SUB-GROUP: place-geographic"
+msgid "place-geographic"
+msgstr "lokasi geografi"
+
+# 49
+msgctxt "EMOJI SUB-GROUP: place-map"
+msgid "place-map"
+msgstr "glob & peta"
+
+# 53
+msgctxt "EMOJI SUB-GROUP: place-other"
+msgid "place-other"
+msgstr "tempat-tempat lain"
+
+# 52
+msgctxt "EMOJI SUB-GROUP: place-religious"
+msgid "place-religious"
+msgstr "bangunan agama"
+
+# 40
+msgctxt "EMOJI SUB-GROUP: plant-flower"
+msgid "plant-flower"
+msgstr "bunga"
+
+# 41
+msgctxt "EMOJI SUB-GROUP: plant-other"
+msgid "plant-other"
+msgstr "tumbuh-tumbuhan lain"
+
+# 91
+msgctxt "EMOJI SUB-GROUP: punctuation"
+msgid "punctuation"
+msgstr "tanda baca"
+
+# 86
+msgctxt "EMOJI SUB-GROUP: religion"
+msgid "religion"
+msgstr "simbol agama"
+
+# 79
+msgctxt "EMOJI SUB-GROUP: science"
+msgid "science"
+msgstr "peralatan sains"
+
+# 32
+msgctxt "EMOJI SUB-GROUP: skin-tone"
+msgid "skin-tone"
+msgstr "nada kulit"
+
+# 59
+msgctxt "EMOJI SUB-GROUP: sky-weather"
+msgid "sky-weather"
+msgstr "cuaca"
+
+# 66
+msgctxt "EMOJI SUB-GROUP: sound"
+msgid "sound"
+msgstr "bunyi"
+
+# 62
+msgctxt "EMOJI SUB-GROUP: sport"
+msgid "sport"
+msgstr "sukan"
+
+# 99
+msgctxt "EMOJI SUB-GROUP: subdivision-flag"
+msgid "subdivision-flag"
+msgstr "bendera pembahagian"
+
+# 58
+msgctxt "EMOJI SUB-GROUP: time"
+msgid "time"
+msgstr "masa"
+
+# 78
+msgctxt "EMOJI SUB-GROUP: tool"
+msgid "tool"
+msgstr "alat"
+
+# 56
+msgctxt "EMOJI SUB-GROUP: transport-air"
+msgid "transport-air"
+msgstr "pengangkutan udara"
+
+# 54
+msgctxt "EMOJI SUB-GROUP: transport-ground"
+msgid "transport-ground"
+msgstr "pengangkutan darat"
+
+# 83
+msgctxt "EMOJI SUB-GROUP: transport-sign"
+msgid "transport-sign"
+msgstr "tanda-tanda pengangkutan"
+
+# 55
+msgctxt "EMOJI SUB-GROUP: transport-water"
+msgid "transport-water"
+msgstr "pengangkutan air"
+
+# 84
+msgctxt "EMOJI SUB-GROUP: warning"
+msgid "warning"
+msgstr "simbol amaran"
+
+# 75
+msgctxt "EMOJI SUB-GROUP: writing"
+msgid "writing"
+msgstr "secara bertulis"
+
+# 87
+msgctxt "EMOJI SUB-GROUP: zodiac"
+msgid "zodiac"
+msgstr "tanda-tanda zodiak"
+
+#, javascript-format
+msgctxt "LABEL: Denotes a countries flag using alphabetical characters (usa = United States)"
+msgid "regional indicator %s"
+msgstr "penunjuk wilayah %s"
+
+msgctxt "LABEL: Name of the asterisk symbol (*)"
+msgid "asterisk"
+msgstr "tanda bintang"
+
+msgctxt "LABEL: Name of the number sign/hash symbol (#)"
+msgid "number sign"
+msgstr "tanda nombor"
+
+msgctxt "LABEL: Very short word for skin tone and/or color (max 1 word if possible)"
+msgid "tone"
+msgstr "warna"
+
+#, fuzzy
+msgctxt "SKIN TONE: dark"
+msgid "dark skin tone"
+msgstr "nada kulit gelap"
+
+#, fuzzy
+msgctxt "SKIN TONE: light"
+msgid "light skin tone"
+msgstr "nada kulit cahaya"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium"
+msgid "medium skin tone"
+msgstr "nada kulit sederhana"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium-dark"
+msgid "medium-dark skin tone"
+msgstr "nada kulit sederhana-gelap"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium-light"
+msgid "medium-light skin tone"
+msgstr "nada kulit ringan"

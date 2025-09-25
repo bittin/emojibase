@@ -57,7 +57,7 @@
  *    non-country use a suffix "<name>_flag".
  */
 
-export default {
+export const shortcodes = {
   // 🇦 regional indicator A
   '1F1E6': ['regional_indicator_a'],
   // 🇧 regional indicator B
@@ -154,7 +154,7 @@ export default {
   '1F62A': ['sleepy', 'sleepy_face'],
   // 😷 face with medical mask
   '1F637': ['mask', 'medical_mask'],
-  // 😵 knocked-out face
+  // 😵 face with crossed-out eyes
   '1F635': ['dizzy_face', 'knocked_out'],
   // 😲 astonished face
   '1F632': ['astonished', 'astonished_face'],
@@ -186,7 +186,7 @@ export default {
   '1F62B': ['tired', 'tired_face'],
   // 😤 face with steam from nose
   '1F624': ['nose_steam', 'triumph'],
-  // 😡 pouting face
+  // 😡 enraged face
   '1F621': ['pout', 'pouting_face', 'rage'],
   // 😠 angry face
   '1F620': ['angry', 'angry_face'],
@@ -230,8 +230,6 @@ export default {
   '1F649': ['hear_no_evil'],
   // 🙊 speak-no-evil monkey
   '1F64A': ['speak_no_evil'],
-  // 💋 kiss mark
-  '1F48B': ['kiss'],
   // 💌 love letter
   '1F48C': ['love_letter'],
   // 💘 heart with arrow
@@ -262,6 +260,8 @@ export default {
   '1F499': ['blue_heart'],
   // 💜 purple heart
   '1F49C': ['purple_heart'],
+  // 💋 kiss mark
+  '1F48B': ['kiss'],
   // 💯 hundred points
   '1F4AF': ['100'],
   // 💢 anger symbol
@@ -274,15 +274,13 @@ export default {
   '1F4A6': ['sweat_drops'],
   // 💨 dashing away
   '1F4A8': ['dash', 'dashing_away'],
-  // 💣️ bomb
-  '1F4A3': ['bomb'],
   // 💬 speech balloon
   '1F4AC': ['speech_balloon'],
-  // 💤 zzz
+  // 💤 ZZZ
   '1F4A4': ['zzz'],
   // 👋 waving hand
   '1F44B': ['wave', 'waving_hand'],
-  // ✋ raised hand
+  // ✋️ raised hand
   '270B': ['high_five', 'raised_hand'],
   // 👌 OK hand
   '1F44C': ['ok_hand'],
@@ -302,7 +300,7 @@ export default {
   '1F44D': ['+1', 'thumbsup', 'yes'],
   // 👎️ thumbs down
   '1F44E': ['-1', 'no', 'thumbsdown'],
-  // ✊ raised fist
+  // ✊️ raised fist
   '270A': ['fist'],
   // 👊 oncoming fist
   '1F44A': ['punch'],
@@ -402,10 +400,10 @@ export default {
   '1F48F': ['couple_kiss', 'couplekiss'],
   // 💑 couple with heart
   '1F491': ['couple_with_heart'],
-  // 👪️ family
-  '1F46A': ['family'],
   // 👤 bust in silhouette
   '1F464': ['bust_in_silhouette'],
+  // 👪️ family
+  '1F46A': ['family'],
   // 👣 footprints
   '1F463': ['footprints'],
   // 🐵 monkey face
@@ -532,6 +530,8 @@ export default {
   '1F342': ['fallen_leaf'],
   // 🍃 leaf fluttering in wind
   '1F343': ['leaves'],
+  // 🍄 mushroom
+  '1F344': ['mushroom'],
   // 🍇 grapes
   '1F347': ['grapes'],
   // 🍈 melon
@@ -560,8 +560,6 @@ export default {
   '1F346': ['eggplant'],
   // 🌽 ear of corn
   '1F33D': ['corn', 'ear_of_corn'],
-  // 🍄 mushroom
-  '1F344': ['mushroom'],
   // 🌰 chestnut
   '1F330': ['chestnut'],
   // 🍞 bread
@@ -782,7 +780,7 @@ export default {
   '23F3': ['hourglass_flowing_sand'],
   // ⌚️ watch
   '231A': ['watch'],
-  // ⏰ alarm clock
+  // ⏰️ alarm clock
   '23F0': ['alarm_clock'],
   // 🕛️ twelve o’clock
   '1F55B': ['clock12'],
@@ -862,7 +860,7 @@ export default {
   '1F386': ['fireworks'],
   // 🎇 sparkler
   '1F387': ['sparkler'],
-  // ✨ sparkles
+  // ✨️ sparkles
   '2728': ['sparkles'],
   // 🎈 balloon
   '1F388': ['balloon'],
@@ -912,6 +910,8 @@ export default {
   '1F3BF': ['ski'],
   // 🎯 bullseye
   '1F3AF': ['bullseye', 'dart', 'direct_hit'],
+  // 🔫 water pistol
+  '1F52B': ['gun', 'pistol'],
   // 🎱 pool 8 ball
   '1F3B1': ['8ball', 'billiards'],
   // 🔮 crystal ball
@@ -1178,8 +1178,8 @@ export default {
   '1F511': ['key'],
   // 🔨 hammer
   '1F528': ['hammer'],
-  // 🔫 water pistol
-  '1F52B': ['gun', 'pistol'],
+  // 💣️ bomb
+  '1F4A3': ['bomb'],
   // 🔧 wrench
   '1F527': ['wrench'],
   // 🔩 nut and bolt
@@ -1290,7 +1290,7 @@ export default {
   '2652': ['aquarius'],
   // ♓️ Pisces
   '2653': ['pisces'],
-  // ⛎ Ophiuchus
+  // ⛎️ Ophiuchus
   '26CE': ['ophiuchus'],
   // ▶︎ play button
   '25B6': ['arrow_forward', 'play'],
@@ -1302,11 +1302,11 @@ export default {
   '23EA': ['fast_reverse', 'rewind'],
   // 🔼 upwards button
   '1F53C': ['arrow_up_small', 'up'],
-  // ⏫ fast up button
+  // ⏫️ fast up button
   '23EB': ['arrow_double_up', 'fast_up'],
   // 🔽 downwards button
   '1F53D': ['arrow_down_small', 'down'],
-  // ⏬ fast down button
+  // ⏬️ fast down button
   '23EC': ['arrow_double_down', 'fast_down'],
   // 🎦 cinema
   '1F3A6': ['cinema'],
@@ -1318,11 +1318,11 @@ export default {
   '1F4F4': ['mobile_phone_off'],
   // ✖︎ multiply
   '2716': ['multiplication', 'multiply'],
-  // ➕ plus
+  // ➕️ plus
   '2795': ['plus'],
-  // ➖ minus
+  // ➖️ minus
   '2796': ['minus'],
-  // ➗ divide
+  // ➗️ divide
   '2797': ['divide', 'division'],
   // ‼︎ double exclamation mark
   '203C': ['bangbang', 'double_exclamation'],
@@ -1330,9 +1330,9 @@ export default {
   '2049': ['exclamation_question', 'interrobang'],
   // ❓️ red question mark
   '2753': ['question'],
-  // ❔ white question mark
+  // ❔️ white question mark
   '2754': ['white_question'],
-  // ❕ white exclamation mark
+  // ❕️ white exclamation mark
   '2755': ['white_exclamation'],
   // ❗️ red exclamation mark
   '2757': ['exclamation'],
@@ -1352,17 +1352,17 @@ export default {
   '1F530': ['beginner'],
   // ⭕️ hollow red circle
   '2B55': ['hollow_red_circle', 'red_o'],
-  // ✅ check mark button
+  // ✅️ check mark button
   '2705': ['check_mark_button', 'white_check_mark'],
   // ☑︎ check box with check
   '2611': ['ballot_box_with_check'],
   // ✔︎ check mark
   '2714': ['check_mark', 'heavy_check_mark'],
-  // ❌ cross mark
+  // ❌️ cross mark
   '274C': ['cross_mark', 'x'],
-  // ❎ cross mark button
+  // ❎️ cross mark button
   '274E': ['cross_mark_button', 'negative_squared_cross_mark'],
-  // ➰ curly loop
+  // ➰️ curly loop
   '27B0': ['curly_loop'],
   // 〽︎ part alternation mark
   '303D': ['part_alternation_mark'],
@@ -1848,7 +1848,7 @@ export default {
   '1F61B': ['face_with_tongue', 'stuck_out_tongue'],
   // 🤑 money-mouth face
   '1F911': ['money_mouth_face'],
-  // 🤗 hugging face
+  // 🤗 smiling face with open hands
   '1F917': ['hug', 'hugging', 'hugging_face'],
   // 🤔 thinking face
   '1F914': ['thinking', 'thinking_face', 'wtf'],
@@ -1966,6 +1966,8 @@ export default {
   '1F409': ['dragon'],
   // 🐋 whale
   '1F40B': ['whale'],
+  // 🦀 crab
+  '1F980': ['crab'],
   // 🦂 scorpion
   '1F982': ['scorpion'],
   // 🌲 evergreen tree
@@ -1988,8 +1990,6 @@ export default {
   '1F32F': ['burrito'],
   // 🍿 popcorn
   '1F37F': ['popcorn'],
-  // 🦀 crab
-  '1F980': ['crab'],
   // 🍼 baby bottle
   '1F37C': ['baby_bottle'],
   // 🍾 bottle with popping cork
@@ -2178,7 +2178,7 @@ export default {
   '1F506': ['bright_button', 'high_brightness'],
   // ⚜︎ fleur-de-lis
   '269C': ['fleur-de-lis'],
-  // ➿ double curly loop
+  // ➿️ double curly loop
   '27BF': ['double_curly_loop', 'loop'],
   // 🏴 black flag
   '1F3F4': ['black_flag'],
@@ -2676,7 +2676,7 @@ export default {
   '1F1F9-1F1F3': ['flag_tn', 'tunisia'],
   // 🇹🇴 flag: Tonga
   '1F1F9-1F1F4': ['flag_to', 'tonga'],
-  // 🇹🇷 flag: Turkey
+  // 🇹🇷 flag: Türkiye
   '1F1F9-1F1F7': ['flag_tr', 'turkey_tr'],
   // 🇹🇹 flag: Trinidad & Tobago
   '1F1F9-1F1F9': ['flag_tt', 'trinidad_tobago'],
@@ -2804,6 +2804,10 @@ export default {
   '1F98E': ['lizard'],
   // 🦈 shark
   '1F988': ['shark'],
+  // 🦐 shrimp
+  '1F990': ['shrimp'],
+  // 🦑 squid
+  '1F991': ['squid'],
   // 🦋 butterfly
   '1F98B': ['butterfly'],
   // 🥀 wilted flower
@@ -2836,10 +2840,6 @@ export default {
   '1F958': ['shallow_pan_of_food'],
   // 🥗 green salad
   '1F957': ['green_salad', 'salad'],
-  // 🦐 shrimp
-  '1F990': ['shrimp'],
-  // 🦑 squid
-  '1F991': ['squid'],
   // 🥛 glass of milk
   '1F95B': ['glass_of_milk', 'milk'],
   // 🥂 clinking glasses
@@ -3334,6 +3334,8 @@ export default {
   '1F99A': ['peacock'],
   // 🦜 parrot
   '1F99C': ['parrot'],
+  // 🦞 lobster
+  '1F99E': ['lobster'],
   // 🦟 mosquito
   '1F99F': ['mosquito'],
   // 🦠 microbe
@@ -3348,8 +3350,6 @@ export default {
   '1F9C2': ['salt'],
   // 🥮 moon cake
   '1F96E': ['moon_cake'],
-  // 🦞 lobster
-  '1F99E': ['lobster'],
   // 🧁 cupcake
   '1F9C1': ['cupcake'],
   // 🧭 compass
@@ -3370,8 +3370,6 @@ export default {
   '1F94F': ['flying_disc'],
   // 🥍 lacrosse
   '1F94D': ['lacrosse'],
-  // 🧿 nazar amulet
-  '1F9FF': ['nazar_amulet'],
   // 🧩 puzzle piece
   '1F9E9': ['jigsaw', 'puzzle_piece'],
   // 🧸 teddy bear
@@ -3420,6 +3418,8 @@ export default {
   '1F9FD': ['sponge'],
   // 🧯 fire extinguisher
   '1F9EF': ['fire_extinguisher'],
+  // 🧿 nazar amulet
+  '1F9FF': ['nazar_amulet'],
   // ♾︎ infinity
   '267E': ['infinity'],
   // 🏴‍☠️ pirate flag
@@ -3486,6 +3486,8 @@ export default {
   '1F9A8': ['skunk'],
   // 🦩 flamingo
   '1F9A9': ['flamingo'],
+  // 🦪 oyster
+  '1F9AA': ['oyster'],
   // 🧄 garlic
   '1F9C4': ['garlic'],
   // 🧅 onion
@@ -3496,8 +3498,6 @@ export default {
   '1F9C6': ['falafel'],
   // 🧈 butter
   '1F9C8': ['butter'],
-  // 🦪 oyster
-  '1F9AA': ['oyster'],
   // 🧃 beverage box
   '1F9C3': ['beverage_box', 'juice_box'],
   // 🧉 mate
@@ -3652,7 +3652,7 @@ export default {
   '1F468-200D-1F37C': ['man_feeding_baby'],
   // 🧑‍🍼 person feeding baby
   '1F9D1-200D-1F37C': ['person_feeding_baby'],
-  // 🧑‍🎄 mx claus
+  // 🧑‍🎄 Mx Claus
   '1F9D1-200D-1F384': ['mx_claus'],
   // 🫂 people hugging
   '1FAC2': ['people_hugging'],
@@ -3776,4 +3776,200 @@ export default {
   '1F9D4-200D-2642-FE0F': ['man_bearded'],
   // 🧔‍♀️ woman: beard
   '1F9D4-200D-2640-FE0F': ['woman_bearded'],
+
+  // VERSION 14
+  // 🫠 melting face
+  '1FAE0': ['melt', 'melting_face'],
+  // 🫢 face with open eyes and hand over mouth
+  '1FAE2': ['face_with_open_eyes_hand_over_mouth', 'gasp'],
+  // 🫣 face with peeking eye
+  '1FAE3': ['face_with_peeking_eye', 'peek'],
+  // 🫡 saluting face
+  '1FAE1': ['salute', 'saluting_face'],
+  // 🫥 dotted line face
+  '1FAE5': ['dotted_line_face'],
+  // 🫤 face with diagonal mouth
+  '1FAE4': ['face_with_diagonal_mouth'],
+  // 🥹 face holding back tears
+  '1F979': ['face_holding_back_tears', 'watery_eyes'],
+  // 🫱 rightwards hand
+  '1FAF1': ['rightwards_hand'],
+  // 🫲 leftwards hand
+  '1FAF2': ['leftwards_hand'],
+  // 🫳 palm down hand
+  '1FAF3': ['palm_down'],
+  // 🫴 palm up hand
+  '1FAF4': ['palm_up'],
+  // 🫰 hand with index finger and thumb crossed
+  '1FAF0': ['hand_with_index_finger_and_thumb_crossed'],
+  // 🫵 index pointing at the viewer
+  '1FAF5': ['point_forward'],
+  // 🫶 heart hands
+  '1FAF6': ['heart_hands'],
+  // 🫦 biting lip
+  '1FAE6': ['biting_lip'],
+  // 🫅 person with crown
+  '1FAC5': ['person_with_crown', 'royalty'],
+  // 🫃 pregnant man
+  '1FAC3': ['pregnant_man'],
+  // 🫄 pregnant person
+  '1FAC4': ['pregnant_person'],
+  // 🧌 troll
+  '1F9CC': ['troll'],
+  // 🪸 coral
+  '1FAB8': ['coral'],
+  // 🪷 lotus
+  '1FAB7': ['lotus'],
+  // 🪹 empty nest
+  '1FAB9': ['empty_nest', 'nest'],
+  // 🪺 nest with eggs
+  '1FABA': ['nest_with_eggs'],
+  // 🫘 beans
+  '1FAD8': ['beans'],
+  // 🫗 pouring liquid
+  '1FAD7': ['pour', 'pouring_liquid'],
+  // 🫙 jar
+  '1FAD9': ['jar'],
+  // 🛝 playground slide
+  '1F6DD': ['playground_slide', 'slide'],
+  // 🛞 wheel
+  '1F6DE': ['wheel'],
+  // 🛟 ring buoy
+  '1F6DF': ['lifebuoy', 'ring_buoy'],
+  // 🪩 mirror ball
+  '1FAA9': ['disco', 'disco_ball', 'mirror_ball'],
+  // 🪫 low battery
+  '1FAAB': ['low_battery'],
+  // 🩼 crutch
+  '1FA7C': ['crutch'],
+  // 🩻 x-ray
+  '1FA7B': ['x-ray', 'xray'],
+  // 🫧 bubbles
+  '1FAE7': ['bubbles'],
+  // 🪬 hamsa
+  '1FAAC': ['hamsa'],
+  // 🪪 identification card
+  '1FAAA': ['id_card'],
+  // 🟰 heavy equals sign
+  '1F7F0': ['heavy_equals_sign'],
+
+  // VERSION 15
+  // 🫨 shaking face
+  '1FAE8': ['shaking', 'shaking_face'],
+  // 🩷 pink heart
+  '1FA77': ['pink_heart'],
+  // 🩵 light blue heart
+  '1FA75': ['light_blue_heart'],
+  // 🩶 grey heart
+  '1FA76': ['gray_heart', 'grey_heart'],
+  // 🫷 leftwards pushing hand
+  '1FAF7': ['leftwards_pushing_hand'],
+  // 🫸 rightwards pushing hand
+  '1FAF8': ['rightwards_pushing_hand'],
+  // 🫎 moose
+  '1FACE': ['moose'],
+  // 🫏 donkey
+  '1FACF': ['donkey'],
+  // 🪽 wing
+  '1FABD': ['wing'],
+  // 🐦‍⬛ black bird
+  '1F426-200D-2B1B': ['black_bird'],
+  // 🪿 goose
+  '1FABF': ['goose'],
+  // 🪼 jellyfish
+  '1FABC': ['jellyfish'],
+  // 🪻 hyacinth
+  '1FABB': ['hyacinth'],
+  // 🫚 ginger root
+  '1FADA': ['ginger'],
+  // 🫛 pea pod
+  '1FADB': ['pea'],
+  // 🪭 folding hand fan
+  '1FAAD': ['folding_fan'],
+  // 🪮 hair pick
+  '1FAAE': ['hair_pick'],
+  // 🪇 maracas
+  '1FA87': ['maracas'],
+  // 🪈 flute
+  '1FA88': ['flute'],
+  // 🪯 khanda
+  '1FAAF': ['khanda'],
+  // 🛜 wireless
+  '1F6DC': ['wireless'],
+
+  // VERSION 15.1
+  // 🙂‍↔️ head shaking horizontally
+  '1F642-200D-2194-FE0F': ['head_shaking_horizontally'],
+  // 🙂‍↕️ head shaking vertically
+  '1F642-200D-2195-FE0F': ['head_shaking_vertically'],
+  // 🚶‍➡️ person walking facing right
+  '1F6B6-200D-27A1-FE0F': ['person_walking_right'],
+  // 🚶‍♀️‍➡️ woman walking facing right
+  '1F6B6-200D-2640-FE0F-200D-27A1-FE0F': ['woman_walking_right'],
+  // 🚶‍♂️‍➡️ man walking facing right
+  '1F6B6-200D-2642-FE0F-200D-27A1-FE0F': ['man_walking_right'],
+  // 🧎‍➡️ person kneeling facing right
+  '1F9CE-200D-27A1-FE0F': ['person_kneeling_right'],
+  // 🧎‍♀️‍➡️ woman kneeling facing right
+  '1F9CE-200D-2640-FE0F-200D-27A1-FE0F': ['woman_kneeling_right'],
+  // 🧎‍♂️‍➡️ man kneeling facing right
+  '1F9CE-200D-2642-FE0F-200D-27A1-FE0F': ['man_kneeling_right'],
+  // 🧑‍🦯‍➡️ person with white cane facing right
+  '1F9D1-200D-1F9AF-200D-27A1-FE0F': ['person_with_white_cane_right'],
+  // 👨‍🦯‍➡️ man with white cane facing right
+  '1F468-200D-1F9AF-200D-27A1-FE0F': ['man_with_white_cane_right'],
+  // 👩‍🦯‍➡️ woman with white cane facing right
+  '1F469-200D-1F9AF-200D-27A1-FE0F': ['woman_with_white_cane_right'],
+  // 🧑‍🦼‍➡️ person in motorized wheelchair facing right
+  '1F9D1-200D-1F9BC-200D-27A1-FE0F': ['person_in_motorized_wheelchair_right'],
+  // 👨‍🦼‍➡️ man in motorized wheelchair facing right
+  '1F468-200D-1F9BC-200D-27A1-FE0F': ['man_in_motorized_wheelchair_right'],
+  // 👩‍🦼‍➡️ woman in motorized wheelchair facing right
+  '1F469-200D-1F9BC-200D-27A1-FE0F': ['woman_in_motorized_wheelchair_right'],
+  // 🧑‍🦽‍➡️ person in manual wheelchair facing right
+  '1F9D1-200D-1F9BD-200D-27A1-FE0F': ['person_in_manual_wheelchair_right'],
+  // 👨‍🦽‍➡️ man in manual wheelchair facing right
+  '1F468-200D-1F9BD-200D-27A1-FE0F': ['man_in_manual_wheelchair_right'],
+  // 👩‍🦽‍➡️ woman in manual wheelchair facing right
+  '1F469-200D-1F9BD-200D-27A1-FE0F': ['woman_in_manual_wheelchair_right'],
+  // 🏃‍➡️ person running facing right
+  '1F3C3-200D-27A1-FE0F': ['person_running_right'],
+  // 🏃‍♀️‍➡️ woman running facing right
+  '1F3C3-200D-2640-FE0F-200D-27A1-FE0F': ['woman_running_right'],
+  // 🏃‍♂️‍➡️ man running facing right
+  '1F3C3-200D-2642-FE0F-200D-27A1-FE0F': ['man_running_right'],
+  // 🧑‍🧑‍🧒 family: adult, adult, child
+  '1F9D1-200D-1F9D1-200D-1F9D2': ['family_aac'],
+  // 🧑‍🧑‍🧒‍🧒 family: adult, adult, child, child
+  '1F9D1-200D-1F9D1-200D-1F9D2-200D-1F9D2': ['family_aacc'],
+  // 🧑‍🧒 family: adult, child
+  '1F9D1-200D-1F9D2': ['family_ac'],
+  // 🧑‍🧒‍🧒 family: adult, child, child
+  '1F9D1-200D-1F9D2-200D-1F9D2': ['family_acc'],
+  // 🐦‍🔥 phoenix
+  '1F426-200D-1F525': ['phoenix'],
+  // 🍋‍🟩 lime
+  '1F34B-200D-1F7E9': ['lime'],
+  // 🍄‍🟫 brown mushroom
+  '1F344-200D-1F7EB': ['brown_mushroom'],
+  // ⛓️‍💥 broken chain
+  '26D3-FE0F-200D-1F4A5': ['broken_chain'],
+
+  // VERSION 16
+  // 🫩 face with bags under eyes
+  '1FAE9': ['face_with_eye_bags'],
+  // 🫆 fingerprint
+  '1FAC6': ['fingerprint'],
+  // 🪾 leafless tree
+  '1FABE': ['leafless_tree'],
+  // 🫜 root vegetable
+  '1FADC': ['root_vegetable'],
+  // 🪉 harp
+  '1FA89': ['harp'],
+  // 🪏 shovel
+  '1FA8F': ['shovel'],
+  // 🫟 splatter
+  '1FADF': ['splatter'],
+  // 🇨🇶 flag: Sark
+  '1F1E8-1F1F6': ['flag_cq', 'sark'],
 };

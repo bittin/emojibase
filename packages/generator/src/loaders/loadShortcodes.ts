@@ -1,8 +1,7 @@
-import path from 'path';
-import { ShortcodeMap } from '../types';
+import type { ShortcodeMap } from '../types';
 
-export default function loadShortcodes(): Promise<ShortcodeMap> {
-  // Relative to the lib/ folder!
-  // eslint-disable-next-line
-  return Promise.resolve(require(path.resolve(__dirname, '../shortcodes.js')));
+export async function loadShortcodes(): Promise<ShortcodeMap> {
+	const { shortcodes } = await import('../resources/shortcodes');
+
+	return shortcodes;
 }

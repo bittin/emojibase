@@ -1,5 +1,4 @@
-/* eslint-disable */
-
+/* eslint-disable sort-keys */
 /**
  * Official Emojibase emoticons list.
  *
@@ -23,12 +22,14 @@
  *    variants are automatically generated.
  */
 
-export default {
+import type { EmoticonMap } from '../types';
+
+export const emoticons: EmoticonMap = {
   // HAPPY
   // 🙂 slightly smiling face
   '1F642': ':)',
-  // 😀 grinning face
-  '1F600': ':D',
+  // 😄 grinning face
+  '1F604': ':D',
   // 😊 smiling face with smiling eyes
   '1F60A': ':>',
   // 😉 winking face
@@ -38,7 +39,7 @@ export default {
   // 😬 grimacing face
   '1F62C': '8D',
   // 😇 smiling face with halo
-  '1F607': 'o:)',
+  '1F607': ['o:)', 'O:)'],
   // 😈 smiling face with horns
   '1F608': '>:)',
 
@@ -48,13 +49,13 @@ export default {
   // 🤣 rolling on the floor laughing
   '1F923': ":'D",
   // 😆 smiling face with open mouth & closed eyes
-  '1F606': 'xD',
+  '1F606': ['xD', 'XD'],
   // 😛 face with stuck-out tongue
-  '1F61B': ':p',
+  '1F61B': [':p', ':P'],
   // 😜 face with stuck-out tongue & winking eye
-  '1F61C': ';p',
+  '1F61C': [';p', ';P'],
   // 😝 face with stuck-out tongue & closed eyes
-  '1F61D': 'xp',
+  '1F61D': ['xp', 'xP', 'XP'],
   // 😏 smirking face
   '1F60F': ':j',
 
@@ -64,7 +65,7 @@ export default {
   // 😚 kissing face with closed eyes
   '1F61A': ':*',
   // 😘 face blowing a kiss
-  '1F618': ':x',
+  '1F618': [':x', ':X'],
 
   // NEUTRAL
   // 😐️ neutral face
@@ -76,15 +77,15 @@ export default {
   // 😓 face with cold sweat
   '1F613': ':<',
   // 🤐 zipper-mouth face
-  '1F910': ':z',
+  '1F910': [':z', ':Z'],
 
   // SAD
   // 🙁 frowning face
   '2639': ':(',
   // 😧 anguished face
-  '1F627': ':s',
+  '1F627': [':s', ':S'],
   // 😖 confounded face
-  '1F616': 'x(',
+  '1F616': ['x(', 'X('],
   // 😢 crying face
   '1F622': ":'(",
   // 😭 loudly crying face
@@ -98,17 +99,17 @@ export default {
   // 👿 angry face with horns
   '1F47F': '>:(',
   // 😫 tired face
-  '1F62B': ':c',
+  '1F62B': [':c', ':C'],
   // woozy face
   '1F974': ':&',
 
   // MISC
   // 🤔 thinking face
-  '1F914': ':l',
+  '1F914': [':l', ':L'],
   // 😲 astonished face
-  '1F632': ':o',
+  '1F632': [':o', ':O'],
   // 😵 dizzy face
-  '1F635': 'xo',
+  '1F635': ['xo', 'XO'],
   // 🤬 face with symbols over mouth
   '1F92C': ':@',
   // 🤢 nauseated face
@@ -136,5 +137,5 @@ export default {
   // 💔 broken heart
   '1F494': '</3',
   // 🤘 sign of the horns
-  '1F918': '\\m/',
+  '1F918': [String.raw`\m/`, String.raw`\M/`],
 };

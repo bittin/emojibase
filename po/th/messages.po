@@ -1,0 +1,612 @@
+# Thai
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-17 14:53-0700\n"
+"PO-Revision-Date: 2024-12-03 15:57+480\n"
+"Last-Translator: Miles Johnson\n"
+"Language-Team: \n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0\n"
+
+# 6
+msgctxt "EMOJI GROUP: activities"
+msgid "activities"
+msgstr "กิจกรรม"
+
+# 3
+msgctxt "EMOJI GROUP: animals-nature"
+msgid "animals-nature"
+msgstr "สัตว์ป่าและธรรมชาติ"
+
+# 2
+msgctxt "EMOJI GROUP: component"
+msgid "component"
+msgstr "คอม โพ เนนต์"
+
+# 9
+msgctxt "EMOJI GROUP: flags"
+msgid "flags"
+msgstr "ธง"
+
+# 4
+msgctxt "EMOJI GROUP: food-drink"
+msgid "food-drink"
+msgstr "อาหารและเครื่องดื่ม"
+
+# 7
+msgctxt "EMOJI GROUP: objects"
+msgid "objects"
+msgstr "วัตถุ"
+
+# 1
+msgctxt "EMOJI GROUP: people-body"
+msgid "people-body"
+msgstr "คนและร่างกาย"
+
+# 0
+msgctxt "EMOJI GROUP: smileys-emotion"
+msgid "smileys-emotion"
+msgstr "รอยยิ้มและอารมณ์"
+
+# 8
+msgctxt "EMOJI GROUP: symbols"
+msgid "symbols"
+msgstr "สัญลักษณ์"
+
+# 5
+msgctxt "EMOJI GROUP: travel-places"
+msgid "travel-places"
+msgstr "สถานที่ท่องเที่ยว"
+
+# 95
+msgctxt "EMOJI SUB-GROUP: alphanum"
+msgid "alphanum"
+msgstr "สัญลักษณ์ตัวอักษรและตัวเลข"
+
+# 36
+msgctxt "EMOJI SUB-GROUP: animal-amphibian"
+msgid "animal-amphibian"
+msgstr "สะเทินน้ําสะเทินบก"
+
+# 35
+msgctxt "EMOJI SUB-GROUP: animal-bird"
+msgid "animal-bird"
+msgstr "นก"
+
+# 39
+msgctxt "EMOJI SUB-GROUP: animal-bug"
+msgid "animal-bug"
+msgstr "ข้อ บกพร่อง"
+
+# 34
+msgctxt "EMOJI SUB-GROUP: animal-mammal"
+msgid "animal-mammal"
+msgstr "เลี้ยงลูกด้วยนม"
+
+# 38
+msgctxt "EMOJI SUB-GROUP: animal-marine"
+msgid "animal-marine"
+msgstr "ชีวิตทางทะเล"
+
+# 37
+msgctxt "EMOJI SUB-GROUP: animal-reptile"
+msgid "animal-reptile"
+msgstr "สัตว์เลื้อยคลาน"
+
+# 85
+msgctxt "EMOJI SUB-GROUP: arrow"
+msgid "arrow"
+msgstr "ลูกศร"
+
+# 64
+msgctxt "EMOJI SUB-GROUP: arts-crafts"
+msgid "arts-crafts"
+msgstr "ศิลปะและงานฝีมือ"
+
+# 88
+msgctxt "EMOJI SUB-GROUP: av-symbol"
+msgid "av-symbol"
+msgstr "สัญลักษณ์เสียงและวิดีโอ"
+
+# 61
+msgctxt "EMOJI SUB-GROUP: award-medal"
+msgid "award-medal"
+msgstr "เหรียญรางวัล"
+
+# 22
+msgctxt "EMOJI SUB-GROUP: body-parts"
+msgid "body-parts"
+msgstr "ส่วนต่างๆ ของร่างกาย"
+
+# 72
+msgctxt "EMOJI SUB-GROUP: book-paper"
+msgid "book-paper"
+msgstr "หนังสือและกระดาษ"
+
+# 12
+msgctxt "EMOJI SUB-GROUP: cat-face"
+msgid "cat-face"
+msgstr "ใบหน้าแมว"
+
+# 65
+msgctxt "EMOJI SUB-GROUP: clothing"
+msgid "clothing"
+msgstr "เสื้อ ผ้า"
+
+# 70
+msgctxt "EMOJI SUB-GROUP: computer"
+msgid "computer"
+msgstr "คอมพิวเตอร์"
+
+# 98
+msgctxt "EMOJI SUB-GROUP: country-flag"
+msgid "country-flag"
+msgstr "ธงชาติ"
+
+# 92
+msgctxt "EMOJI SUB-GROUP: currency"
+msgid "currency"
+msgstr "สกุล เงิน"
+
+# 48
+msgctxt "EMOJI SUB-GROUP: dishware"
+msgid "dishware"
+msgstr "เครื่องล้างจาน"
+
+# 47
+msgctxt "EMOJI SUB-GROUP: drink"
+msgid "drink"
+msgstr "เครื่อง ดื่ม"
+
+# 15
+msgctxt "EMOJI SUB-GROUP: emotion"
+msgid "emotion"
+msgstr "อารมณ์"
+
+# 60
+msgctxt "EMOJI SUB-GROUP: event"
+msgid "event"
+msgstr "กิจกรรมและวันหยุดนักขัตฤกษ์"
+
+# 1
+msgctxt "EMOJI SUB-GROUP: face-affection"
+msgid "face-affection"
+msgstr "รักใคร่"
+
+# 9
+msgctxt "EMOJI SUB-GROUP: face-concerned"
+msgid "face-concerned"
+msgstr "กังวล"
+
+# 11
+msgctxt "EMOJI SUB-GROUP: face-costume"
+msgid "face-costume"
+msgstr "เครื่องแต่งกายและสิ่งมีชีวิต"
+
+# 8
+msgctxt "EMOJI SUB-GROUP: face-glasses"
+msgid "face-glasses"
+msgstr "กับแว่นตา"
+
+# 3
+msgctxt "EMOJI SUB-GROUP: face-hand"
+msgid "face-hand"
+msgstr "ด้วยมือ"
+
+# 7
+msgctxt "EMOJI SUB-GROUP: face-hat"
+msgid "face-hat"
+msgstr "กับหมวก"
+
+# 10
+msgctxt "EMOJI SUB-GROUP: face-negative"
+msgid "face-negative"
+msgstr "เนกาทีฟ"
+
+# 4
+msgctxt "EMOJI SUB-GROUP: face-neutral-skeptical"
+msgid "face-neutral-skeptical"
+msgstr "เป็นกลาง / สงสัย"
+
+# 5
+msgctxt "EMOJI SUB-GROUP: face-sleepy"
+msgid "face-sleepy"
+msgstr "ง่วง นอน"
+
+# 0
+msgctxt "EMOJI SUB-GROUP: face-smiling"
+msgid "face-smiling"
+msgstr "รอย ยิ้ม"
+
+# 2
+msgctxt "EMOJI SUB-GROUP: face-tongue"
+msgid "face-tongue"
+msgstr "ด้วยลิ้น"
+
+# 6
+msgctxt "EMOJI SUB-GROUP: face-unwell"
+msgid "face-unwell"
+msgstr "ไม่สบาย"
+
+# 30
+msgctxt "EMOJI SUB-GROUP: family"
+msgid "family"
+msgstr "ครอบครัว"
+
+# 97
+msgctxt "EMOJI SUB-GROUP: flag"
+msgid "flag"
+msgstr "ค่าสถานะอื่นๆ"
+
+# 45
+msgctxt "EMOJI SUB-GROUP: food-asian"
+msgid "food-asian"
+msgstr "เอเชีย"
+
+# 42
+msgctxt "EMOJI SUB-GROUP: food-fruit"
+msgid "food-fruit"
+msgstr "ผลไม้"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-marine"
+msgid "food-marine"
+msgstr "อาหาร ทะเล"
+
+# 44
+msgctxt "EMOJI SUB-GROUP: food-prepared"
+msgid "food-prepared"
+msgstr "สุก / เตรียม"
+
+# 46
+msgctxt "EMOJI SUB-GROUP: food-sweet"
+msgid "food-sweet"
+msgstr "ขนมและลูกอม"
+
+# 43
+msgctxt "EMOJI SUB-GROUP: food-vegetable"
+msgid "food-vegetable"
+msgstr "ผัก"
+
+# 63
+msgctxt "EMOJI SUB-GROUP: game"
+msgid "game"
+msgstr "เกมและงานอดิเรก"
+
+# 89
+msgctxt "EMOJI SUB-GROUP: gender"
+msgid "gender"
+msgstr "สัญญาณทางเพศ"
+
+# 96
+msgctxt "EMOJI SUB-GROUP: geometric"
+msgid "geometric"
+msgstr "รูปร่างและสี"
+
+# 33
+msgctxt "EMOJI SUB-GROUP: hair-style"
+msgid "hair-style"
+msgstr "สไตล์ผม"
+
+# 19
+msgctxt "EMOJI SUB-GROUP: hand-fingers-closed"
+msgid "hand-fingers-closed"
+msgstr "ปิดนิ้วแล้ว"
+
+# 16
+msgctxt "EMOJI SUB-GROUP: hand-fingers-open"
+msgid "hand-fingers-open"
+msgstr "เปิดนิ้ว"
+
+# 17
+msgctxt "EMOJI SUB-GROUP: hand-fingers-partial"
+msgid "hand-fingers-partial"
+msgstr "สัญญาณมือ"
+
+# 21
+msgctxt "EMOJI SUB-GROUP: hand-prop"
+msgid "hand-prop"
+msgstr "อุปกรณ์ประกอบฉากมือ"
+
+# 18
+msgctxt "EMOJI SUB-GROUP: hand-single-finger"
+msgid "hand-single-finger"
+msgstr "การชี้นิ้ว"
+
+# 20
+msgctxt "EMOJI SUB-GROUP: hands"
+msgid "hands"
+msgstr "มือ"
+
+# 14
+msgctxt "EMOJI SUB-GROUP: heart"
+msgid "heart"
+msgstr "หัวใจ"
+
+# 57
+msgctxt "EMOJI SUB-GROUP: hotel"
+msgid "hotel"
+msgstr "โรงแรม"
+
+# 81
+msgctxt "EMOJI SUB-GROUP: household"
+msgid "household"
+msgstr "ของใช้ในครัวเรือน"
+
+# 94
+msgctxt "EMOJI SUB-GROUP: keycap"
+msgid "keycap"
+msgstr "อักขระแป้นพิมพ์"
+
+# 71
+msgctxt "EMOJI SUB-GROUP: light-video"
+msgid "light-video"
+msgstr "แสง, ภาพยนตร์และวิดีโอ"
+
+# 77
+msgctxt "EMOJI SUB-GROUP: lock"
+msgid "lock"
+msgstr "ล็อคและกุญแจ"
+
+# 74
+msgctxt "EMOJI SUB-GROUP: mail"
+msgid "mail"
+msgstr "จดหมาย"
+
+# 90
+msgctxt "EMOJI SUB-GROUP: math"
+msgid "math"
+msgstr "สัญลักษณ์ทางคณิตศาสตร์"
+
+# 80
+msgctxt "EMOJI SUB-GROUP: medical"
+msgid "medical"
+msgstr "แพทย์"
+
+# 73
+msgctxt "EMOJI SUB-GROUP: money"
+msgid "money"
+msgstr "เงิน"
+
+# 13
+msgctxt "EMOJI SUB-GROUP: monkey-face"
+msgid "monkey-face"
+msgstr "ใบหน้าลิง"
+
+# 67
+msgctxt "EMOJI SUB-GROUP: music"
+msgid "music"
+msgstr "เพลง"
+
+# 68
+msgctxt "EMOJI SUB-GROUP: musical-instrument"
+msgid "musical-instrument"
+msgstr "ดนตรี"
+
+# 76
+msgctxt "EMOJI SUB-GROUP: office"
+msgid "office"
+msgstr "เครื่องใช้สํานักงาน"
+
+# 82
+msgctxt "EMOJI SUB-GROUP: other-object"
+msgid "other-object"
+msgstr "วัตถุอื่นๆ"
+
+# 93
+msgctxt "EMOJI SUB-GROUP: other-symbol"
+msgid "other-symbol"
+msgstr "สัญลักษณ์อื่นๆ"
+
+# 23
+msgctxt "EMOJI SUB-GROUP: person"
+msgid "person"
+msgstr "คน"
+
+# 27
+msgctxt "EMOJI SUB-GROUP: person-activity"
+msgid "person-activity"
+msgstr "กิจกรรม"
+
+# 26
+msgctxt "EMOJI SUB-GROUP: person-fantasy"
+msgid "person-fantasy"
+msgstr "แฟนตาซี"
+
+# 24
+msgctxt "EMOJI SUB-GROUP: person-gesture"
+msgid "person-gesture"
+msgstr "รูป แบบ ลาย เส้น"
+
+# 29
+msgctxt "EMOJI SUB-GROUP: person-resting"
+msgid "person-resting"
+msgstr "พักผ่อน"
+
+# 25
+msgctxt "EMOJI SUB-GROUP: person-role"
+msgid "person-role"
+msgstr "บทบาทและอาชีพ"
+
+# 28
+msgctxt "EMOJI SUB-GROUP: person-sport"
+msgid "person-sport"
+msgstr "กรีฑา"
+
+# 31
+msgctxt "EMOJI SUB-GROUP: person-symbol"
+msgid "person-symbol"
+msgstr "สัญลักษณ์บุคคล"
+
+# 69
+msgctxt "EMOJI SUB-GROUP: phone"
+msgid "phone"
+msgstr "เบอร์โทร"
+
+# 51
+msgctxt "EMOJI SUB-GROUP: place-building"
+msgid "place-building"
+msgstr "อาคาร"
+
+# 50
+msgctxt "EMOJI SUB-GROUP: place-geographic"
+msgid "place-geographic"
+msgstr "ที่ตั้งทางภูมิศาสตร์"
+
+# 49
+msgctxt "EMOJI SUB-GROUP: place-map"
+msgid "place-map"
+msgstr "ลูกโลกและแผนที่"
+
+# 53
+msgctxt "EMOJI SUB-GROUP: place-other"
+msgid "place-other"
+msgstr "สถานที่อื่น ๆ"
+
+# 52
+msgctxt "EMOJI SUB-GROUP: place-religious"
+msgid "place-religious"
+msgstr "อาคารทางศาสนา"
+
+# 40
+msgctxt "EMOJI SUB-GROUP: plant-flower"
+msgid "plant-flower"
+msgstr "ดอกไม้"
+
+# 41
+msgctxt "EMOJI SUB-GROUP: plant-other"
+msgid "plant-other"
+msgstr "พืชอื่น ๆ"
+
+# 91
+msgctxt "EMOJI SUB-GROUP: punctuation"
+msgid "punctuation"
+msgstr "เครื่อง หมาย วรรค ตอน"
+
+# 86
+msgctxt "EMOJI SUB-GROUP: religion"
+msgid "religion"
+msgstr "สัญลักษณ์ทางศาสนา"
+
+# 79
+msgctxt "EMOJI SUB-GROUP: science"
+msgid "science"
+msgstr "อุปกรณ์วิทยาศาสตร์"
+
+# 32
+msgctxt "EMOJI SUB-GROUP: skin-tone"
+msgid "skin-tone"
+msgstr "โทนสีผิว"
+
+# 59
+msgctxt "EMOJI SUB-GROUP: sky-weather"
+msgid "sky-weather"
+msgstr "สภาพ อากาศ"
+
+# 66
+msgctxt "EMOJI SUB-GROUP: sound"
+msgid "sound"
+msgstr "เสียง"
+
+# 62
+msgctxt "EMOJI SUB-GROUP: sport"
+msgid "sport"
+msgstr "กีฬา"
+
+# 99
+msgctxt "EMOJI SUB-GROUP: subdivision-flag"
+msgid "subdivision-flag"
+msgstr "แฟล็กการแบ่งย่อย"
+
+# 58
+msgctxt "EMOJI SUB-GROUP: time"
+msgid "time"
+msgstr "เวลา"
+
+# 78
+msgctxt "EMOJI SUB-GROUP: tool"
+msgid "tool"
+msgstr "เครื่องมือ"
+
+# 56
+msgctxt "EMOJI SUB-GROUP: transport-air"
+msgid "transport-air"
+msgstr "การขนส่งทางอากาศ"
+
+# 54
+msgctxt "EMOJI SUB-GROUP: transport-ground"
+msgid "transport-ground"
+msgstr "การขนส่งทางบก"
+
+# 83
+msgctxt "EMOJI SUB-GROUP: transport-sign"
+msgid "transport-sign"
+msgstr "สัญญาณการขนส่ง"
+
+# 55
+msgctxt "EMOJI SUB-GROUP: transport-water"
+msgid "transport-water"
+msgstr "การขนส่งทางน้ํา"
+
+# 84
+msgctxt "EMOJI SUB-GROUP: warning"
+msgid "warning"
+msgstr "สัญลักษณ์การเตือน"
+
+# 75
+msgctxt "EMOJI SUB-GROUP: writing"
+msgid "writing"
+msgstr "เขียน"
+
+# 87
+msgctxt "EMOJI SUB-GROUP: zodiac"
+msgid "zodiac"
+msgstr "ราศีกันย์"
+
+#, javascript-format
+msgctxt "LABEL: Denotes a countries flag using alphabetical characters (usa = United States)"
+msgid "regional indicator %s"
+msgstr "ตัวบ่งชี้ภูมิภาคก %s"
+
+msgctxt "LABEL: Name of the asterisk symbol (*)"
+msgid "asterisk"
+msgstr "ดอกจัน"
+
+msgctxt "LABEL: Name of the number sign/hash symbol (#)"
+msgid "number sign"
+msgstr "เครื่องหมายตัวเลข"
+
+msgctxt "LABEL: Very short word for skin tone and/or color (max 1 word if possible)"
+msgid "tone"
+msgstr "สี"
+
+#, fuzzy
+msgctxt "SKIN TONE: dark"
+msgid "dark skin tone"
+msgstr "โทนสีผิวคล้ํา"
+
+#, fuzzy
+msgctxt "SKIN TONE: light"
+msgid "light skin tone"
+msgstr "โทนสีผิวอ่อน"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium"
+msgid "medium skin tone"
+msgstr "โทนสีผิวปานกลาง"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium-dark"
+msgid "medium-dark skin tone"
+msgstr "โทนสีผิวคล้ําปานกลาง"
+
+#, fuzzy
+msgctxt "SKIN TONE: medium-light"
+msgid "medium-light skin tone"
+msgstr "โทนสีผิวสีอ่อนปานกลาง"

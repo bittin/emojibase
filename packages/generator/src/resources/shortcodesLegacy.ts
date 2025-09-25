@@ -35,7 +35,7 @@
  *    https://www.dailywritingtips.com/100-words-for-facial-expressions/
  */
 
-export default {
+export const shortcodes = {
   // 🇦 regional indicator A
   '1F1E6': ['regional_indicator_a'],
   // 🇧 regional indicator B

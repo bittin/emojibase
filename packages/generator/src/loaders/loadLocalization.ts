@@ -1,41 +1,48 @@
+/* eslint-disable promise/prefer-await-to-then */
 import { LATEST_CLDR_VERSION } from 'emojibase';
-import formatLocale from '../helpers/formatLocale';
-import parseLocalization from '../parsers/parseLocalization';
-import { CLDRLocaleMap } from '../types';
-import fetchAndCache from './fetchAndCache';
+import { formatLocaleJson } from '../helpers/formatLocale';
+import type { CLDRLocaleMap } from '../types';
+import { importJsonModule } from './fetchAndCache';
 
-const SUBDIVISION_FALLBACK_LOCALES: { [key: string]: string } = {
-  'en-gb': 'en',
-  'es-mx': 'es',
-};
+interface CLDRLocaleNamesTerritories {
+	main: Record<string, { localeDisplayNames: { territories?: Record<string, string> } }>;
+}
 
-export default async function loadLocalization(
-  locale: string,
-  version: string = LATEST_CLDR_VERSION,
+interface CLDRLocaleNamesDisplayNames {
+	main: Record<string, { localeDisplayNames: { subdivisions?: Record<string, string> } }>;
+}
+
+interface CLDRMiscCharacterLabels {
+	main: Record<string, { characterLabelPatterns: Record<string, string> }>;
+}
+
+export async function loadLocalization(
+	locale: string,
+	version: string = LATEST_CLDR_VERSION,
 ): Promise<CLDRLocaleMap> {
-  const releaseVersion = version.replace(/\./g, '-');
-  const pathLocale = formatLocale(locale);
+	const jsonLocale = formatLocaleJson(locale);
 
-  // Load territory names from main XML
-  const territoryPromise = fetchAndCache(
-    `https://raw.githubusercontent.com/unicode-org/cldr/release-${releaseVersion}/common/main/${pathLocale}.xml`,
-    `cldr-${version}/messages-${locale}.json`,
-    (data) => parseLocalization(version, data, 'territory'),
-  );
+	const territoryPromise = importJsonModule<CLDRLocaleNamesTerritories>(
+		`cldr-localenames-full/main/${jsonLocale}/territories.json`,
+	).then((cldr) => cldr.main[jsonLocale].localeDisplayNames.territories ?? {});
 
-  // Load subdivision names from subdivision XML
-  const subdivisionPromise = fetchAndCache(
-    `https://raw.githubusercontent.com/unicode-org/cldr/release-${releaseVersion}/common/subdivisions/${
-      SUBDIVISION_FALLBACK_LOCALES[locale] || pathLocale
-    }.xml`,
-    `cldr-${version}/subdivisions-${locale}.json`,
-    (data) => parseLocalization(version, data, 'subdivision'),
-  );
+	const subdivisionPromise = importJsonModule<CLDRLocaleNamesDisplayNames>(
+		`cldr-localenames-full/main/${jsonLocale}/localeDisplayNames.json`,
+	).then((cldr) => cldr.main[jsonLocale].localeDisplayNames.subdivisions ?? {});
 
-  return Promise.all([subdivisionPromise, territoryPromise]).then(
-    ([subdivisions, territories]) => ({
-      subdivisions,
-      territories,
-    }),
-  );
+	const labelsPromise = importJsonModule<CLDRMiscCharacterLabels>(
+		`cldr-misc-full/main/${jsonLocale}/characterLabels.json`,
+	).then((cldr) => cldr.main[jsonLocale].characterLabelPatterns ?? {});
+
+	const [subdivisions, territories, labels] = await Promise.all([
+		subdivisionPromise,
+		territoryPromise,
+		labelsPromise,
+	]);
+
+	return {
+		labels,
+		subdivisions,
+		territories,
+	};
 }

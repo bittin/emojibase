@@ -45,7 +45,7 @@ adhere to the defined [data structure](#data-structure).
 ```ts
 import emojis from 'emojibase-data/<locale>/data.json';
 import compactEmojis from 'emojibase-data/<locale>/compact.json';
-import groupsSubgroups from 'emojibase-data/<locale>/meta.json';
+import groupsSubgroups from 'emojibase-data/<locale>/messages.json';
 ```
 
 The second group, versioned data, provides datasets for emoji and Unicode release versions. These
@@ -63,7 +63,9 @@ The third and last group, metadata, provides specialized datasets for unique use
 
 - `emojibase-data/meta/groups.json` - A map of non-localized emoji groups (Smileys & People),
   subgroups (Sky & Weather), and hierarchy, according to the official Unicode data files.
-- `emojibase-data/meta/hexcodes.json` - An array of all emoji hexcodes (hexadecimal codepoints).
+- `emojibase-data/meta/hexcodes.json` - A map of emoji hexcodes (hexadecimal codepoints) to an
+  object of hexcodes with different qualified status: fully qualified, minimally qualified, and
+  unqualified.
 - `emojibase-data/meta/unicode.json` - An array of all emoji unicode characters, including text and
   emoji presentation characters.
 - `emojibase-data/meta/unicode-names.json` - A map of hexcodes to official Unicode names for each
@@ -79,40 +81,10 @@ Each emoji character found within the pre-generated datasets are represented by 
 of the properties listed below. In an effort to reduce the overall dataset filesize, most property
 values have been implemented using integers,
 [with associated constants](https://github.com/milesj/emojibase/blob/master/packages/core/src/constants.ts).
-
-- `annotation` (`string`) - A localized description, provided by [CLDR][cldr], primarily used for
-  text-to-speech (TTS) and accessibility.
-- `emoji` (`string`) - The emoji presentation Unicode character.
-- `emoticon` (`string`) - If applicable, an emoticon representing the emoji character.
-- `gender` (`number`) - If applicable, the gender of the emoji character. `0` for female, `1` for
-  male.
-- `group` (`number`) - The categorical group the emoji belongs to. Undefined for uncategorized
-  emojis.
-- `hexcode` (`string`) - The hexadecimal representation of the emoji Unicode codepoint. If the emoji
-  supports both emoji and text variations, the hexcode _will not_ include the variation selector. If
-  a multi-person, multi-gender, or skin tone variation, the hexcode _will_ include zero width
-  joiners and variation selectors.
-- `order` (`number`) - The order in which emoji should be displayed on a device, through a keyboard
-  or emoji picker. Undefined for unordered emojis.
-- `shortcodes` (`string[]`) - An array of community curated shortcodes. _Does not include
-  surrounding colons_.
-- `skins` (`emoji[]`) - If applicable, an array of emoji objects for each skin tone modification,
-  starting at light skin, and ending with dark skin.
-- `subgroup` (`number`) - The categorical subgroup the emoji belongs to. Undefined for uncategorized
-  emojis.
-- `tags` (`string[]`) - An array of localized keywords, provided by [CLDR][cldr], to use for
-  searching and filtering.
-- `text` (`string`) - The text presentation Unicode character.
-- `tone` (`number | number[]`) - If applicable, the skin tone of the emoji character. `1` for light
-  skin, `2` for medium-light skin, `3` for medium skin, `4` for medium-dark skin, and `5` for dark
-  skin. Multi-person skin tones will be an array of values.
-- `type` (`number`) - The default presentation of the emoji character. `0` for text, `1` for emoji.
-- `unicode` (`string`) - Either the emoji or text presentation Unicode character. _Only available in
-  the compact dataset._
-- `version` (`number`) - The version in which the emoji character was released.
+View the [`Emoji`](/api/emojibase/interface/Emoji) object for a list of all available fields.
 
 > Not all properties will be found in the emoji object, as properties without an applicable value
-> are omitted from the emoji object.
+> are omitted from the emoji object. This helps to reduce the filesize!
 
 ```js
 {
@@ -156,8 +128,8 @@ values have been implemented using integers,
 ### Compact format
 
 While the emoji data is pretty thorough, not all of it may be required, and as such, a compact
-dataset is supported. This dataset supports the following properties: `annotation`, `emoticon`,
-`group`, `hexcode`, `order`, `shortcodes`, `skins`, `tags`, and `unicode`.
+dataset is supported. View the [`CompactEmoji`](/api/emojibase/interface/CompactEmoji) object for a
+list of all available fields.
 
 To use a compact dataset, replace `data.json` with `compact.json`.
 
@@ -195,13 +167,14 @@ import data from 'emojibase-data/en/compact.json';
 },
 ```
 
-### Metadata format
+### Messages format
 
-The metadata format is a special dataset that provides translations for groups, sub-groups, and any
-other related emoji metadata.
+The messages format is a special dataset that provides translations for groups, sub-groups, and any
+other related emoji metadata. The `key` in each message lines up with a defined TypeScript type
+alias.
 
 ```ts
-import data from 'emojibase-data/en/meta.json';
+import data from 'emojibase-data/en/messages.json';
 ```
 
 ```js
@@ -222,6 +195,13 @@ import data from 'emojibase-data/en/meta.json';
     },
     // ...
   ],
+  skinTones: [
+    {
+      key: 'light',
+      message: 'light skin tone',
+    },
+    // ...
+  ],
 };
 ```
 
@@ -229,23 +209,62 @@ import data from 'emojibase-data/en/meta.json';
 
 If you prefer to not inflate your bundle size with these large JSON datasets, you can fetch them
 from our CDN ([provided by jsdelivr.com](https://cdn.jsdelivr.net/npm/emojibase-data@latest/)) using
-`fetchFromCDN()`, `fetchEmojis()`, or `fetchShortcodes()`.
+[`fetchFromCDN()`](/api/emojibase/function/fetchFromCDN),
+[`fetchEmojis()`](/api/emojibase/function/fetchEmojis), or
+[`fetchShortcodes()`](/api/emojibase/function/fetchShortcodes).
 
 ```ts
-import { fetchFromCDN, fetchEmojis, fetchMetadata, fetchShortcodes } from 'emojibase';
+import { fetchFromCDN, fetchEmojis, fetchMessages, fetchShortcodes } from 'emojibase';
 
 const englishEmojis = await fetchFromCDN('en/data.json', { shortcodes: ['github'] });
 const japaneseCompactEmojis = await fetchEmojis('ja', { compact: true });
 const germanCldrShortcodes = await fetchShortcodes('de', 'cldr');
-const chineseTranslations = await fetchMetadata('zh');
+const chineseTranslations = await fetchMessages('zh');
 ```
 
-Learn more about these functions in the [API](./api.mdx).
+## Fetching from your own CDN
+
+If you want to load the JSON datasets from your own CDN, you can customize the `cdnUrl` using the
+options object.
+
+When `cdnUrl` is a string, `fetchFromCDN` will append `'/${path}'` to the url. Make sure to include
+the `version` within the `cdnUrl` yourself, it's not added automatically to give you control over
+its placement.
+
+```ts
+import { fetchFromCDN, fetchEmojis, fetchMessages, fetchShortcodes } from 'emojibase';
+
+const cdnUrl = 'https://example.com/cdn/emojidata/latest';
+
+const englishEmojis = await fetchFromCDN('en/data.json', { shortcodes: ['github'], cdnUrl });
+const japaneseCompactEmojis = await fetchEmojis('ja', { compact: true, cdnUrl });
+const germanCldrShortcodes = await fetchShortcodes('de', 'cldr', { cdnUrl });
+const chineseTranslations = await fetchMessages('zh', { cdnUrl });
+```
+
+`cdnUrl` can also be a function, so you have complete control over the format of the url. This
+function receives `path` and `version` as parameters. Version will be what you pass in within the
+options object, or it will default to `latest`. Note that `version` is also used for the cache key,
+so it's advised to set the option and not hard-code it in the `cdnUrl` function.
+
+```ts
+import { fetchFromCDN, fetchEmojis, fetchMessages, fetchShortcodes } from 'emojibase';
+
+function cdnUrl(path: string, version: string): string {
+  return `https://example.com/cdn/emojidata/${version}/${path}`;
+}
+
+const englishEmojis = await fetchFromCDN('en/data.json', { shortcodes: ['github'], cdnUrl });
+const japaneseCompactEmojis = await fetchEmojis('ja', { compact: true, cdnUrl });
+const germanCldrShortcodes = await fetchShortcodes('de', 'cldr', { cdnUrl });
+const chineseTranslations = await fetchMessages('zh', { cdnUrl });
+```
 
 ## Supported locales
 
 Follow locales are supported for both full and compact datasets.
 
+- Bengali (`bu`)
 - Chinese (`zh`)
 - Chinese, Traditional (`zh-hant`)
 - Danish (`da`)
@@ -256,6 +275,7 @@ Follow locales are supported for both full and compact datasets.
 - Finnish (`fi`)
 - French (`fr`)
 - German (`de`)
+- Hindu (`hi`)
 - Hungarian (`hu`)
 - Italian (`it`)
 - Japanese (`ja`)
@@ -283,163 +303,202 @@ Sorted by original size in ascending order.
     { label: 'Emojis', value: 'data' },
     { label: 'Emojis (compact)', value: 'compact' },
     { label: 'Shortcodes', value: 'shortcodes' },
-    { label: 'Metadata', value: 'metadata' },
+    { label: 'Messages', value: 'messages' },
     { label: 'Other', value: 'other' },
   ]}
 >
   <TabItem value="data">
 
-| File              |      Size |  Gzipped |
-| ----------------- | --------: | -------: |
-| zh-hant/data.json | 602.68 KB | 66.62 KB |
-| zh/data.json      | 627.42 KB | 73.26 KB |
-| sv/data.json      | 637.91 KB | 72.06 KB |
-| nb/data.json      | 639.03 KB | 72.68 KB |
-| da/data.json      |  644.1 KB | 72.36 KB |
-| en/data.json      |  645.5 KB | 71.05 KB |
-| en-gb/data.json   | 645.99 KB |  71.3 KB |
-| et/data.json      | 650.27 KB | 71.69 KB |
-| fi/data.json      |  653.2 KB | 75.16 KB |
-| fr/data.json      |  656.8 KB | 71.71 KB |
-| ko/data.json      | 657.79 KB | 75.58 KB |
-| nl/data.json      | 658.55 KB | 72.71 KB |
-| lt/data.json      |  658.8 KB | 75.03 KB |
-| pt/data.json      | 659.54 KB | 74.77 KB |
-| ja/data.json      | 664.15 KB | 76.22 KB |
-| ms/data.json      | 668.67 KB | 72.51 KB |
-| hu/data.json      | 669.67 KB |  74.9 KB |
-| es/data.json      |  676.5 KB | 74.85 KB |
-| es-mx/data.json   | 676.83 KB | 75.15 KB |
-| pl/data.json      | 677.04 KB | 78.64 KB |
-| it/data.json      | 679.61 KB | 76.61 KB |
-| de/data.json      | 681.15 KB | 79.59 KB |
-| ru/data.json      |    787 KB | 85.28 KB |
-| th/data.json      | 801.72 KB | 76.32 KB |
-| uk/data.json      | 804.46 KB | 84.23 KB |
+| File              |      Size |   Gzipped |
+| ----------------- | --------: | --------: |
+| zh-hant/data.json | 674.07 kB |  84.59 kB |
+| sv/data.json      | 698.15 kB |  82.79 kB |
+| nb/data.json      | 701.89 kB |  84.36 kB |
+| zh/data.json      | 708.75 kB |  93.53 kB |
+| da/data.json      | 710.08 kB |     86 kB |
+| fi/data.json      | 715.13 kB |  86.26 kB |
+| et/data.json      | 722.12 kB |  85.51 kB |
+| es/data.json      | 730.87 kB |     83 kB |
+| es-mx/data.json   | 732.06 kB |  83.39 kB |
+| lt/data.json      | 735.13 kB |  88.48 kB |
+| en/data.json      | 735.59 kB |  89.22 kB |
+| en-gb/data.json   | 735.59 kB |  89.22 kB |
+| ja/data.json      | 736.62 kB |  91.25 kB |
+| ms/data.json      | 743.18 kB |  86.71 kB |
+| nl/data.json      | 748.35 kB |  92.29 kB |
+| pt/data.json      | 751.02 kB |  94.34 kB |
+| hu/data.json      | 761.02 kB |  93.98 kB |
+| ko/data.json      | 761.63 kB | 100.11 kB |
+| vi/data.json      | 762.17 kB |  87.89 kB |
+| fr/data.json      | 764.67 kB |  95.29 kB |
+| de/data.json      | 768.58 kB |  97.99 kB |
+| pl/data.json      | 772.79 kB |  96.72 kB |
+| it/data.json      | 799.19 kB | 102.82 kB |
+| ru/data.json      | 897.47 kB | 104.02 kB |
+| th/data.json      | 913.12 kB |   92.7 kB |
+| uk/data.json      | 931.48 kB |    106 kB |
+| hi/data.json      | 977.49 kB | 103.19 kB |
+| bn/data.json      |   1.02 MB | 102.24 kB |
 
   </TabItem>
   <TabItem value="compact">
 
 | File                 |      Size |  Gzipped |
 | -------------------- | --------: | -------: |
-| zh-hant/compact.json | 426.67 KB | 58.26 KB |
-| zh/compact.json      | 451.41 KB | 64.89 KB |
-| sv/compact.json      |  461.9 KB | 63.54 KB |
-| nb/compact.json      | 463.01 KB | 64.49 KB |
-| da/compact.json      | 468.08 KB | 63.93 KB |
-| en/compact.json      | 469.49 KB |  62.8 KB |
-| en-gb/compact.json   | 469.97 KB | 63.05 KB |
-| et/compact.json      | 474.26 KB | 63.24 KB |
-| fi/compact.json      | 477.18 KB |  66.5 KB |
-| fr/compact.json      | 480.79 KB | 63.14 KB |
-| ko/compact.json      | 481.78 KB | 66.72 KB |
-| nl/compact.json      | 482.54 KB | 64.25 KB |
-| lt/compact.json      | 482.79 KB | 66.14 KB |
-| pt/compact.json      | 483.53 KB | 66.22 KB |
-| ja/compact.json      | 488.14 KB | 67.44 KB |
-| ms/compact.json      | 492.66 KB | 63.95 KB |
-| hu/compact.json      | 493.66 KB |  66.2 KB |
-| es/compact.json      | 500.49 KB | 66.27 KB |
-| es-mx/compact.json   | 500.82 KB | 66.56 KB |
-| pl/compact.json      | 501.03 KB | 69.97 KB |
-| it/compact.json      |  503.6 KB | 67.94 KB |
-| de/compact.json      | 505.14 KB | 70.64 KB |
-| ru/compact.json      | 610.99 KB | 76.28 KB |
-| th/compact.json      |  625.7 KB | 67.41 KB |
-| uk/compact.json      | 628.45 KB | 74.88 KB |
+| zh-hant/compact.json | 479.62 kB | 75.38 kB |
+| sv/compact.json      |  503.7 kB | 73.14 kB |
+| nb/compact.json      | 507.44 kB | 76.07 kB |
+| zh/compact.json      |  514.3 kB | 83.42 kB |
+| da/compact.json      | 515.63 kB |  76.4 kB |
+| fi/compact.json      | 520.68 kB | 76.38 kB |
+| et/compact.json      | 527.67 kB | 76.11 kB |
+| es/compact.json      | 536.42 kB | 73.51 kB |
+| es-mx/compact.json   | 537.61 kB |  73.8 kB |
+| lt/compact.json      | 540.68 kB | 78.71 kB |
+| en/compact.json      | 541.14 kB | 80.05 kB |
+| en-gb/compact.json   | 541.14 kB | 80.05 kB |
+| ja/compact.json      | 542.17 kB | 81.14 kB |
+| ms/compact.json      | 548.73 kB | 77.29 kB |
+| nl/compact.json      |  553.9 kB | 82.72 kB |
+| pt/compact.json      | 556.57 kB | 84.61 kB |
+| hu/compact.json      | 566.57 kB | 83.95 kB |
+| ko/compact.json      | 567.17 kB | 89.51 kB |
+| vi/compact.json      | 567.72 kB | 78.07 kB |
+| fr/compact.json      | 570.22 kB |  85.5 kB |
+| de/compact.json      | 574.13 kB | 87.44 kB |
+| pl/compact.json      | 578.34 kB | 86.66 kB |
+| it/compact.json      | 604.74 kB | 92.63 kB |
+| ru/compact.json      | 703.02 kB | 93.93 kB |
+| th/compact.json      | 718.67 kB | 82.66 kB |
+| uk/compact.json      | 737.03 kB | 95.63 kB |
+| hi/compact.json      | 783.04 kB | 92.86 kB |
+| bn/compact.json      |  821.3 kB | 92.12 kB |
 
   </TabItem>
   <TabItem value="shortcodes">
 
 | File                                |      Size |  Gzipped |
 | ----------------------------------- | --------: | -------: |
-| fr/shortcodes/emojibase.json        |      42 B |     61 B |
-| zh/shortcodes/emojibase.json        |     329 B |    205 B |
-| ja/shortcodes/emojibase.json        |   1.07 KB |    571 B |
-| ru/shortcodes/emojibase.json        |  23.59 KB |  6.34 KB |
-| en/shortcodes/github.json           |  41.14 KB | 14.19 KB |
-| en/shortcodes/iamcal.json           |  43.39 KB | 13.99 KB |
-| zh-hant/shortcodes/cldr-native.json | 124.69 KB | 24.88 KB |
-| en/shortcodes/emojibase-legacy.json | 124.84 KB | 23.63 KB |
-| zh/shortcodes/cldr-native.json      |  127.6 KB | 25.24 KB |
-| hu/shortcodes/cldr.json             | 130.33 KB | 24.98 KB |
-| ja/shortcodes/cldr.json             |  130.8 KB | 23.83 KB |
-| en-gb/shortcodes/cldr.json          | 131.36 KB | 24.51 KB |
-| en/shortcodes/cldr.json             | 131.43 KB | 24.53 KB |
-| zh-hant/shortcodes/cldr.json        | 132.45 KB | 22.89 KB |
-| nb/shortcodes/cldr.json             | 133.57 KB | 24.46 KB |
-| th/shortcodes/cldr.json             | 133.86 KB | 24.78 KB |
-| sv/shortcodes/cldr.json             | 133.97 KB | 24.83 KB |
-| et/shortcodes/cldr.json             | 134.43 KB | 24.76 KB |
-| da/shortcodes/cldr.json             |  134.8 KB | 24.54 KB |
-| fi/shortcodes/cldr.json             | 135.71 KB | 25.05 KB |
-| nl/shortcodes/cldr.json             | 138.39 KB | 25.17 KB |
-| zh/shortcodes/cldr.json             | 138.56 KB |  23.3 KB |
-| pt/shortcodes/cldr.json             | 138.93 KB | 25.34 KB |
-| de/shortcodes/cldr.json             | 139.16 KB | 25.34 KB |
-| ru/shortcodes/cldr.json             | 139.42 KB | 25.79 KB |
-| ja/shortcodes/cldr-native.json      | 139.95 KB | 26.28 KB |
-| en-gb/shortcodes/emojibase.json     | 140.31 KB | 27.73 KB |
-| en/shortcodes/emojibase.json        | 141.01 KB | 27.88 KB |
-| ms/shortcodes/cldr.json             | 145.43 KB | 25.44 KB |
-| lt/shortcodes/cldr.json             | 145.59 KB | 26.23 KB |
-| pl/shortcodes/cldr.json             | 145.63 KB | 26.33 KB |
-| ko/shortcodes/cldr-native.json      | 145.75 KB | 26.71 KB |
-| ko/shortcodes/cldr.json             | 145.84 KB | 24.97 KB |
-| es-mx/shortcodes/cldr.json          | 146.17 KB | 25.72 KB |
-| fr/shortcodes/cldr.json             | 146.37 KB | 25.68 KB |
-| es/shortcodes/cldr.json             | 146.41 KB | 25.68 KB |
-| it/shortcodes/cldr.json             | 146.55 KB | 25.98 KB |
-| uk/shortcodes/cldr.json             | 153.44 KB |  27.1 KB |
-| en/shortcodes/joypixels.json        | 163.35 KB | 28.25 KB |
-| ru/shortcodes/cldr-native.json      | 185.93 KB | 28.33 KB |
-| th/shortcodes/cldr-native.json      | 208.33 KB | 28.57 KB |
-| uk/shortcodes/cldr-native.json      | 211.14 KB | 30.16 KB |
+| fr/shortcodes/emojibase.json        |      42 B |     62 B |
+| en/shortcodes/cldr-native.json      |     258 B |    184 B |
+| en-gb/shortcodes/cldr-native.json   |     258 B |    184 B |
+| zh/shortcodes/emojibase-native.json |     298 B |    202 B |
+| zh/shortcodes/emojibase.json        |     347 B |    186 B |
+| ja/shortcodes/emojibase.json        |   1.02 kB |    472 B |
+| ja/shortcodes/emojibase-native.json |   1.09 kB |    571 B |
+| it/shortcodes/cldr-native.json      |   1.18 kB |    496 B |
+| nl/shortcodes/cldr-native.json      |   2.39 kB |    725 B |
+| ru/shortcodes/emojibase.json        |  19.23 kB |   5.9 kB |
+| ru/shortcodes/emojibase-native.json |  25.23 kB |  6.59 kB |
+| da/shortcodes/emojibase-native.json |  36.68 kB |   6.7 kB |
+| es/shortcodes/cldr-native.json      |  42.73 kB |  8.38 kB |
+| es-mx/shortcodes/cldr-native.json   |  42.76 kB |  8.47 kB |
+| de/shortcodes/cldr-native.json      |  43.33 kB |  6.84 kB |
+| nb/shortcodes/cldr-native.json      |  44.34 kB |   7.4 kB |
+| en/shortcodes/github.json           |  45.31 kB |  15.6 kB |
+| en/shortcodes/iamcal.json           |  47.83 kB | 15.11 kB |
+| pt/shortcodes/cldr-native.json      |   53.2 kB | 10.53 kB |
+| sv/shortcodes/emojibase-native.json |  54.62 kB | 10.14 kB |
+| fr/shortcodes/cldr-native.json      |  55.89 kB |  10.4 kB |
+| da/shortcodes/cldr-native.json      |  56.77 kB |   9.1 kB |
+| fi/shortcodes/cldr-native.json      |  69.88 kB |  10.7 kB |
+| et/shortcodes/cldr-native.json      |  71.04 kB | 12.06 kB |
+| sv/shortcodes/cldr-native.json      |  72.39 kB | 11.97 kB |
+| lt/shortcodes/cldr-native.json      |  120.4 kB | 20.59 kB |
+| pl/shortcodes/cldr-native.json      | 124.71 kB |  18.9 kB |
+| en/shortcodes/emojibase-legacy.json | 129.02 kB | 24.32 kB |
+| sv/shortcodes/emojibase.json        | 137.61 kB | 27.25 kB |
+| zh-hant/shortcodes/cldr-native.json | 139.82 kB | 27.14 kB |
+| zh/shortcodes/cldr-native.json      | 144.03 kB |  27.5 kB |
+| hu/shortcodes/cldr.json             | 147.25 kB | 27.16 kB |
+| ja/shortcodes/cldr.json             |  147.6 kB | 26.24 kB |
+| hu/shortcodes/cldr-native.json      |  147.9 kB | 25.67 kB |
+| en/shortcodes/cldr.json             | 148.77 kB | 26.83 kB |
+| en-gb/shortcodes/cldr.json          | 148.77 kB | 26.83 kB |
+| zh-hant/shortcodes/cldr.json        | 149.27 kB | 25.21 kB |
+| da/shortcodes/cldr.json             | 150.32 kB | 26.76 kB |
+| da/shortcodes/emojibase.json        | 150.69 kB | 29.99 kB |
+| sv/shortcodes/cldr.json             | 150.92 kB | 27.05 kB |
+| th/shortcodes/cldr.json             | 150.97 kB |  27.1 kB |
+| nb/shortcodes/cldr.json             |  151.5 kB | 26.79 kB |
+| et/shortcodes/cldr.json             | 152.36 kB | 27.01 kB |
+| fi/shortcodes/cldr.json             | 153.47 kB | 27.39 kB |
+| nl/shortcodes/cldr.json             | 156.87 kB | 27.49 kB |
+| ja/shortcodes/cldr-native.json      | 156.96 kB | 28.82 kB |
+| vi/shortcodes/cldr.json             | 157.32 kB | 26.44 kB |
+| de/shortcodes/cldr.json             | 157.47 kB | 27.62 kB |
+| zh/shortcodes/cldr.json             | 157.57 kB |  25.7 kB |
+| en/shortcodes/emojibase.json        | 157.82 kB | 30.03 kB |
+| en-gb/shortcodes/emojibase.json     | 157.82 kB | 30.03 kB |
+| ru/shortcodes/cldr.json             | 158.47 kB | 27.99 kB |
+| pt/shortcodes/cldr.json             | 158.65 kB | 27.69 kB |
+| bn/shortcodes/cldr.json             | 161.54 kB | 28.37 kB |
+| ms/shortcodes/cldr.json             | 164.58 kB |  27.8 kB |
+| hi/shortcodes/cldr.json             | 164.82 kB | 29.08 kB |
+| pl/shortcodes/cldr.json             | 164.96 kB | 28.54 kB |
+| lt/shortcodes/cldr.json             | 165.08 kB | 28.53 kB |
+| it/shortcodes/cldr.json             | 165.37 kB | 28.28 kB |
+| ko/shortcodes/cldr-native.json      | 165.47 kB | 29.22 kB |
+| es-mx/shortcodes/cldr.json          | 165.53 kB | 28.01 kB |
+| fr/shortcodes/cldr.json             | 165.83 kB | 28.03 kB |
+| es/shortcodes/cldr.json             | 165.87 kB | 27.99 kB |
+| ko/shortcodes/cldr.json             | 166.01 kB | 27.46 kB |
+| uk/shortcodes/cldr.json             | 172.82 kB | 29.26 kB |
+| vi/shortcodes/cldr-native.json      | 178.58 kB | 29.13 kB |
+| ru/shortcodes/cldr-native.json      | 212.58 kB | 31.13 kB |
+| en/shortcodes/joypixels.json        | 223.11 kB | 34.54 kB |
+| th/shortcodes/cldr-native.json      |    235 kB | 31.32 kB |
+| uk/shortcodes/cldr-native.json      | 238.37 kB | 32.93 kB |
+| hi/shortcodes/cldr-native.json      | 269.67 kB | 33.37 kB |
+| bn/shortcodes/cldr-native.json      | 279.18 kB | 32.56 kB |
 
   </TabItem>
-  <TabItem value="metadata">
+  <TabItem value="messages">
 
-| File              |    Size | Gzipped |
-| ----------------- | ------: | ------: |
-| zh/meta.json      | 5.74 KB | 1.81 KB |
-| zh-hant/meta.json | 5.79 KB |  1.8 KB |
-| en/meta.json      | 6.05 KB |  1.5 KB |
-| en-gb/meta.json   | 6.05 KB | 1.52 KB |
-| sv/meta.json      | 6.08 KB | 1.71 KB |
-| da/meta.json      | 6.08 KB |  1.7 KB |
-| ms/meta.json      | 6.08 KB | 1.72 KB |
-| ko/meta.json      | 6.11 KB | 1.94 KB |
-| nb/meta.json      | 6.11 KB | 1.71 KB |
-| et/meta.json      | 6.15 KB | 1.75 KB |
-| it/meta.json      | 6.16 KB | 1.74 KB |
-| nl/meta.json      | 6.17 KB | 1.73 KB |
-| pl/meta.json      | 6.17 KB | 1.87 KB |
-| de/meta.json      |  6.2 KB |  1.8 KB |
-| fi/meta.json      |  6.2 KB | 1.79 KB |
-| pt/meta.json      | 6.26 KB | 1.79 KB |
-| es-mx/meta.json   |  6.3 KB |  1.8 KB |
-| es/meta.json      |  6.3 KB |  1.8 KB |
-| ja/meta.json      |  6.3 KB | 2.08 KB |
-| hu/meta.json      | 6.33 KB | 1.88 KB |
-| fr/meta.json      | 6.34 KB | 1.82 KB |
-| lt/meta.json      | 6.36 KB | 1.85 KB |
-| ru/meta.json      | 7.27 KB | 2.19 KB |
-| uk/meta.json      | 7.32 KB | 2.23 KB |
-| th/meta.json      | 8.43 KB | 2.28 KB |
+| File                  |    Size | Gzipped |
+| --------------------- | ------: | ------: |
+| zh/messages.json      |  6.2 kB | 1.93 kB |
+| zh-hant/messages.json |  6.2 kB | 1.93 kB |
+| en/messages.json      |  6.5 kB | 1.59 kB |
+| en-gb/messages.json   |  6.5 kB |  1.6 kB |
+| da/messages.json      | 6.51 kB | 1.79 kB |
+| sv/messages.json      | 6.51 kB |  1.8 kB |
+| ms/messages.json      | 6.54 kB | 1.81 kB |
+| nb/messages.json      | 6.56 kB |  1.8 kB |
+| ko/messages.json      | 6.57 kB | 2.09 kB |
+| et/messages.json      | 6.61 kB | 1.85 kB |
+| nl/messages.json      | 6.64 kB | 1.82 kB |
+| de/messages.json      | 6.65 kB | 1.91 kB |
+| it/messages.json      | 6.65 kB | 1.83 kB |
+| fi/messages.json      | 6.66 kB | 1.88 kB |
+| pl/messages.json      | 6.66 kB | 1.99 kB |
+| pt/messages.json      | 6.74 kB | 1.89 kB |
+| es-mx/messages.json   | 6.76 kB | 1.89 kB |
+| es/messages.json      | 6.77 kB |  1.9 kB |
+| ja/messages.json      | 6.78 kB | 2.24 kB |
+| fr/messages.json      | 6.78 kB | 1.91 kB |
+| hu/messages.json      | 6.81 kB |    2 kB |
+| vi/messages.json      | 6.85 kB | 2.12 kB |
+| lt/messages.json      | 6.85 kB | 1.95 kB |
+| ru/messages.json      | 7.84 kB | 2.33 kB |
+| uk/messages.json      | 7.91 kB | 2.38 kB |
+| hi/messages.json      | 8.51 kB | 2.31 kB |
+| bn/messages.json      | 8.66 kB | 2.32 kB |
+| th/messages.json      |  9.1 kB | 2.42 kB |
 
   </TabItem>
   <TabItem value="other">
 
 | File                    |      Size |  Gzipped |
 | ----------------------- | --------: | -------: |
-| meta/groups.json        |   3.78 KB |  1.21 KB |
-| meta/unicode.json       |  65.18 KB | 11.43 KB |
-| meta/hexcodes.json      |  83.55 KB | 11.42 KB |
-| versions/unicode.json   |  85.16 KB | 10.86 KB |
-| versions/emoji.json     |   85.2 KB | 10.96 KB |
-| meta/unicode-names.json | 210.09 KB | 26.32 KB |
+| meta/groups.json        |   3.86 kB |  1.24 kB |
+| meta/unicode.json       |  72.55 kB | 12.63 kB |
+| versions/unicode.json   |  95.08 kB | 11.98 kB |
+| versions/emoji.json     |  95.12 kB | 12.08 kB |
+| meta/unicode-names.json | 237.34 kB | 28.48 kB |
+| meta/hexcodes.json      |  258.7 kB | 28.51 kB |
 
   </TabItem>
 </Tabs>
 
-[cldr]: http://cldr.unicode.org/index/downloads/cldr-38
+[cldr]: http://cldr.unicode.org/index/downloads/cldr-46

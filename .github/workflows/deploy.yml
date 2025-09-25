@@ -8,9 +8,11 @@ jobs:
     name: Docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: yarn install --ignore-engines --frozen-lockfile
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: yarn
+      - run: yarn install --immutable
       - run: yarn run build
       - name: Add key to allow access to repository
         env:
@@ -29,9 +31,11 @@ jobs:
         env:
           GIT_USER: milesj
           USE_SSH: true
+          NODE_OPTIONS: --openssl-legacy-provider
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "gh-actions"
+          yarn install --immutable
+          yarn run pack
           cd website
-          yarn install --ignore-engines --frozen-lockfile
           yarn run deploy

@@ -1,4 +1,126 @@
-> Versions that only update `test-data.json` are omitted from the changelog.
+# Change Log
+
+## 16.0.0
+
+### Major Changes
+
+- d237386: Update to Emoji v16 and CLDR 46.
+- d237386: Drop Node.js v16 support. Requires >= v18.12.
+
+### Patch Changes
+
+- Updated dependencies [e9b9a9a]
+- Updated dependencies [d237386]
+- Updated dependencies [d237386]
+  - emojibase@16.0.0
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+### 15.2.2 - 2024-06-09
+
+#### 🐞 Fixes
+
+- Fix missing group. (#176) ([9f4d2a4](https://github.com/milesj/emojibase/commit/9f4d2a4)), closes
+  [#176](https://github.com/milesj/emojibase/issues/176)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+## <small>15.2.1 (2024-06-03)</small>
+
+- new: Support CLDR 45 (new annotations). (#173)
+  ([d2c587f](https://github.com/milesj/emojibase/commit/d2c587f)), closes
+  [#173](https://github.com/milesj/emojibase/issues/173)
+- deps(typescript): Update to v5.4. ([8756294](https://github.com/milesj/emojibase/commit/8756294))
+
+## 15.2.0 - 2023-12-03
+
+#### 🚀 Updates
+
+- Add shortcodes for v15.1. (#167) ([44afd19](https://github.com/milesj/emojibase/commit/44afd19)),
+  closes [#167](https://github.com/milesj/emojibase/issues/167)
+- Support Emoji v15.1. (#164) ([b2e0ec6](https://github.com/milesj/emojibase/commit/b2e0ec6)),
+  closes [#164](https://github.com/milesj/emojibase/issues/164)
+- Use official CLDR JSON packages. (#166)
+  ([f6b2dc9](https://github.com/milesj/emojibase/commit/f6b2dc9)), closes
+  [#166](https://github.com/milesj/emojibase/issues/166)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+## 15.1.0 - 2023-10-03
+
+#### 🚀 Updates
+
+- Support CLDR 43. (#163) ([1094148](https://github.com/milesj/emojibase/commit/1094148)), closes
+  [#163](https://github.com/milesj/emojibase/issues/163)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+# 15.0.0 - 2023-06-11
+
+#### 🎉 Release
+
+- Support emoji v15! (#146) ([55286b1](https://github.com/milesj/emojibase/commit/55286b1)), closes
+  [#146](https://github.com/milesj/emojibase/issues/146)
+
+#### 💥 Breaking
+
+- Align emojibase version with spec. ([614dda2](https://github.com/milesj/emojibase/commit/614dda2))
+- Drop Node v14 support. Require v16.12+.
+  ([45a889d](https://github.com/milesj/emojibase/commit/45a889d))
+
+#### 📦 Dependencies
+
+- **[packemon]** Update to v2.4.1. ([b5bff35](https://github.com/milesj/emojibase/commit/b5bff35))
+- **[packemon]** Update to v3. ([ecc31da](https://github.com/milesj/emojibase/commit/ecc31da))
+- Update dev and test dependencies. ([57b5f18](https://github.com/milesj/emojibase/commit/57b5f18))
+
+#### 🛠 Internals
+
+- Migrate from beemo to moon. (#144)
+  ([0607d6e](https://github.com/milesj/emojibase/commit/0607d6e)), closes
+  [#144](https://github.com/milesj/emojibase/issues/144)
+
+**Note:** Version bump only for package emojibase-test-utils
+
+> Versions that only update `test-*.json` are omitted from the changelog.
+
+# 15.0.0 - 2023-06-10
+
+#### 🎉 Release
+
+- Emojibase versions will now align with the emoji/unicode versions.
+- Updated to [Emoji 15](https://emojipedia.org/emoji-15.0/) and
+  [Unicode 15](http://unicode.org/versions/Unicode15.0.0/).
+  - 21 new emoji (31 including skin tones variations).
+- Updated to [CLDR 42](http://cldr.unicode.org/index/downloads/cldr-42).
+
+# 7.0.0 - 2021-10-15
+
+#### 🎉 Release
+
+- Updated to [Emoji 14](https://emojipedia.org/emoji-14.0/) and
+  [Unicode 14](http://unicode.org/versions/Unicode14.0.0/).
+  - 37 new emoji (117 including skin tones variations).
+  - Handshake now supports mixed skin tones.
+- Updated to [CLDR 40](http://cldr.unicode.org/index/downloads/cldr-40).
+- Updated shortcodes.
+
+#### 💥 Breaking
+
+- Dropped Node.js v10 support. Requires v12.17 and above.
+- Renamed the `annotation` field to `label`.
+- Renamed `loadMeta` to `loadMessages`.
+
+#### 🚀 Updates
+
+- Updated to [CLDR 40](http://cldr.unicode.org/index/downloads/cldr-40).
+
+### 6.2.1 - 2021-05-13
+
+#### 🐞 Fixes
+
+- Fixed an issue where certain `test-*.json` files were not published.
 
 ## 6.2.0 - 2020-01-17
 

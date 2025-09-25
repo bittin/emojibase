@@ -1,4 +1,161 @@
-## 6.2.0 - 2021-04-27
+# Change Log
+
+## 16.0.3
+
+### Patch Changes
+
+- 53fcdc1: Updated Chinese Traditional translations.
+
+## 16.0.2
+
+### Patch Changes
+
+- d0e4bcc: Fixed a broken publish.
+
+## 16.0.1
+
+### Patch Changes
+
+- 3faf950: Add missing files and types for `vi` data.
+
+## 16.0.0
+
+### Major Changes
+
+- e9b9a9a: Add `vi` (Vietnamese) language.
+- d237386: Update to Emoji v16 and CLDR 46.
+- d237386: Drop Node.js v16 support. Requires >= v18.12.
+
+### Patch Changes
+
+- Updated dependencies [e9b9a9a]
+- Updated dependencies [d237386]
+- Updated dependencies [d237386]
+  - emojibase@16.0.0
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+### 15.3.2 - 2024-06-09
+
+#### 🐞 Fixes
+
+- Fix missing group. (#176) ([9f4d2a4](https://github.com/milesj/emojibase/commit/9f4d2a4)), closes
+  [#176](https://github.com/milesj/emojibase/issues/176)
+
+**Note:** Version bump only for package emojibase-data
+
+## <small>15.3.1 (2024-06-03)</small>
+
+- new: Support CLDR 45 (new annotations). (#173)
+  ([d2c587f](https://github.com/milesj/emojibase/commit/d2c587f)), closes
+  [#173](https://github.com/milesj/emojibase/issues/173)
+- deps(typescript): Update to v5.4. ([8756294](https://github.com/milesj/emojibase/commit/8756294))
+
+## 15.3.0 - 2023-12-03
+
+#### 🚀 Updates
+
+- Add shortcodes for v15.1. (#167) ([44afd19](https://github.com/milesj/emojibase/commit/44afd19)),
+  closes [#167](https://github.com/milesj/emojibase/issues/167)
+- Support Emoji v15.1. (#164) ([b2e0ec6](https://github.com/milesj/emojibase/commit/b2e0ec6)),
+  closes [#164](https://github.com/milesj/emojibase/issues/164)
+- Use official CLDR JSON packages. (#166)
+  ([f6b2dc9](https://github.com/milesj/emojibase/commit/f6b2dc9)), closes
+  [#166](https://github.com/milesj/emojibase/issues/166)
+
+**Note:** Version bump only for package emojibase-data
+
+## 15.2.0 - 2023-10-06
+
+#### 🚀 Updates
+
+- Add hi (Hindi) language. (#165) ([ada3784](https://github.com/milesj/emojibase/commit/ada3784)),
+  closes [#165](https://github.com/milesj/emojibase/issues/165)
+
+#### 📘 Docs
+
+- Update file sizes. ([bb8b93a](https://github.com/milesj/emojibase/commit/bb8b93a))
+
+**Note:** Version bump only for package emojibase-data
+
+## 15.1.0 - 2023-10-03
+
+#### 🚀 Updates
+
+- Add `bn` (Bengali) language. (#161)
+  ([84ea37c](https://github.com/milesj/emojibase/commit/84ea37c)), closes
+  [#161](https://github.com/milesj/emojibase/issues/161)
+- Support CLDR 43. (#163) ([1094148](https://github.com/milesj/emojibase/commit/1094148)), closes
+  [#163](https://github.com/milesj/emojibase/issues/163)
+
+**Note:** Version bump only for package emojibase
+
+# 15.0.0 - 2023-06-11
+
+#### 🎉 Release
+
+- Support emoji v15! (#146) ([55286b1](https://github.com/milesj/emojibase/commit/55286b1)), closes
+  [#146](https://github.com/milesj/emojibase/issues/146)
+
+#### 💥 Breaking
+
+- Align emojibase version with spec. ([614dda2](https://github.com/milesj/emojibase/commit/614dda2))
+
+#### 🛠 Internals
+
+- Get website API build working. ([0cb4284](https://github.com/milesj/emojibase/commit/0cb4284))
+
+**Note:** Version bump only for package emojibase-data
+
+# 15.0.0 - 2023-06-10
+
+#### 🎉 Release
+
+- Emojibase versions will now align with the emoji/unicode versions.
+- Updated to [Emoji 15](https://emojipedia.org/emoji-15.0/) and
+  [Unicode 15](http://unicode.org/versions/Unicode15.0.0/).
+  - 21 new emoji (31 including skin tones variations).
+- Updated to [CLDR 42](http://cldr.unicode.org/index/downloads/cldr-42).
+- Updated shortcodes.
+
+### 7.0.1 - 2021-12-19
+
+#### 🛠 Internals
+
+- Fixed spurious build issues.
+
+# 7.0.0 - 2021-10-15
+
+#### 🎉 Release
+
+- Updated to [Emoji 14](https://emojipedia.org/emoji-14.0/) and
+  [Unicode 14](http://unicode.org/versions/Unicode14.0.0/).
+  - 37 new emoji (117 including skin tones variations).
+  - Handshake now supports mixed skin tones.
+- Updated to [CLDR 40](http://cldr.unicode.org/index/downloads/cldr-40).
+- Updated shortcodes.
+
+#### 💥 Breaking
+
+- Updated `emojibase` shortcode preset to transliterate for all languages.
+- Updated the `emoticon` property to also support an array of strings.
+- Updated `meta/hexcodes.json` to be a mapping of hexcodes based on qualified status, instead of a
+  list of hexcodes.
+- Renamed the `annotation` field to `label`.
+- Renamed `meta.json` datasets to `messages.json`.
+
+#### 🚀 Updates
+
+- Added uppercased versions of emoticons when applicable.
+- Added `emojibase-native` shortcodes that do _not_ transliterate. Only applicable to languages that
+  have been translated so far.
+- Added Swedish shortcodes (`sv/shortcodes/emojibase.json`).
+- Added `skinTones` translations to `messages.json`.
+- Updated to [CLDR 40](http://cldr.unicode.org/index/downloads/cldr-40).
+- Improved TypeScript declarations.
+
+## 6.2.0 - 2021-05-13
 
 #### 🚀 Updates
 

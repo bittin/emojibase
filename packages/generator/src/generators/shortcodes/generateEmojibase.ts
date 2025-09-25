@@ -1,112 +1,171 @@
-import path from 'path';
-import { appendSkinToneIndex, Emoji, SUPPORTED_LOCALES, TEXT } from 'emojibase';
+import path from 'node:path';
+import { appendSkinToneIndex, type Emoji, type Hexcode, SUPPORTED_LOCALES, TEXT } from 'emojibase';
 import { SHORTCODE_GUIDELINES } from '../../constants';
-import toArray from '../../helpers/toArray';
-import writeDataset from '../../helpers/writeDataset';
-import writeFile from '../../helpers/writeFile';
-import loadPoMeta from '../../loaders/loadPoMeta';
-import loadPoShortcodes from '../../loaders/loadPoShortcodes';
-import { ShortcodeDataMap } from '../../types';
-import Database from '../Database';
+import { writeDataset } from '../../helpers/writeDataset';
+import { writeFile } from '../../helpers/writeFile';
+import { loadDataset } from '../../loaders/loadDatasetPackage';
+import { loadPoMessages } from '../../loaders/loadPoMessages';
+import { loadPoShortcodes } from '../../loaders/loadPoShortcodes';
+import type { ShortcodeDataMap } from '../../types';
+import { Database } from '../Database';
 
-export default async function generateEmojibase(db: Database) {
-  db.preset = 'emojibase';
+export async function generateEmojibase(db: Database) {
+	db.preset = 'emojibase';
 
-  let englishShortcodes: ShortcodeDataMap = {};
+	let englishShortcodes: ShortcodeDataMap = {};
+	const missingShortcodes = new Set<Hexcode>();
 
-  await Promise.all(
-    SUPPORTED_LOCALES.map(async (locale) => {
-      const shortcodes: ShortcodeDataMap = {};
-      const translations = await loadPoShortcodes(locale);
-      const metaTranslations = await loadPoMeta(locale);
-      const toneMsg = metaTranslations.getMessage('tone');
-      let count = 0;
+	await Promise.all(
+		SUPPORTED_LOCALES.map(async (locale) => {
+			const translations = await loadPoShortcodes(locale);
+			const metaTranslations = await loadPoMessages(locale);
+			const shortcodes: ShortcodeDataMap = {};
+			const shortcodesNative: ShortcodeDataMap = {};
+			const skinToneSuffix = Database.slugify(metaTranslations.getMessage('tone'), true);
+			const skinToneSuffixNative = Database.slugify(metaTranslations.getMessage('tone'));
+			let count = 0;
 
-      db.emojiList.forEach((emoji) => {
-        const items = translations.itemsByComment[emoji.hexcode];
+			db.emojiList.forEach((emoji) => {
+				const items = translations.itemsByComment[emoji.hexcode];
 
-        if (!items) {
-          return;
-        }
+				if (!items) {
+					if (locale === 'en') {
+						missingShortcodes.add(emoji.hexcode);
+					}
 
-        const list = items
-          .map((item) => Database.slugify(toArray(item.msgstr).join('')))
-          .filter(Boolean)
-          .sort();
+					return;
+				}
 
-        if (list.length === 0) {
-          return;
-        }
+				const list: string[] = [];
+				const listNative: string[] = [];
 
-        count += 1;
-        shortcodes[emoji.hexcode] = db.formatShortcodes(list);
+				items
+					.map((item) => translations.getMessage(item.msgid))
+					.filter(Boolean)
+					.forEach((msg) => {
+						const code = Database.slugify(msg, true);
+						const codeNative = Database.slugify(msg);
 
-        if (emoji.modifications) {
-          Object.values(emoji.modifications).forEach((mod) => {
-            shortcodes[mod.hexcode] = db.formatShortcodes(
-              list.map((code) => appendSkinToneIndex(code, mod, toneMsg)),
-            );
-          });
-        }
-      });
+						// Avoid dupes
+						if (list.includes(code)) {
+							return;
+						}
 
-      if (locale === 'en') {
-        englishShortcodes = shortcodes;
-      }
+						list.push(code);
 
-      if (count === 0) {
-        return Promise.resolve();
-      }
+						if (codeNative !== code) {
+							listNative.push(codeNative);
+						}
+					});
 
-      return Promise.all([
-        writeDataset(`${locale}/shortcodes/emojibase.raw.json`, shortcodes),
-        writeDataset(`${locale}/shortcodes/emojibase.json`, shortcodes, true),
-      ]);
-    }),
-  );
+				if (list.length === 0) {
+					return;
+				}
 
-  // Organize and sort the resources file using the raw dataset
-  // eslint-disable-next-line
-  const emojisSource: Emoji[] = require(path.join(process.cwd(), 'packages/data/en/data.raw.json'));
-  const output: string[] = [
-    '/* eslint-disable sort-keys */',
-    '',
-    SHORTCODE_GUIDELINES,
-    '',
-    'export default {',
-  ];
-  let lastVersion = 0;
+				list.sort();
+				listNative.sort();
 
-  // Sort by version -> order
-  emojisSource.sort((a, b) =>
-    a.version === b.version ? (a.order ?? -1) - (b.order ?? -1) : a.version - b.version,
-  );
+				count += 1;
+				shortcodes[emoji.hexcode] = db.formatShortcodes(list);
 
-  // Add each emoji to the list
-  emojisSource.forEach((emoji) => {
-    if (emoji.version !== lastVersion) {
-      output.push('');
-      output.push(`  // VERSION ${emoji.version}`);
+				if (listNative.length > 0) {
+					shortcodesNative[emoji.hexcode] = db.formatShortcodes(listNative);
+				}
 
-      lastVersion = emoji.version;
-    }
+				Object.values(emoji.modifications ?? {}).forEach((mod) => {
+					shortcodes[mod.hexcode] = db.formatShortcodes(
+						list.map((code) => appendSkinToneIndex(code, mod, skinToneSuffix)),
+					);
 
-    const unicode = emoji.type === TEXT ? emoji.text : emoji.emoji;
-    let codes = englishShortcodes[emoji.hexcode] || [];
+					if (listNative.length > 0) {
+						shortcodesNative[mod.hexcode] = db.formatShortcodes(
+							listNative.map((code) => appendSkinToneIndex(code, mod, skinToneSuffixNative)),
+						);
+					}
+				});
+			});
 
-    if (!Array.isArray(codes)) {
-      codes = [codes];
-    }
+			if (locale === 'en') {
+				englishShortcodes = shortcodes;
+			}
 
-    output.push(`  // ${unicode} ${emoji.annotation}`);
-    output.push(`  '${emoji.hexcode}': [${codes.map((sc) => `'${sc}'`).join(', ')}],`);
-  });
+			if (count === 0) {
+				return undefined;
+			}
 
-  output.push('};\n');
+			const promises: Promise<unknown>[] = [
+				writeDataset(`${locale}/shortcodes/emojibase.raw.json`, shortcodes),
+				writeDataset(`${locale}/shortcodes/emojibase.json`, shortcodes, true),
+			];
 
-  await writeFile(
-    path.join(process.cwd(), 'packages/generator/src/resources'),
-    'shortcodes.ts',
-    output.join('\n'),
-  );
+			if (Object.keys(shortcodesNative).length > 0) {
+				promises.push(
+					writeDataset(`${locale}/shortcodes/emojibase-native.raw.json`, shortcodesNative),
+					writeDataset(`${locale}/shortcodes/emojibase-native.json`, shortcodesNative, true),
+				);
+			}
+
+			return Promise.all(promises);
+		}),
+	);
+
+	// Organize and sort the resources file using the raw dataset
+	const emojisSource = await loadDataset<Emoji[]>('en/data.raw.json');
+
+	const output: string[] = [
+		'/* eslint-disable sort-keys */',
+		'',
+		SHORTCODE_GUIDELINES,
+		'',
+		'export const shortcodes = {',
+	];
+	const poAdditions: string[] = [];
+	let lastVersion = 0;
+
+	// Sort by version -> order
+	emojisSource.sort((a, b) =>
+		a.version === b.version ? (a.order ?? -1) - (b.order ?? -1) : a.version - b.version,
+	);
+
+	// Add each emoji to the list
+	emojisSource.forEach((emoji) => {
+		if (emoji.version !== lastVersion) {
+			output.push('', `  // VERSION ${emoji.version}`);
+
+			lastVersion = emoji.version;
+		}
+
+		const unicode = emoji.type === TEXT ? emoji.text : emoji.emoji;
+		let codes = englishShortcodes[emoji.hexcode] || [];
+
+		if (!Array.isArray(codes)) {
+			codes = [codes];
+		}
+
+		output.push(
+			`  // ${unicode} ${emoji.label}`,
+			`  '${emoji.hexcode}': [${codes.map((sc) => `'${sc}'`).join(', ')}],`,
+		);
+
+		if (missingShortcodes.has(emoji.hexcode)) {
+			poAdditions.push(
+				'',
+				`# ${emoji.hexcode}`,
+				`msgctxt "EMOJI: ${unicode} ${emoji.label}"`,
+				'msgid ""',
+				'msgstr ""',
+			);
+		}
+	});
+
+	output.push('};\n');
+
+	await writeFile(
+		path.join(process.cwd(), 'packages/generator/src/resources'),
+		'shortcodes.ts',
+		output.join('\n'),
+	);
+
+	// eslint-disable-next-line no-console
+	console.log(poAdditions.join('\n'));
 }

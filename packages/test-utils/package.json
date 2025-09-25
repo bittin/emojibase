@@ -1,6 +1,6 @@
 {
   "name": "emojibase-test-utils",
-  "version": "6.2.1",
+  "version": "16.0.0",
   "description": "Test utilities for working with Emojibase data.",
   "keywords": [
     "emoji",
@@ -16,11 +16,13 @@
   "author": "Miles Johnson",
   "license": "MIT",
   "main": "./lib/index.js",
-  "types": "./dts/index.d.ts",
+  "types": "./lib/index.d.ts",
   "files": [
-    "dts/**/*.d.ts",
-    "lib/**/*.{js,map}",
-    "src/**/*.{ts,tsx,json}"
+    "lib/**/*",
+    "src/**/*",
+    "test-data.json",
+    "test-messages.json",
+    "test-shortcodes.json"
   ],
   "sideEffects": false,
   "publishConfig": {
@@ -34,10 +36,11 @@
     "url": "https://ko-fi.com/milesjohnson"
   },
   "packemon": {
+    "bundle": true,
+    "format": "lib",
     "platform": "node"
   },
   "engines": {
-    "node": ">=10.3.0",
-    "npm": ">=6.1.0"
+    "node": ">=18.12.0"
   }
 }

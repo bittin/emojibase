@@ -20,7 +20,7 @@ collection of shortcodes that map to emoji hexcodes. They're entirely platform d
 
 Localized shortcodes derived from the official Unicode [CLDR][cldr] annotations. Non-Latin languages
 are transliterated to a Latin character equivalent, but may not be entirely accurate. These are
-basically slugified variations of the `annotation` field in the Emojibase emoji object.
+basically slugified variations of the `label` field in the Emojibase emoji object.
 
 ```
 // 😁 beaming face with smiling eyes
@@ -31,8 +31,9 @@ basically slugified variations of the `annotation` field in the Emojibase emoji 
 
 ### `cldr-native`
 
-Like [`cldr`](#cldr) but shortcodes are not transliterated to Latin characters. These presets _do
-not_ exist for Latin based languages.
+Like [`cldr`](#cldr) but shortcodes are not transliterated to Latin characters. Furthermore, this
+preset will only include shortcodes that do not contain shortcodes that already exist in the `cldr`
+preset.
 
 ```
 // 😁 beaming face with smiling eyes
@@ -58,7 +59,14 @@ Emojibase shortcodes that are carefully crafted and maintained in an effort to p
 - Commonly used shortcodes from other presets will be supported for interoperability and backwards
   compatibility. This does not guarantee 100% compatibility across the board.
 
-With this standard in place, we would also like to provide localized versions in the future.
+With this standard in place, we would also like to provide localized versions in the future. For
+languages that are localized, all shortcodes are transliterated to Latin characters.
+
+### `emojibase-native`
+
+Like [`emojibase`](#emojibase) but shortcodes are _not_ transliterated to Latin characters.
+Furthermore, this preset will only include shortcodes that do not contain shortcodes that already
+exist in the `emojibase` preset.
 
 ### `emojibase-legacy`
 
@@ -99,29 +107,31 @@ An alias for the [`iamcal`](#iamcal) preset.
 
 | Locale                   | `cldr` | `cldr-native` | `emojibase` | `emojibase-legacy` | `github` | `iamcal` | `joypixels` |
 | ------------------------ | :----: | :-----------: | :---------: | :----------------: | :------: | :------: | :---------: |
-| Chinese (zh)             |   ✅   |      ✅       |     ✳️      |                    |          |          |             |
+| Bengali (bn)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Chinese (zh)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Chinese, Trad. (zh-hant) |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
-| Danish (da)              |   ✅   |               |     ✴️      |                    |          |          |             |
-| Dutch (nl)               |   ✅   |               |     ✴️      |                    |          |          |             |
-| English (en)             |   ✅   |               |     ✅      |         ✅         |    ✅    |    ✅    |     ✅      |
-| English, GB (en-gb)      |   ✅   |               |     ✴️      |                    |          |          |             |
-| Estonian (et)            |   ✅   |               |     ✴️      |                    |          |          |             |
-| Finnish (fi)             |   ✅   |               |     ✴️      |                    |          |          |             |
-| French (fr)              |   ✅   |               |     ✴️      |                    |          |          |             |
-| German (de)              |   ✅   |               |     ✴️      |                    |          |          |             |
-| Hungarian (hu)           |   ✅   |               |     ✴️      |                    |          |          |             |
-| Italian (it)             |   ✅   |               |     ✴️      |                    |          |          |             |
-| Japanese (ja)            |   ✅   |      ✅       |     ✳️      |                    |          |          |             |
+| Danish (da)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Dutch (nl)               |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| English (en)             |   ✅   |      ✅       |     ✅      |         ✅         |    ✅    |    ✅    |     ✅      |
+| English, GB (en-gb)      |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Estonian (et)            |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Finnish (fi)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| French (fr)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| German (de)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Hindu (hi)               |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Hungarian (hu)           |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Italian (it)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Japanese (ja)            |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Korean (ko)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
-| Lithuanian (lt)          |   ✅   |               |     ✴️      |                    |          |          |             |
+| Lithuanian (lt)          |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Malay (ms)               |   ✅   |               |     ✴️      |                    |          |          |             |
-| Norwegian (nb)           |   ✅   |               |     ✴️      |                    |          |          |             |
-| Polish (pl)              |   ✅   |               |     ✴️      |                    |          |          |             |
-| Portuguese (pt)          |   ✅   |               |     ✴️      |                    |          |          |             |
-| Russian (ru)             |   ✅   |      ✅       |     ✳️      |                    |          |          |             |
-| Spanish (es)             |   ✅   |               |     ✴️      |                    |          |          |             |
-| Spanish, Mexico (es-mx)  |   ✅   |               |     ✴️      |                    |          |          |             |
-| Swedish (sv)             |   ✅   |               |     ✴️      |                    |          |          |             |
+| Norwegian (nb)           |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Polish (pl)              |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Portuguese (pt)          |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Russian (ru)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Spanish (es)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Spanish, Mexico (es-mx)  |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
+| Swedish (sv)             |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Thai (th)                |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 | Ukrainian (uk)           |   ✅   |      ✅       |     ✴️      |                    |          |          |             |
 
@@ -140,4 +150,4 @@ Some caveats to be aware of when using shortcodes.
 - There may be duplicate and/or conflicting shortcodes when using multiple presets.
 - Presets may not provide shortcodes for the latest emoji/Unicode specifications.
 
-[cldr]: http://cldr.unicode.org/index/downloads/cldr-38
+[cldr]: http://cldr.unicode.org/index/downloads/cldr-46
